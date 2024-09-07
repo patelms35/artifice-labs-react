@@ -1,0 +1,9 @@
+/* TinySlider Custom Styles */
+.tns-item {
+  display: inline-block !important;
+}
+
+.carousel-card {
+  display: flex;
+  justify-content: center;
+}
