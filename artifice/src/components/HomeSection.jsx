@@ -41,9 +41,7 @@ const HomeSection = () => {
       {/* About Us Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            About Us
-          </h2>
+          <MainHeading/>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <img
