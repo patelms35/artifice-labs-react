@@ -1,4 +1,6 @@
 import "../buttonStyles.css";
+import ContactUsSection from "./ContactUsSection";
+import MissionVisionSection from "./MissionVisionSection";
 import ServicesSection from "./ServicesSection";
 
 const HomeSection = () => {
@@ -6,7 +8,6 @@ const HomeSection = () => {
     <div className="w-full">
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col justify-center items-center bg-[url('/Background.png')] bg-cover bg-center">
-        {/* Optional Overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         {/* Content */}
@@ -66,8 +67,6 @@ const HomeSection = () => {
           </div>
         </div>
       </section>
-
-      {/* Our Works Section */}
 
       {/* Our Works Section */}
       <section className="relative w-full py-16 flex flex-col justify-center items-center bg-gradient-to-b from-white to-gray-100">
@@ -138,6 +137,12 @@ const HomeSection = () => {
 
       {/* Services Section */}
       <ServicesSection />
+
+      {/* Mission and Vision Section */}
+      <MissionVisionSection />
+
+      {/* Contact Us Section */}
+      <ContactUsSection />
     </div>
   );
 };
