@@ -2,44 +2,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
-import LeftLogo from "../assets/arrow-left-solid.svg?react";
-import RightLogo from "../assets/arrow-right-solid.svg?react";
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "transparent",
-        margin: "auto",
-      }}
-      onClick={onClick}
-    >
-      <RightLogo className="arrow-icon" />
-    </div>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        right: 50,
-      }}
-      onClick={onClick}
-    >
-      <LeftLogo className="arrow-icon" />
-    </div>
-  );
-}
-
 const ServicesSection = () => {
   const settings = {
     dots: false,
@@ -47,54 +9,56 @@ const ServicesSection = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          centerMode: true, // Center the slides in view
-          centerPadding: "20px", // Adjust padding to ensure full card visibility
+          centerMode: true,
+          centerPadding: "30px",
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 430,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: "20px",
+          centerPadding: "10px",
         },
       },
     ],
   };
 
   return (
-    <div className="w-full md:w-3/4 m-auto">
-      <div className="mt-20">
-        <Slider {...settings}>
-          {data.map((item, index) => (
-            <div key={index} className="flex flex-row text-center">
-              <div className="shadow-black shadow-md h-[433px] w-[365px] text-black rounded-xl flex flex-col justify-center items-center">
-                <div className="h-10 w-10 bg-slate-800 rounded-md mb-10"></div>
-                <div>
-                  <h1 className="text-2xl mb-12">{item.title}</h1>
-                  <p>{item.content}</p>
-                  <button className="learn-more mt-10">
-                    <span className="circle">
-                      <span className="icon arrow"></span>
-                    </span>
-                    <span className="button-text">View More</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
+    <section className="w-full md:w-3/4 mx-auto py-16">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold mb-4">Services</h2>
+        <p className="text-lg text-gray-600">
+          Discover our wide range of services.
+        </p>
       </div>
-    </div>
+
+      <Slider {...settings}>
+        {data.map((item, index) => (
+          <div key={index} className="flex text-center flex-col items-center">
+            <div className="shadow-md h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center m-5">
+              <div className="h-16 w-16 bg-gray-300 rounded-full mb-6"></div>
+              <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+              <p className="text-center text-gray-600 mb-6">{item.content}</p>
+              <button className="learn-more mt-4">
+                <span className="circle">
+                  <span className="icon arrow"></span>
+                </span>
+                <span className="button-text">Learn more</span>
+              </button>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </section>
   );
 };
 
@@ -116,6 +80,11 @@ const data = [
   },
   {
     title: "AI/ML",
+    content:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
+  },
+  {
+    title: "UI/UX Design",
     content:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
   },
