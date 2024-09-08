@@ -1,6 +1,29 @@
+import { ArrowLeft, ArrowRight } from "react-feather";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+
+const CustomPrevArrow = ({ onClick }) => {
+  return (
+    <button
+      className="absolute lg:left-[-30px] lg:top-1/2 lg:transform lg:-translate-y-1/2 bottom-[-40px] left-1/2 transform -translate-x-full translate-y-0 lg:translate-x-0 z-10"
+      onClick={onClick}
+    >
+      <ArrowLeft className="text-black w-6 h-6" />
+    </button>
+  );
+};
+
+const CustomNextArrow = ({ onClick }) => {
+  return (
+    <button
+      className="absolute lg:right-[-30px] lg:top-1/2 lg:transform lg:-translate-y-1/2 bottom-[-40px] right-1/2 transform translate-x-full translate-y-0 lg:translate-x-0 z-10"
+      onClick={onClick}
+    >
+      <ArrowRight className="text-black w-6 h-6" />
+    </button>
+  );
+};
 
 const ServicesSection = () => {
   const settings = {
@@ -9,19 +32,55 @@ const ServicesSection = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+    adaptiveHeight: false,
     responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: "30px",
         },
       },
       {
-        breakpoint: 430,
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 320,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
