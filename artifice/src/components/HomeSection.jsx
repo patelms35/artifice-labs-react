@@ -2,6 +2,7 @@ import "../buttonStyles.css";
 import ContactUsSection from "./ContactUsSection";
 import MissionVisionSection from "./MissionVisionSection";
 import ServicesSection from "./ServicesSection";
+import MainHeading from "./Heading";
 
 const HomeSection = () => {
   return (
