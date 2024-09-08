@@ -1,12 +1,17 @@
 import "../buttonStyles.css";
 import ContactUsSection from "./ContactUsSection";
-import MissionVisionSection from "./MissionVisionSection";
-import ServicesSection from "./ServicesSection";
+import Footer from "./Footer";
 import MainHeading from "./Heading";
+import MissionVisionSection from "./MissionVisionSection";
+import Navbar from "./Navbar";
+import ServicesSection from "./ServicesSection";
 
 const HomeSection = () => {
   return (
     <div className="w-full">
+      {/* Navbar */}
+      <Navbar />
+
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col justify-center items-center bg-[url('/Background.png')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -41,16 +46,18 @@ const HomeSection = () => {
       {/* About Us Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <MainHeading/>
+          <MainHeading />
           <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-8 md:mb-0">
+            <div className="w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0">
+              {" "}
               <img
                 src="/about.png"
                 alt="About Us"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
-            <div className="md:w-1/2 md:pl-12">
+            <div className="md:w-1/2 lg:w-3/5 md:pl-12">
+              {" "}
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 About Artifice Labs
               </h3>
@@ -142,6 +149,9 @@ const HomeSection = () => {
 
       {/* Contact Us Section */}
       <ContactUsSection />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
