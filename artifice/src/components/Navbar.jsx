@@ -29,10 +29,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        className={`fixed top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg ${
+        <nav
+        className={`fixed top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500  ${
           isScrolled ? "-translate-y-60" : "translate-y-0"
-        } bg-gray-800 bg-opacity-90 backdrop-blur-lg`}
+        } bg-gray-800 bg-opacity-10 backdrop-blur-lg`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -43,31 +43,31 @@ const Navbar = () => {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#home"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-white hover:text-white px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
                 </a>
                 <a
                   href="#about"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-white hover:text-white px-3 py-2 rounded-md text-base font-medium"
                 >
                   About Us
                 </a>
                 <a
                   href="#works"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-white hover:text-white px-3 py-2 rounded-md text-base font-medium"
                 >
                   Our Works
                 </a>
                 <a
                   href="#services"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-white hover:text-white px-3 py-2 rounded-md text-base font-medium"
                 >
                   Services
                 </a>
                 <a
                   href="#mission"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-white hover:text-white px-3 py-2 rounded-md text-base font-medium"
                 >
                   Mission & Vision
                 </a>
