@@ -1,7 +1,7 @@
 
 const MainHeading = () => {
   return (
-    <div className="flex flex-col items-center relative">
+    <div className="flex flex-col items-center relative" data-aos="fade-down">
       <div className="relative">
         {/* First About Us */}
         <span className="text-6xl font-bold text-gray-200">About Us</span>

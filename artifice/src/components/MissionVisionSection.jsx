@@ -3,7 +3,7 @@ import vision from "../assets/vision.png";
 
 const MissionVisionSection = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-[#F6F9FE]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
           Mission & Vision
