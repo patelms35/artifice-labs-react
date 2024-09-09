@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import logo from "../assets/logo.png";
 import Sidebar from "./Sidebar";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,6 +19,7 @@ const Navbar = () => {
         setIsScrolled(false);
       }
       lastScrollTop = scrollTop;
+      AOS.init({ duration: 2000 });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -29,12 +32,12 @@ const Navbar = () => {
 
   return (
     <>
-        <nav
+        <nav 
         className={`fixed top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500  ${
           isScrolled ? "-translate-y-60" : "translate-y-0"
-        } bg-gray-800 bg-opacity-10 backdrop-blur-lg`}
+        } bg-gray-800 bg-opacity-10 backdrop-blur-lg`} 
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
               <img src={logo} alt="Logo" className="h-8 w-10" />

@@ -13,7 +13,7 @@ const ContactUsSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-[#F6F9FE]">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-20">
         Contact Us
       </h2>
