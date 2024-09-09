@@ -1,10 +1,7 @@
-import React from 'react'
-import HomeSection from './components/HomeSection.jsx'
+import HomeSection from "./components/HomeSection.jsx";
 
 const App = () => {
-  return (
-    <HomeSection />
-  )
-}
+  return <HomeSection />;
+};
 
-export default App
+export default App;
