@@ -8,4 +8,7 @@ export default defineConfig({
     include: ["swiper"],
   },
   plugins: [react(), svgr()],
+  server: {
+    port: 5173,
+  },
 });
