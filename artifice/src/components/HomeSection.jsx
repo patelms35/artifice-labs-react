@@ -5,8 +5,6 @@ import MainHeading from "./Heading";
 import MissionVisionSection from "./MissionVisionSection";
 import Navbar from "./Navbar";
 import ServicesSection from "./ServicesSection";
-import AOS from 'aos'
-// import 'aos/dist/aos.css'
 
 const HomeSection = () => {
   return (
@@ -73,7 +71,7 @@ const HomeSection = () => {
                 quasi quibusdam modi id pariatur ab saepe at sint ad eius nemo
                 voluptates, voluptas in temporibus dicta commodi atque molestiae
                 aut. Tempore, maxime. Quo odit, aspernatur omnis asperiores
-                neque nostrum nihil dolores nemo amet.  Lorem, ipsum dolor sit
+                neque nostrum nihil dolores nemo amet. Lorem, ipsum dolor sit
                 amet consectetur adipisicing elit. Asperiores inventore expedita
                 magnam veritatis facere vero velit quasi quibusdam modi id
                 pariatur ab saepe at sint ad eius nemo voluptates, voluptas in
