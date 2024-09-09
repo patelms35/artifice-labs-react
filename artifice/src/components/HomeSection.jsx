@@ -5,6 +5,8 @@ import MainHeading from "./Heading";
 import MissionVisionSection from "./MissionVisionSection";
 import Navbar from "./Navbar";
 import ServicesSection from "./ServicesSection";
+import AOS from 'aos'
+// import 'aos/dist/aos.css'
 
 const HomeSection = () => {
   return (
@@ -44,10 +46,10 @@ const HomeSection = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-blue-50 h-screen">
         <div className="container mx-auto px-4">
           <MainHeading />
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center mt-20">
             <div className="w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0">
               {" "}
               <img
@@ -58,13 +60,26 @@ const HomeSection = () => {
             </div>
             <div className="md:w-1/2 lg:w-3/5 md:pl-12">
               {" "}
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                About Artifice Labs
+              <h1 className="text-2xl font-bold text-black mb-4">
+                About <span className="text-blue-600">Artifice Labs</span>
+              </h1>
+              <h3 className="text-xl font-semibold mb-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores inventore
               </h3>
               <p className="text-gray-600 mb-6">
-                Lorem, ipsum dolor sit amet consectetur adipiscing elit.
-                Asperiores inventore voluptates fugiat vero voluptate quae
-                cupiditate modi in pariatur. Tempore, maxime.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores inventore expedita magnam veritatis facere vero velit
+                quasi quibusdam modi id pariatur ab saepe at sint ad eius nemo
+                voluptates, voluptas in temporibus dicta commodi atque molestiae
+                aut. Tempore, maxime. Quo odit, aspernatur omnis asperiores
+                neque nostrum nihil dolores nemo amet.  Lorem, ipsum dolor sit
+                amet consectetur adipisicing elit. Asperiores inventore expedita
+                magnam veritatis facere vero velit quasi quibusdam modi id
+                pariatur ab saepe at sint ad eius nemo voluptates, voluptas in
+                temporibus dicta commodi atque molestiae aut. Tempore, maxime.
+                Quo odit, aspernatur omnis asperiores neque nostrum nihil
+                dolores nemo amet.
               </p>
               <button className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
                 Know More
