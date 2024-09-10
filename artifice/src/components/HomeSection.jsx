@@ -14,12 +14,12 @@ const HomeSection = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="w-full">
+    <div className="w-full bg-[#F6F9FE]">
       {/* Navbar */}
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-center items-center bg-[url('/Background.png')] bg-cover bg-center">
+      <section className="relative  h-screen flex flex-col justify-center items-center bg-[url('/Background.png')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         {/* Home */}
@@ -151,7 +151,7 @@ const HomeSection = () => {
 
           {/* Third Card */}
           <div
-            className="bg-white rounded-lg shadow-lg p-4 max-w-[20rem] lg:max-w-[22rem]"
+            className="relative bg-white rounded-lg shadow-lg p-4 max-w-[20rem] lg:max-w-[22rem]"
             data-aos="fade-left"
           >
             <img
@@ -171,8 +171,8 @@ const HomeSection = () => {
 
         {/* View More Button */}
         <div
-          className="flex justify-end w-full mt-8 px-6 lg:px-12"
-          data-aos="fade-left"
+          className=" absolute -bottom-1 -left-[70px] flex justify-end w-full mt-8 px-6 lg:px-12"
+          data-aos="fade-right"
         >
           <button className="learn-more mr-16">
             <span className="circle">

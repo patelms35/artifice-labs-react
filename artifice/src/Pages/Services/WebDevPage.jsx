@@ -76,9 +76,9 @@ const Services = () => {
           </div>
 
           {/* Cards */}
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-10">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-64">
             {/* Card 1 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-start transform lg:translate-y-0 pb-14">
+            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform lg:translate-y-0 pb-14">
               <img src="/globe.png" className="pb-6" />
               <p className="text-gray-700">
                 <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
@@ -90,7 +90,7 @@ const Services = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-start transform lg:translate-y-6 pb-14 lg:mt-0">
+            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform lg:translate-y-16 pb-14 lg:mt-0">
               <img src="/ecommerce.png" className="pb-6" />
               <p className="text-gray-700">
                 <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
@@ -102,7 +102,7 @@ const Services = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-start transform lg:translate-y-12 pb-14">
+            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform lg:translate-y-32 pb-14">
               <img src="/webapp.png" className="pb-6" />
               <p className="text-gray-700">
                 <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
@@ -114,7 +114,7 @@ const Services = () => {
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-start transform lg:translate-y-20 lg:mt-0 pb-14">
+            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform lg:translate-y-48 lg:mt-0 pb-14">
               <img src="/cms.png" className="pb-6" />
               <p className="text-gray-700">
                 <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
