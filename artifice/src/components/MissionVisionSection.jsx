@@ -1,13 +1,13 @@
 import mission from "../assets/mission.png";
 import vision from "../assets/vision.png";
+import MainHeading from "./MainHeading";
+
 
 const MissionVisionSection = () => {
   return (
     <section className="py-16 bg-[#F6F9FE]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-          Mission & Vision
-        </h2>
+      <MainHeading title="Mission & Vision" backgroundTitle="Mission & Vision" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="md:order-1">

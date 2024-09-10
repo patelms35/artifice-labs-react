@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import contactUs from "../assets/pana.png";
+import MainHeading from "./MainHeading";
 
 const ContactUsSection = () => {
   const {
@@ -14,10 +15,8 @@ const ContactUsSection = () => {
 
   return (
     <section className="py-16 bg-[#F6F9FE]">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-20">
-        Contact Us
-      </h2>
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <MainHeading title="Contect Us" backgroundTitle="Contect Us" />
+      <div className="container mt-20 mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 w-3/4 sm:w-3/4 bg-white p-8 rounded-lg shadow-md">
           <h2 className="text-3xl font-bold mb-6 text-center">Contact Us</h2>
           <form onSubmit={handleSubmit(onSubmit)}>

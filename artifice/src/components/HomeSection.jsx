@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import "../buttonStyles.css";
 import ContactUsSection from "./ContactUsSection";
 import Footer from "./Footer";
-import MainHeading from "./Heading";
+import MainHeading from "./MainHeading";
 import MissionVisionSection from "./MissionVisionSection";
 import Navbar from "./Navbar";
 import ServicesSection from "./ServicesSection";
@@ -56,7 +56,7 @@ const HomeSection = () => {
       {/* About Us Section */}
       <section className="py-16 bg-[#F6F9FE] h-screen">
         <div className="container mx-auto px-4">
-          <MainHeading />
+          <MainHeading title="About us" backgroundTitle="About us" />
           <div className="flex flex-col md:flex-row items-center mt-20">
             <div className="w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0">
               {" "}
@@ -105,15 +105,17 @@ const HomeSection = () => {
       </section>
 
       {/* Our Works Section */}
-      <section className="relative w-full py-16 flex flex-col justify-center items-center bg-gradient-to-b  bg-[#F6F9FE]">
+      <section className="relative w-full py-16 flex flex-col justify-center items-center top-10 bg-gradient-to-b  bg-[#F6F9FE]">
         {/* Section Title */}
-        <h2 className="text-4xl font-bold text-center mb-20">Our Works</h2>
+        <div className="mb-20">
+          <MainHeading title="Our Works" backgroundTitle="Our Works" />
+        </div>
 
         {/* Works Cards */}
         <div className="flex flex-wrap justify-center lg:justify-between gap-12 px-6">
           {/* Single Card */}
           <div
-            className="bg-white rounded-lg shadow-lg p-4 max-w-[20rem] lg:max-w-[22rem]"
+            className="bg-white rounded-lg shadow-lg p-4 max-w-[20rem] lg:max-w-[22rem] "
             data-aos="fade-right"
           >
             <img

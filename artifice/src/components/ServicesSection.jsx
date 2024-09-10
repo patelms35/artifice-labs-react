@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import MainHeading from "./MainHeading";
 
 const CustomPrevArrow = ({ onClick }) => {
   return (
@@ -18,7 +19,7 @@ const CustomPrevArrow = ({ onClick }) => {
 const CustomNextArrow = ({ onClick }) => {
   return (
     <button
-      className="absolute lg:right-[-30px] lg:top-1/2 lg:transform lg:-translate-y-1/2 bottom-[-40px] right-1/2 transform translate-x-full translate-y-0 lg:translate-x-0 z-10"
+      className="absolute lg:right-[50px] lg:top-1/2 lg:transform lg:-translate-y-1/2 bottom-[-40px] right-1/2 transform translate-x-full translate-y-0 lg:translate-x-0 z-10"
       onClick={onClick}
     >
       <ArrowRight className="text-black w-6 h-6" />
@@ -101,9 +102,10 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] ">
+    <section className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE]  ">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold mb-4">Services</h2>
+        <MainHeading title="Services" backgroundTitle="Services" />
+
         <p
           className="text-left text-[32px] font-bold text-gray-600"
           data-aos="fade-top"
@@ -116,11 +118,11 @@ const ServicesSection = () => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex text-center flex-col items-center"
+            className="flex text-center flex-col items-center "
             data-aos="fade-top"
           >
-            <div className="shadow-md h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center m-5">
-              <div className="h-16 w-16 bg-gray-300 rounded-full mb-6"></div>
+            <div className="shadow-md h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center m-5 border-2 border-[E0E0E0] ">
+              <div className="h-16 w-16 bg-gray-300 rounded-full mb-6 "></div>
               <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
               <p className="text-center text-gray-600 mb-6">{item.content}</p>
               <button
