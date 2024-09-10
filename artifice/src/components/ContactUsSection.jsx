@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import contactUs from "../assets/pana.png";
+import contactUs from "../assets/Get-in-touch.png";
 import MainHeading from "./MainHeading";
 
 const ContactUsSection = () => {
@@ -15,10 +15,14 @@ const ContactUsSection = () => {
 
   return (
     <section className="py-16 bg-[#F6F9FE]">
-      <MainHeading title="Contect Us" backgroundTitle="Contect Us" />
+      <MainHeading title="Contact Us" backgroundTitle="Contact Us" />
       <div className="container mt-20 mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 w-3/4 sm:w-3/4 bg-white p-8 rounded-lg shadow-md">
-          <h2 className="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center text-[#407BFF] ">
+            Get in touch
+            <div className="h-1 w-16 bg-blue-500 mt-1 ml-80 "></div>
+          </h2>
+
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-700">

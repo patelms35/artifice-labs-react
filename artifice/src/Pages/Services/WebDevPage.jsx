@@ -16,7 +16,7 @@ const Services = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/Background.png')] bg-cover bg-center">
+      <section className="relative h-screen flex flex-col justify-center items-start bg-designer bg-cover bg-center">
         <div className="absolute inset-0 bg-black opacity-60"></div>
 
         {/* Content */}

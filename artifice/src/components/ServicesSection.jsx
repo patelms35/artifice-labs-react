@@ -107,7 +107,7 @@ const ServicesSection = () => {
         <MainHeading title="Services" backgroundTitle="Services" />
 
         <p
-          className="text-left text-[32px] font-bold text-gray-600"
+          className="text-left text-[32px] font-bold text-black mt-12"
           data-aos="fade-top"
         >
           Discover our wide range of services.
@@ -121,7 +121,7 @@ const ServicesSection = () => {
             className="flex text-center flex-col items-center "
             data-aos="fade-top"
           >
-            <div className="shadow-md h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center m-5 border-2 border-[E0E0E0] ">
+            <div className="shadow-lg hover:drop-shadow-2xl h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center m-10  border-2 border-[#E0E0E0] mb-36 ">
               <div className="h-16 w-16 bg-gray-300 rounded-full mb-6 "></div>
               <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
               <p className="text-center text-gray-600 mb-6">{item.content}</p>

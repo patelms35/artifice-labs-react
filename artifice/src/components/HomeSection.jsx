@@ -13,17 +13,18 @@ const HomeSection = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
   return (
     <div className="w-full bg-[#F6F9FE]">
       {/* Navbar */}
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative  h-screen flex flex-col justify-center items-center bg-[url('/Background.png')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+      <section className="h-screen flex flex-col justify-center items-center bg-[url('/Background.png')] bg-cover bg-center">
+        <div className="bg-black opacity-50 w-full h-full absolute top-0 left-0"></div>
 
         {/* Home */}
-        <div className="relative z-10 text-center text-white px-6">
+        <div className="text-center text-white px-6 z-10">
           <h1
             className="text-4xl md:text-6xl font-bold mb-4"
             data-aos="fade-right"
@@ -59,7 +60,6 @@ const HomeSection = () => {
           <MainHeading title="About us" backgroundTitle="About us" />
           <div className="flex flex-col md:flex-row items-center mt-20">
             <div className="w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0">
-              {" "}
               <img
                 src="/about.png"
                 alt="About Us"
@@ -68,31 +68,47 @@ const HomeSection = () => {
               />
             </div>
             <div className="md:w-1/2 lg:w-3/5 md:pl-12">
-              {" "}
               <h1
-                className="text-2xl font-bold text-black mb-4"
+                className="text-2xl font-bold text-black mb-4 z-10 relative"
                 data-aos="fade-left"
               >
                 About <span className="text-blue-600">Artifice Labs</span>
               </h1>
-              <h3 className="text-xl font-semibold mb-2" data-aos="fade-left">
+              <h3 className="text-xl font-semibold mb-2 z-10 relative" data-aos="fade-left">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores inventore
               </h3>
-              <p className="text-gray-600 mb-6" data-aos="fade-left">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores inventore expedita magnam veritatis facere vero velit
-                quasi quibusdam modi id pariatur ab saepe at sint ad eius nemo
-                voluptates, voluptas in temporibus dicta commodi atque molestiae
-                aut. Tempore, maxime. Quo odit, aspernatur omnis asperiores
-                neque nostrum nihil dolores nemo amet. Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Asperiores inventore expedita
-                magnam veritatis facere vero velit quasi quibusdam modi id
-                pariatur ab saepe at sint ad eius nemo voluptates, voluptas in
-                temporibus dicta commodi atque molestiae aut. Tempore, maxime.
-                Quo odit, aspernatur omnis asperiores neque nostrum nihil
-                dolores nemo amet.
-              </p>
+              {/* Container for paragraph and image */}
+              <div className="relative">
+                {/* Paragraph */}
+                <p
+                  className="text-gray-600 mb-6 relative z-10"
+                  data-aos="fade-left"
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores inventore expedita magnam veritatis facere vero
+                  velit quasi quibusdam modi id pariatur ab saepe at sint ad
+                  eius nemo voluptates, voluptas in temporibus dicta commodi
+                  atque molestiae aut. Tempore, maxime. Quo odit, aspernatur
+                  omnis asperiores neque nostrum nihil dolores nemo amet. Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                  inventore expedita magnam veritatis facere vero velit quasi
+                  quibusdam modi id pariatur ab saepe at sint ad eius nemo
+                  voluptates, voluptas in temporibus dicta commodi atque
+                  molestiae aut. Tempore, maxime. Quo odit, aspernatur omnis
+                  asperiores neque nostrum nihil dolores nemo amet.
+                </p>
+                {/* Image positioned behind the text */}
+                <div className="absolute inset-0 z-0 -top-[6rem] left-[19rem]">
+                  <img
+                    // className="opacity-50"
+                    src="../src/assets/Vectors/about.png"
+                    alt=""
+                    width={550}
+                    height={550}
+                  />
+                </div>
+              </div>
               <button
                 className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
                 data-aos="fade-up"
@@ -105,7 +121,7 @@ const HomeSection = () => {
       </section>
 
       {/* Our Works Section */}
-      <section className="relative w-full py-16 flex flex-col justify-center items-center top-10 bg-gradient-to-b  bg-[#F6F9FE]">
+      <section className="w-full py-16 flex flex-col justify-center items-center bg-[#F6F9FE]">
         {/* Section Title */}
         <div className="mb-20">
           <MainHeading title="Our Works" backgroundTitle="Our Works" />
@@ -115,7 +131,7 @@ const HomeSection = () => {
         <div className="flex flex-wrap justify-center lg:justify-between gap-12 px-6">
           {/* Single Card */}
           <div
-            className="bg-white rounded-lg shadow-lg p-4 max-w-[20rem] lg:max-w-[22rem] "
+            className="bg-white rounded-xl p-4 max-w-[20rem] lg:max-w-[22rem] border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl "
             data-aos="fade-right"
           >
             <img
@@ -134,7 +150,7 @@ const HomeSection = () => {
 
           {/* Second Card */}
           <div
-            className="bg-white rounded-lg shadow-lg p-4 max-w-[20rem] lg:max-w-[22rem]"
+            className="bg-white rounded-xl p-4 max-w-[20rem] lg:max-w-[22rem] border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl"
             data-aos="zoom-in"
           >
             <img
@@ -153,7 +169,7 @@ const HomeSection = () => {
 
           {/* Third Card */}
           <div
-            className="relative bg-white rounded-lg shadow-lg p-4 max-w-[20rem] lg:max-w-[22rem]"
+            className="bg-white rounded-xl  p-4 max-w-[20rem] lg:max-w-[22rem] border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl  "
             data-aos="fade-left"
           >
             <img
@@ -173,10 +189,10 @@ const HomeSection = () => {
 
         {/* View More Button */}
         <div
-          className=" absolute -bottom-1 -left-[70px] flex justify-end w-full mt-8 px-6 lg:px-12"
+          className="flex justify-end w-full mt-8 px-6 lg:px-12"
           data-aos="fade-right"
         >
-          <button className="learn-more mr-16">
+          <button className="learn-more right-80">
             <span className="circle">
               <span className="icon arrow"></span>
             </span>
