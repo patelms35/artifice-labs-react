@@ -1,4 +1,3 @@
-
 const MainHeading = ({ title, backgroundTitle}) => {
   return (
     <div className="flex flex-col items-center relative" data-aos="fade-down">
@@ -10,7 +9,7 @@ const MainHeading = ({ title, backgroundTitle}) => {
           {title}
         </span>
       </div>
-      <div className="h-1 w-16 bg-blue-500 mt-3 ml-20"></div>
+      <div className="h-1 w-16 bg-blue-500 mt-3 ml-[5rem]"></div>
     </div>
   );
 };

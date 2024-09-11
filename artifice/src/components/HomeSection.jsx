@@ -20,7 +20,7 @@ const HomeSection = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center items-center bg-[url('/Background.png')] bg-cover bg-center">
+      <section className="h-screen flex flex-col justify-center items-center bg-[url('/Background.jpeg')] bg-cover bg-center">
         <div className="bg-black opacity-50 w-full h-full absolute top-0 left-0"></div>
 
         {/* Home */}
@@ -69,7 +69,7 @@ const HomeSection = () => {
             </div>
             <div className="md:w-1/2 lg:w-3/5 md:pl-12">
               <h1
-                className="text-2xl font-bold text-black mb-4 z-10 relative"
+                className="text-3xl font-bold text-black mb-4 z-10 relative"
                 data-aos="fade-left"
               >
                 About <span className="text-blue-600">Artifice Labs</span>
@@ -99,9 +99,9 @@ const HomeSection = () => {
                   asperiores neque nostrum nihil dolores nemo amet.
                 </p>
                 {/* Image positioned behind the text */}
-                <div className="absolute inset-0 z-0 -top-[6rem] left-[19rem]">
+                <div className="absolute inset-0 z-0 -top-[6rem] left-[19rem]" data-aos="fade-up">
                   <img
-                    // className="opacity-50"
+                    className="opacity-60"
                     src="../src/assets/Vectors/about.png"
                     alt=""
                     width={550}
