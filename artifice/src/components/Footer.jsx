@@ -4,10 +4,10 @@ import artLogo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-600 text-white py-8">
+    <footer className="bg-[#0B5EFF] text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="md:mb-0">
+          <div className="md:mb-0" data-aos="fade-right" >
             <a href="#" className="flex flex-col items-center">
               <img
                 src={artLogo}
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left" data-aos="fade-down" >
             <h3 className="font-semibold text-center mb-4">More</h3>
             <ul className="flex flex-col md:flex-row gap-6">
               <li>
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-6 md:mt-0">
+          <div className="mt-6 md:mt-0" data-aos="fade-left" >
             <h3 className="font-semibold mb-4 text-center md:text-left">
               Follow
             </h3>
