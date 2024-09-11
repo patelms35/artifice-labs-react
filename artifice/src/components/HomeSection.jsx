@@ -27,15 +27,15 @@ const HomeSection = () => {
         <div className="text-center text-white px-6 z-10">
           <h1
             className="text-4xl md:text-6xl font-bold mb-4"
-            data-aos="fade-right"
+           
           >
             Inspired and passionate about innovation.
           </h1>
-          <p className="text-lg md:text-2xl mb-8" data-aos="fade-right">
+          <p className="text-lg md:text-2xl mb-8" >
             Lorem, ipsum dolor sit amet
           </p>
           <button
-            data-aos="fade-up"
+            
             className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-[#0B5EFF] backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#FFFFFF] hover:text-black before:-z-10 before:aspect-square before:hover:scale-200 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
             type="submit"
           >
@@ -64,17 +64,17 @@ const HomeSection = () => {
                 src="/about.png"
                 alt="About Us"
                 className="w-full rounded-lg shadow-lg"
-                data-aos="fade-right"
+               
               />
             </div>
             <div className="md:w-1/2 lg:w-3/5 md:pl-12">
               <h1
                 className="text-3xl font-bold text-black mb-4 z-10 relative"
-                data-aos="fade-left"
+              
               >
                 About <span className="text-blue-600">Artifice Labs</span>
               </h1>
-              <h3 className="text-xl font-semibold mb-2 z-10 relative" data-aos="fade-left">
+              <h3 className="text-xl font-semibold mb-2 z-10 relative">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores inventore
               </h3>
@@ -83,7 +83,7 @@ const HomeSection = () => {
                 {/* Paragraph */}
                 <p
                   className="text-gray-600 mb-6 relative z-10"
-                  data-aos="fade-left"
+               
                 >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Asperiores inventore expedita magnam veritatis facere vero
@@ -99,7 +99,7 @@ const HomeSection = () => {
                   asperiores neque nostrum nihil dolores nemo amet.
                 </p>
                 {/* Image positioned behind the text */}
-                <div className="absolute inset-0 z-0 -top-[6rem] left-[19rem]" data-aos="fade-up">
+                <div className="absolute inset-0 z-0 -top-[6rem] left-[19rem]">
                   <img
                     className="opacity-60"
                     src="../src/assets/Vectors/about.png"
@@ -110,9 +110,7 @@ const HomeSection = () => {
                 </div>
               </div>
               <button
-                className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
-                data-aos="fade-up"
-              >
+                className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
                 Know More
               </button>
             </div>
@@ -132,7 +130,6 @@ const HomeSection = () => {
           {/* Single Card */}
           <div
             className="bg-white rounded-xl p-4 max-w-[20rem] lg:max-w-[22rem] border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl "
-            data-aos="fade-right"
           >
             <img
               src="/about.png"
@@ -151,7 +148,7 @@ const HomeSection = () => {
           {/* Second Card */}
           <div
             className="bg-white rounded-xl p-4 max-w-[20rem] lg:max-w-[22rem] border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl"
-            data-aos="zoom-in"
+          
           >
             <img
               src="/about.png"
@@ -170,7 +167,7 @@ const HomeSection = () => {
           {/* Third Card */}
           <div
             className="bg-white rounded-xl  p-4 max-w-[20rem] lg:max-w-[22rem] border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl  "
-            data-aos="fade-left"
+    
           >
             <img
               src="/about.png"
@@ -190,7 +187,7 @@ const HomeSection = () => {
         {/* View More Button */}
         <div
           className="flex justify-end w-full mt-8 px-6 lg:px-12"
-          data-aos="fade-right"
+       
         >
           <button className="learn-more right-80">
             <span className="circle">

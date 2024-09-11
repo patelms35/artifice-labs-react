@@ -8,7 +8,7 @@ const MissionVisionSection = () => {
       <div className="container mx-auto px-4">
         <MainHeading title="Mission & Vision" backgroundTitle="Mission & Vision" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="md:order-1"  data-aos="fade-right" >
+          <div className="md:order-1" >
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Our Mission
               <div className="h-1 w-10 bg-blue-500 ml-[6rem]"></div>
@@ -19,7 +19,7 @@ const MissionVisionSection = () => {
               experiences, and improve quality of life.
             </p>
           </div>
-          <div className="md:order-2" data-aos="fade-left" >
+          <div className="md:order-2">
             <img
               src={mission}
               alt="Mission Icon"
@@ -29,7 +29,7 @@ const MissionVisionSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
-          <div className="md:order-1"data-aos="fade-right">
+          <div className="md:order-1">
             <img
               src={vision}
               alt="Vision Icon"
@@ -38,7 +38,7 @@ const MissionVisionSection = () => {
               height={450}
             />
           </div>
-          <div className="md:order-2" data-aos="fade-left" >
+          <div className="md:order-2">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Our Vision
               <div className="h-1 w-10 bg-blue-500 ml-[4.8rem]"></div>

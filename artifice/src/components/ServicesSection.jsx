@@ -108,7 +108,7 @@ const ServicesSection = () => {
 
         <p
           className="text-left text-[32px] font-bold text-black mt-12"
-          data-aos="fade-right"
+          
         >
           Discover our wide range of services.
         </p>
@@ -119,7 +119,7 @@ const ServicesSection = () => {
           <div
             key={index}
             className="flex text-center flex-col items-center "
-            data-aos="fade-top"
+           
           >
             <div className="shadow-lg hover:drop-shadow-2xl h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center m-10  border-2 border-[#E0E0E0] mb-36 hover:border-[#106EEA] hover:border-opacity-40 hover:shadow-[#106EEA]/40 ">
               <div className="h-16 w-16 bg-gray-300 rounded-full mb-6 "></div>
