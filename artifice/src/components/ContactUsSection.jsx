@@ -16,8 +16,11 @@ const ContactUsSection = () => {
   return (
     <section className="py-16 bg-[#F6F9FE]">
       <MainHeading title="Contact Us" backgroundTitle="Contact Us" />
-      <div className="container mt-20 mb-32 mx-auto px-4 md:gap-32  flex flex-col md:flex-row items-center justify-between">
-        <div className="md:w-1/2 w-3/4 sm:w-3/4 bg-white p-10 rounded-lg shadow-md"  >
+      <div className="container mt-20 mb-32 mx-auto px-4 md:gap-32  flex flex-col-reverse md:flex-row items-center justify-between">
+        <div
+          className="md:w-1/2 w-11/12 bg-white p-10 rounded-lg shadow-md"
+          
+        >
           <h2 className="text-3xl font-bold mb-6 text-center text-blue-500 ">
             Get in touch
             {/* <div className="h-1 w-16 bg-blue-500 mt-1 ml-80 "></div> */}
@@ -118,7 +121,10 @@ const ContactUsSection = () => {
           </form>
         </div>
 
-        <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center" >
+        <div
+          className="md:w-1/2 mt-8 md:mt-0 flex justify-center"
+        
+        >
           <img
             src={contactUs}
             alt="Contact Us"

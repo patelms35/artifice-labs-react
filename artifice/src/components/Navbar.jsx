@@ -1,4 +1,4 @@
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import Sidebar from "./Sidebar";
 import AOS from "aos";
@@ -32,17 +32,17 @@ const Navbar = () => {
 
   return (
     <>
-        <nav 
+      <nav
         className={`fixed top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500  ${
           isScrolled ? "-translate-y-60" : "translate-y-0"
-        } bg-gray-800 bg-opacity-10 backdrop-blur-lg`} 
+        } bg-gray-800 bg-opacity-10 backdrop-blur-lg`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
-          <div className="flex justify-between items-center h-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16 ">
             <div className="flex-shrink-0">
               <img src={logo} alt="Logo" className="h-8 w-10" />
             </div>
-            <div className="hidden md:block">
+            <div className="hidden md:flex">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#home"
@@ -77,7 +77,17 @@ const Navbar = () => {
               </div>
             </div>
 
-            <div className="-mr-2 flex md:hidden">
+            {/* Contact Us Button */}
+            <div className="hidden md:flex justify-between items-center h-16 mr-[74px]">
+              <div className="bg-white absolute text-black rounded-full px-6 py-[18px] flex items-end justify-end space-x-2">
+                <span className=" relative  text-black  font-bold ">
+                  Contact Us
+                </span>
+                
+              </div>
+            </div>
+
+            <div className="block md:hidden">
               <button
                 onClick={toggleSidebar}
                 type="button"
