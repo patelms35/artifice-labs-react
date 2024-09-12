@@ -79,7 +79,7 @@ const Navbar = () => {
 
             {/* Contact Us Button */}
             <div className="hidden md:flex justify-between items-center h-16 mr-[74px]">
-              <div className="bg-white absolute text-black rounded-full px-6 py-[18px] flex items-end justify-end space-x-2">
+              <div className="bg-white absolute opacity-15  text-black rounded-full px-6 py-[18px] flex items-end justify-end space-x-2">
                 <span className=" relative  text-black  font-bold ">
                   Contact Us
                 </span>

@@ -5,7 +5,7 @@ import artLogo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0B5EFF] text-white py-8">
+    <footer className="bg-[#106eea] text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="md:mb-0" >
