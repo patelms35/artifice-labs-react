@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../buttonStyles.css";
 import ContactUsSection from "./ContactUsSection";
 import Footer from "./Footer";
@@ -10,6 +11,12 @@ import Navbar from "./Navbar";
 import ServicesSection from "./ServicesSection";
 
 const HomeSection = () => {
+  const navigate = useNavigate();
+
+  const handleOurWorks = () => {
+    navigate("/our-works");
+  };
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -20,23 +27,19 @@ const HomeSection = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center items-center bg-[url('/Background.jpeg')] bg-cover bg-center relative" id="home" >
+      <section
+        className="h-screen flex flex-col justify-center items-center bg-[url('/Background.jpeg')] bg-cover bg-center relative"
+        id="home"
+      >
         <div className="bg-black opacity-50 w-full h-full absolute top-0 left-0"></div>
         <div className="text-center text-white px-6 relative z-10">
-          <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
-            
-          >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             Inspired and passionate about innovation.
           </h1>
-          <p
-            className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8"
-           
-          >
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8">
             Lorem, ipsum dolor sit amet
           </p>
           <button
-            
             className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-base sm:text-lg md:text-xl lg:text-lg text-gray-50 bg-[#106eea] backdrop-blur-md lg:font-semibold border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#FFFFFF] hover:text-black before:-z-10 before:aspect-square before:hover:scale-200 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
             type="submit"
           >
@@ -57,15 +60,15 @@ const HomeSection = () => {
 
       {/* About Us Section */}
       <section className="py-16 bg-[#F6F9FE]" id="about">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 relative">
           <MainHeading title="About us" backgroundTitle="About us" />
           <div className="relative flex flex-col md:flex-row items-center mt-10 md:mt-20">
             {/* Left Image */}
-            <div className="z-30 w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0">
+            <div className="z-30 w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0 relative">
               <img
                 src="/about.png"
                 alt="About Us"
-                className="w-full rounded-lg shadow-lg"
+                className="w-11/12 h-11/12 rounded-lg shadow-lg relative z-20"
               />
             </div>
 
@@ -75,36 +78,42 @@ const HomeSection = () => {
                 About <span className="text-[#106eea]">Artifice Labs</span>
               </h1>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-xl font-semibold mb-2 z-20 relative">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores inventore
               </h3>
 
               {/* Text Paragraph */}
               <div className="relative flex-1">
                 <p className="text-gray-600 mb-6 relative z-20 text-base sm:text-lg md:text-xl">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi id pariatur ab saepe at sint ad eius nemo voluptates, voluptas in temporibus dicta commodi atque molestiae aut.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores inventore expedita magnam veritatis facere vero
+                  velit quasi quibusdam modi id pariatur ab saepe at sint ad
+                  eius nemo voluptates, voluptas in temporibus dicta commodi
+                  atque molestiae aut.
                 </p>
 
-                {/* Background Image */}
-                <div className="z-10 absolute inset-x-0 bottom-[-50px] sm:bottom-[-100px] lg:bottom-[-200px] flex justify-center lg:justify-end lg:items-end">
-                  <img
-                    className="opacity-60 w-[60%] lg:w-auto lg:h-[500px] object-contain"
-                    src="../public/about-vector.png"
-                    alt="Background"
-                  />
-                </div>
+                {/* Know More Button */}
+                <button className="z-20 cursor-pointer transition-all bg-[#106eea] text-white px-4 py-2 rounded-md w-36 text-center border-blue-600 border-b-[2px] sm:border-b-[4px] hover:brightness-110 hover:-translate-y-1 hover:border-b-[4px] active:border-b-[2px] active:brightness-90 active:translate-y-1">
+                  Know More
+                </button>
               </div>
 
-              {/* Know More Button */}
-              <button className="z-20 cursor-pointer transition-all bg-[#106eea] text-white px-4 py-2 rounded-md w-36 text-center border-blue-600 border-b-[2px] sm:border-b-[4px] hover:brightness-110 hover:-translate-y-1 hover:border-b-[4px] active:border-b-[2px] active:brightness-90 active:translate-y-1">
-                Know More
-              </button>
+              {/* Background Vector Positioned to the Right */}
+              <img
+                src="/about-vector.png"
+                alt="Background"
+                className="absolute bottom-30 right-10 opacity-60 w-[200px] md:w-[300px] lg:w-[500px] object-contain z-10"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Our Works */}
-      <section id="works" className="w-full py-16 flex flex-col justify-center items-center bg-[#F6F9FE] relative">
+      <section
+        id="works"
+        className="w-full py-16 flex flex-col justify-center items-center bg-[#F6F9FE] relative"
+      >
         <div className="mb-10 md:mb-20">
           <MainHeading title="Our Works" backgroundTitle="Our Works" />
         </div>
@@ -113,10 +122,7 @@ const HomeSection = () => {
           {/* Wrapper for alignment */}
           <div className="flex flex-wrap gap-6 md:gap-20 justify-center relative">
             {/* Single Card */}
-            <div
-              className="bg-white rounded-xl p-4 max-w-80 border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-96"
-              
-            >
+            <div className="bg-white rounded-xl p-4 max-w-80 border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-96">
               <img
                 src="/about.png"
                 alt="Work 1"
@@ -132,10 +138,7 @@ const HomeSection = () => {
             </div>
 
             {/* Second Card */}
-            <div
-              className="bg-white rounded-xl p-4 max-w-80 border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-96"
-              
-            >
+            <div className="bg-white rounded-xl p-4 max-w-80 border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-96">
               <img
                 src="/about.png"
                 alt="Work 2"
@@ -151,10 +154,7 @@ const HomeSection = () => {
             </div>
 
             {/* Third Card */}
-            <div
-              className="bg-white rounded-xl p-4 max-w-80 border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-96"
-            
-            >
+            <div className="bg-white rounded-xl p-4 max-w-80 border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-96">
               <img
                 src="/about.png"
                 alt="Work 3"
@@ -172,7 +172,7 @@ const HomeSection = () => {
 
           {/* Button Container */}
           <div className="absolute right-0 top-full flex justify-end pr-4 mt-4 lg:mt-8 max-w-full w-full">
-            <button className="learn-more">
+            <button className="learn-more" onClick={handleOurWorks}>
               <span className="circle">
                 <span className="icon arrow"></span>
               </span>

@@ -1,49 +1,28 @@
-import { useEffect, useState } from "react";
+import "aos/dist/aos.css";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import Sidebar from "./Sidebar";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navigate = useNavigate();
 
   const navigateHome = () => {
-    navigate('/');
-  }
-
-  useEffect(() => {
-    let lastScrollTop = 0;
-    const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-      lastScrollTop = scrollTop;
-      AOS.init({ duration: 2000 });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    navigate("/");
+  };
 
   const toggleSidebar = () => {
     setMenuOpen(!menuOpen);
   };
 
-
   return (
     <>
       <nav
-        className={`fixed top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500  ${
-          isScrolled ? "-translate-y-60" : "translate-y-0"
-        } bg-gray-800 bg-opacity-10 backdrop-blur-lg`}
+        className={
+          "absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500 bg-gray-800 bg-opacity-10 backdrop-blur-lg"
+        }
       >
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16 ">
@@ -94,7 +73,7 @@ const Navbar = () => {
                 viewBox="0 0 260 74"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="md:-mr-[2.4rem] xl:-mr-[0.9rem] lg:-mr-[0.89rem]" 
+                className="md:-mr-[2.4rem] xl:-mr-[0.9rem] lg:-mr-[0.89rem]"
               >
                 <rect
                   width="260"
@@ -118,7 +97,7 @@ const Navbar = () => {
                   className="md:text-sm lg:text-base"
                 />
               </svg>
-            </a> 
+            </a>
 
             <div className="block md:hidden">
               <button

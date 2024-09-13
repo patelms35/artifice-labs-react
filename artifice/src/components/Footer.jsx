@@ -1,5 +1,5 @@
 import artLogo from "../assets/logo.png";
-import Media from "./Buttons/media-icon/media.jsx"; 
+import Media from "./Buttons/media-icon/media.jsx";
 
 const Footer = () => {
   return (
@@ -55,12 +55,20 @@ const Footer = () => {
           </div>
 
           {/* Social Media Section */}
-          <div className="mt-2 md:mt-0 text-center"> 
+          <div className="mt-2 md:mt-0 text-center">
             <h3 className="font-semibold mb-2">Follow</h3>
             <div className="flex justify-center gap-6">
               <Media />
             </div>
           </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="mt-8 text-center">
+          <p className="text-sm">
+            © Copyright <span className="font-semibold">Artifice Labs</span>.
+            All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>
