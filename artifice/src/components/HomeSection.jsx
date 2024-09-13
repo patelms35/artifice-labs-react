@@ -66,53 +66,28 @@ const HomeSection = () => {
                 src="/about.png"
                 alt="About Us"
                 className="w-full rounded-lg shadow-lg"
-                
               />
             </div>
 
             {/* Right Text Content */}
             <div className="md:w-1/2 lg:w-3/5 md:pl-12 relative flex flex-col justify-between">
-              <h1
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold text-black mb-4 z-20 relative"
-               
-              >
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold text-black mb-4 z-20 relative">
                 About <span className="text-[#106eea]">Artifice Labs</span>
               </h1>
-              <h3
-                className="text-lg sm:text-xl md:text-2xl lg:text-xl font-semibold mb-2 z-20 relative"
-                
-              >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores inventore
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-xl font-semibold mb-2 z-20 relative">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore
               </h3>
 
               {/* Text Paragraph */}
               <div className="relative flex-1">
-                <p
-                  className="text-gray-600 mb-6 relative z-20 text-base sm:text-lg md:text-xl"
-                  
-                >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores inventore expedita magnam veritatis facere vero
-                  velit quasi quibusdam modi id pariatur ab saepe at sint ad
-                  eius nemo voluptates, voluptas in temporibus dicta commodi
-                  atque molestiae aut. Tempore, maxime. Quo odit, aspernatur
-                  omnis asperiores neque nostrum nihil dolores nemo amet. Lorem,
-                  ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-                  inventore expedita magnam veritatis facere vero velit quasi
-                  quibusdam modi id pariatur ab saepe at sint ad eius nemo
-                  voluptates, voluptas in temporibus dicta commodi atque
-                  molestiae aut. Tempore, maxime. Quo odit, aspernatur omnis
-                  asperiores neque nostrum nihil dolores nemo amet.
+                <p className="text-gray-600 mb-6 relative z-20 text-base sm:text-lg md:text-xl">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi id pariatur ab saepe at sint ad eius nemo voluptates, voluptas in temporibus dicta commodi atque molestiae aut.
                 </p>
 
                 {/* Background Image */}
-                <div
-                  className="z-10 absolute inset-x-0 bottom-0 flex justify-center lg:justify-end lg:items-end"
-                  
-                >
+                <div className="z-10 absolute inset-x-0 bottom-[-50px] sm:bottom-[-100px] lg:bottom-[-200px] flex justify-center lg:justify-end lg:items-end">
                   <img
-                    className="opacity-60 w-[80%] lg:w-auto lg:h-[500px] object-contain"
+                    className="opacity-60 w-[60%] lg:w-auto lg:h-[500px] object-contain"
                     src="../public/about-vector.png"
                     alt="Background"
                   />
@@ -120,10 +95,7 @@ const HomeSection = () => {
               </div>
 
               {/* Know More Button */}
-              <button
-                className="cursor-pointer transition-all bg-[#106eea] text-white px-4 py-2 rounded-md w-36 text-center border-blue-600 border-b-[2px] sm:border-b-[4px] hover:brightness-110 hover:-translate-y-1 hover:border-b-[4px] active:border-b-[2px] active:brightness-90 active:translate-y-1"
-                
-              >
+              <button className="z-20 cursor-pointer transition-all bg-[#106eea] text-white px-4 py-2 rounded-md w-36 text-center border-blue-600 border-b-[2px] sm:border-b-[4px] hover:brightness-110 hover:-translate-y-1 hover:border-b-[4px] active:border-b-[2px] active:brightness-90 active:translate-y-1">
                 Know More
               </button>
             </div>
@@ -132,7 +104,7 @@ const HomeSection = () => {
       </section>
 
       {/* Our Works */}
-      <section className="w-full py-16 flex flex-col justify-center items-center bg-[#F6F9FE] relative">
+      <section id="works" className="w-full py-16 flex flex-col justify-center items-center bg-[#F6F9FE] relative">
         <div className="mb-10 md:mb-20">
           <MainHeading title="Our Works" backgroundTitle="Our Works" />
         </div>

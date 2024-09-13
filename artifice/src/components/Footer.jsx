@@ -1,14 +1,12 @@
-/* eslint-disable react/no-unknown-property */
-import instaLogo from "../assets/instagram.png";
-import linkedInLogo from "../assets/linkedin.png";
 import artLogo from "../assets/logo.png";
+import Media from "./Buttons/media-icon/media.jsx"; 
 
 const Footer = () => {
   return (
     <footer className="bg-[#106eea] text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="md:mb-0" >
+          <div className="md:mb-0">
             <a href="#" className="flex flex-col items-center">
               <img
                 src={artLogo}
@@ -56,27 +54,13 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-6 md:mt-0">
-            <h3 className="font-semibold mb-4 text-center md:text-left">
-              Follow
-            </h3>
-            <div className="flex justify-center md:justify-start gap-4">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src={instaLogo}
-                  alt="Instagram"
-                  className="h-6 text-white"
-                />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={linkedInLogo} alt="LinkedIn" className="h-6" />
-              </a>
+          {/* Social Media Section */}
+          <div className="mt-2 md:mt-0 text-center"> 
+            <h3 className="font-semibold mb-2">Follow</h3>
+            <div className="flex justify-center gap-6">
+              <Media />
             </div>
           </div>
-        </div>
-
-        <div className="mt-8 text-center text-sm">
-          © Copyright <strong>Artifice Labs</strong>. All Rights Reserved 2024
         </div>
       </div>
     </footer>

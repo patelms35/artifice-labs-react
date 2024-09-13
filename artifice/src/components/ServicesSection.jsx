@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight } from "react-feather";
 import { useNavigate } from "react-router-dom";
 import MainHeading from "./MainHeading";
+import Learn from "./Buttons/learn-more/learn-more.jsx";  // Import the Learn component
 
 const ServicesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -51,7 +52,7 @@ const ServicesSection = () => {
     window.addEventListener("resize", updateCardsToShow);
 
     return () => {
-       window.removeEventListener("resize", updateCardsToShow);
+      window.removeEventListener("resize", updateCardsToShow);
     };
   }, []);
 
@@ -68,14 +69,8 @@ const ServicesSection = () => {
     slides.push(data[(currentSlide + i) % data.length]);
   }
 
-  const handleClick = (title) => {
-    if (title === "Web Development") {
-      navigate("/web-dev");
-    }
-  };
-
   return (
-    <section className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] mt-[4rem]">
+    <section id="services" className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] mt-[4rem]">
       <div className="text-center mb-12">
         <MainHeading title="Services" backgroundTitle="Services" />
         <p className="text-left text-[32px] ml-10 font-bold text-black mt-12">
@@ -94,20 +89,14 @@ const ServicesSection = () => {
               <div className="h-16 w-16 bg-gray-300 rounded-full mb-6"></div>
               <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
               <p className="text-center text-gray-600 mb-6">{item.content}</p>
-              <button
-                onClick={() => handleClick(item.title)}
-                className="learn-more mt-4"
-              >
-                <span className="circle">
-                  <span className="icon arrow"></span>
-                </span>
-                <span className="button-text">Learn more</span>
-              </button>
+              
+              {/* Learn More Button */}
+              <Learn title={item.title} />
             </div>
           ))}
         </div>
 
-        <div className="flex justify-center mt-6 lg:mt-0 lg:absolute lg:top-1/2 lg:left-0 lg:right-0 lg:flex lg:justify-between lg:px-10">
+        <div className="flex justify-around mt-6 lg:mt-0 lg:absolute lg:top-1/2 lg:left-0 lg:right-0 lg:flex lg:justify-between lg:px-10">
           <button
             className="lg:absolute lg:left-[-70px] lg:top-1/2 transform lg:-translate-y-1/2 z-10"
             onClick={handlePrev}

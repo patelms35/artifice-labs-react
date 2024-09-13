@@ -4,7 +4,7 @@ import MainHeading from "./MainHeading";
 
 const MissionVisionSection = () => {
   return (
-    <section className="py-16 bg-[#F6F9FE]">
+    <section id="mission" className="py-16 bg-[#F6F9FE]">
       <div className="container mx-auto px-4">
         <MainHeading
           title="Mission & Vision"

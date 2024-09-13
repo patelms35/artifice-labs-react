@@ -14,7 +14,7 @@ const ContactUsSection = () => {
   };
 
   return (
-    <section className="py-16 bg-[#F6F9FE]">
+    <section id="contact" className="py-16 bg-[#F6F9FE]">
       <MainHeading title="Contact Us" backgroundTitle="Contact Us" />
       <div className="container mt-20 mb-32 mx-auto px-4 md:gap-32  flex flex-col-reverse md:flex-row items-center justify-between">
         <div

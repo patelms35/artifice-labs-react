@@ -37,6 +37,7 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+
   return (
     <>
       <nav
