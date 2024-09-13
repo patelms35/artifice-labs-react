@@ -4,7 +4,7 @@ export default {
     extend: {
       backgroundImage: {
         hero: "url('./artifice/public/Background.jpeg')",
-        designer: "url('./src/assets/Designer.jpeg')",
+        designer: "url('./artifice/public/Designer.jpeg')",
       },
     },
     // screens: {

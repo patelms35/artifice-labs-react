@@ -11,7 +11,7 @@ const MainHeading = ({ title, backgroundTitle }) => {
           {title}
         </span>
       </div>
-      <div className="h-1 w-16 bg-blue-500 mt-3 ml-[5rem]"></div>
+      <div className="h-1 w-16 bg-[#106eea] mt-3 ml-[5rem]"></div>
     </div>
   );
 };

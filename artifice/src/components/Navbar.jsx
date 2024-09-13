@@ -3,10 +3,17 @@ import logo from "../assets/logo.png";
 import Sidebar from "./Sidebar";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const navigateHome = () => {
+    navigate('/');
+  }
 
   useEffect(() => {
     let lastScrollTop = 0;
@@ -46,31 +53,32 @@ const Navbar = () => {
               <div className="ml-10 flex items-baseline">
                 <a
                   href="#home"
-                  className="text-white hover:text-white px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  onClick={navigateHome}
                 >
                   Home
                 </a>
                 <a
                   href="#about"
-                  className="text-white hover:text-white px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                 >
                   About Us
                 </a>
                 <a
                   href="#works"
-                  className="text-white hover:text-white px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                 >
                   Our Works
                 </a>
                 <a
                   href="#services"
-                  className="text-white hover:text-white px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                 >
                   Services
                 </a>
                 <a
                   href="#mission"
-                  className="text-white hover:text-white px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                 >
                   Mission & Vision
                 </a>
@@ -85,7 +93,7 @@ const Navbar = () => {
                 viewBox="0 0 260 74"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="-mr-[2.4rem]" 
+                className="md:-mr-[2.4rem] xl:-mr-[0.9rem] lg:-mr-[0.89rem]" 
               >
                 <rect
                   width="260"

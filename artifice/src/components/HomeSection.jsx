@@ -20,7 +20,7 @@ const HomeSection = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center items-center bg-[url('/Background.jpeg')] bg-cover bg-center relative">
+      <section className="h-screen flex flex-col justify-center items-center bg-[url('/Background.jpeg')] bg-cover bg-center relative" id="home" >
         <div className="bg-black opacity-50 w-full h-full absolute top-0 left-0"></div>
         <div className="text-center text-white px-6 relative z-10">
           <h1
@@ -37,14 +37,14 @@ const HomeSection = () => {
           </p>
           <button
             
-            className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-base sm:text-lg md:text-xl lg:text-lg text-gray-50 bg-[#0B5EFF] backdrop-blur-md lg:font-semibold border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#FFFFFF] hover:text-black before:-z-10 before:aspect-square before:hover:scale-200 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+            className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-base sm:text-lg md:text-xl lg:text-lg text-gray-50 bg-[#106eea] backdrop-blur-md lg:font-semibold border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#FFFFFF] hover:text-black before:-z-10 before:aspect-square before:hover:scale-200 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
             type="submit"
           >
             Get Started
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 19"
-              className="w-6 h-6 sm:w-8 sm:h-8 justify-end bg-[#0B5EFF] group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border-2 border-white-700 group-hover:border-gray-700 p-2 rotate-45"
+              className="w-8 md:h-8 justify-end bg-[#106eea] group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border-2 border-white-700 group-hover:border-gray-700 p-2 rotate-45"
             >
               <path
                 className="fill-white group-hover:fill-gray-800"
@@ -56,7 +56,7 @@ const HomeSection = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="py-16 bg-[#F6F9FE]">
+      <section className="py-16 bg-[#F6F9FE]" id="about">
         <div className="container mx-auto px-4">
           <MainHeading title="About us" backgroundTitle="About us" />
           <div className="relative flex flex-col md:flex-row items-center mt-10 md:mt-20">
@@ -76,7 +76,7 @@ const HomeSection = () => {
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold text-black mb-4 z-20 relative"
                
               >
-                About <span className="text-blue-600">Artifice Labs</span>
+                About <span className="text-[#106eea]">Artifice Labs</span>
               </h1>
               <h3
                 className="text-lg sm:text-xl md:text-2xl lg:text-xl font-semibold mb-2 z-20 relative"
@@ -113,7 +113,7 @@ const HomeSection = () => {
                 >
                   <img
                     className="opacity-60 w-[80%] lg:w-auto lg:h-[500px] object-contain"
-                    src="../src/assets/Vectors/about.png"
+                    src="../public/about-vector.png"
                     alt="Background"
                   />
                 </div>
@@ -121,7 +121,7 @@ const HomeSection = () => {
 
               {/* Know More Button */}
               <button
-                className="cursor-pointer transition-all bg-blue-500 text-white px-4 py-2 rounded-md w-36 text-center border-blue-600 border-b-[2px] sm:border-b-[4px] hover:brightness-110 hover:-translate-y-1 hover:border-b-[4px] active:border-b-[2px] active:brightness-90 active:translate-y-1"
+                className="cursor-pointer transition-all bg-[#106eea] text-white px-4 py-2 rounded-md w-36 text-center border-blue-600 border-b-[2px] sm:border-b-[4px] hover:brightness-110 hover:-translate-y-1 hover:border-b-[4px] active:border-b-[2px] active:brightness-90 active:translate-y-1"
                 
               >
                 Know More

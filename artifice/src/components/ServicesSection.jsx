@@ -75,7 +75,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE]">
+    <section className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] mt-[4rem]">
       <div className="text-center mb-12">
         <MainHeading title="Services" backgroundTitle="Services" />
         <p className="text-left text-[32px] ml-10 font-bold text-black mt-12">
@@ -89,7 +89,7 @@ const ServicesSection = () => {
           {slides.map((item, index) => (
             <div
               key={index}
-              className="shadow-lg hover:drop-shadow-2xl h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center border-2 border-[#E0E0E0] hover:border-[#106EEA] hover:border-opacity-40 hover:shadow-[#106EEA]/40 transition-transform duration-300 ease-in-out"
+              className="shadow-lg hover:shadow-2xl h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center border-2 border-[#E0E0E0] hover:border-[#106EEA] hover:border-opacity-40 hover:shadow-[#106EEA]/40 transition-all duration-300 ease-in-out"
             >
               <div className="h-16 w-16 bg-gray-300 rounded-full mb-6"></div>
               <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
