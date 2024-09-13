@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight } from "react-feather";
 import { useNavigate } from "react-router-dom";
 import MainHeading from "./MainHeading";
-import Learn from "./Buttons/learn-more/learn-more.jsx";  // Import the Learn component
+import Learn from "./Buttons/learn-more/learn-more.jsx"; // Import the Learn component
 
 const ServicesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -70,7 +70,9 @@ const ServicesSection = () => {
   }
 
   return (
-    <section id="services" className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] mt-[4rem]">
+    <section
+      id="services"
+      className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] mt-[4rem]">
       <div className="text-center mb-12">
         <MainHeading title="Services" backgroundTitle="Services" />
         <p className="text-left text-[32px] ml-10 font-bold text-black mt-12">
@@ -89,7 +91,7 @@ const ServicesSection = () => {
               <div className="h-16 w-16 bg-gray-300 rounded-full mb-6"></div>
               <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
               <p className="text-center text-gray-600 mb-6">{item.content}</p>
-              
+
               {/* Learn More Button */}
               <Learn title={item.title} />
             </div>

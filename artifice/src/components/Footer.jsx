@@ -66,7 +66,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="mt-8 text-center">
           <p className="text-sm">
-            © Copyright <span className="font-semibold">Artifice Labs</span>.
+            © Copyright <span className="font-bold">Artifice Labs</span>.
             All Rights Reserved
           </p>
         </div>

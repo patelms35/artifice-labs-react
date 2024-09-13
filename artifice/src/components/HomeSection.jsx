@@ -122,15 +122,15 @@ const HomeSection = () => {
           {/* Wrapper for alignment */}
           <div className="flex flex-wrap gap-6 md:gap-20 justify-center relative">
             {/* Single Card */}
-            <div className="bg-white rounded-xl p-4 max-w-80 border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-96">
+            <div className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]">
               <img
                 src="/about.png"
                 alt="Work 1"
                 className="w-full h-3/5 object-cover rounded-lg"
               />
               <div className="p-4 h-2/5 flex flex-col justify-between">
-                <h3 className="text-base sm:text-lg font-semibold">Headline</h3>
-                <p className="text-gray-600 mt-2 text-sm sm:text-base">
+                <h3 className="text-base sm:text-lg font-bold">Headline</h3>
+                <p className="text-[#666666] mb-4 text-sm sm:text-base">
                   Please add your content here. Keep it short and simple. And
                   smile :)
                 </p>
@@ -138,15 +138,15 @@ const HomeSection = () => {
             </div>
 
             {/* Second Card */}
-            <div className="bg-white rounded-xl p-4 max-w-80 border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-96">
+            <div className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]">
               <img
                 src="/about.png"
                 alt="Work 2"
                 className="w-full h-3/5 object-cover rounded-lg"
               />
               <div className="p-4 h-2/5 flex flex-col justify-between">
-                <h3 className="text-base sm:text-lg font-semibold">Headline</h3>
-                <p className="text-gray-600 mt-2 text-sm sm:text-base">
+                <h3 className="text-base sm:text-lg font-bold">Headline</h3>
+                <p className="text-[#666666] mb-4 text-sm sm:text-base">
                   Please add your content here. Keep it short and simple. And
                   smile :)
                 </p>
@@ -154,15 +154,15 @@ const HomeSection = () => {
             </div>
 
             {/* Third Card */}
-            <div className="bg-white rounded-xl p-4 max-w-80 border-2 border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-96">
+            <div className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]">
               <img
                 src="/about.png"
                 alt="Work 3"
                 className="w-full h-3/5 object-cover rounded-lg"
               />
               <div className="p-4 h-2/5 flex flex-col justify-between">
-                <h3 className="text-base sm:text-lg font-semibold">Headline</h3>
-                <p className="text-gray-600 mt-2 text-sm sm:text-base">
+                <h3 className="text-base sm:text-lg font-bold">Headline</h3>
+                <p className="text-[#666666] mb-4 text-sm sm:text-base">
                   Please add your content here. Keep it short and simple. And
                   smile :)
                 </p>

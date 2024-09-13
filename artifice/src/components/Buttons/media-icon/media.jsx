@@ -6,7 +6,7 @@ const Media = () => {
       <ul className="wrapper">
         {/* LinkedIn Icon */}
         <li className="icon facebook">
-          <span className="tooltip">LinkedIn</span>
+          <span className="tooltip">Linkedin</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
