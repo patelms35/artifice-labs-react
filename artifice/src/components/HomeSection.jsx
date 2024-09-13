@@ -102,7 +102,7 @@ const HomeSection = () => {
               <img
                 src="/about-vector.png"
                 alt="Background"
-                className="absolute bottom-30 right-10 opacity-60 w-[200px] md:w-[300px] lg:w-[500px] object-contain z-10"
+                className="absolute -bottom-28 md:-bottom-10 lg:-bottom-48 right-10 md: opacity-60 w-[200px] md:w-[300px] lg:w-[500px] object-contain z-10"
               />
             </div>
           </div>
