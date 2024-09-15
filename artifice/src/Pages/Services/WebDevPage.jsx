@@ -63,7 +63,7 @@ const Services = () => {
       {/* Section - Achieve your business goals */}
       <section className="py-24 px-6 md:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between space-y-4 lg:space-y-0 mb-24">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24">
             <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2">
               Achieve your business goals{" "}
               <span className="text-[#0B5EFF]">

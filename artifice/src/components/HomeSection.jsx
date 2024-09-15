@@ -142,7 +142,7 @@ const HomeSection = () => {
       {/* Our Works */}
       <section
         id="works"
-        className="w-full py-20 flex flex-col justify-center items-center bg-[#F6F9FE] relative"
+        className="w-full py-32 flex flex-col justify-center items-center bg-[#F6F9FE] relative"
       >
         <div className="mb-10 md:mb-20">
           <MainHeading title="Our Works" backgroundTitle="Our Works" />
