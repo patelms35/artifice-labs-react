@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../buttonStyles.css";
 import ContactUsSection from "./ContactUsSection";
@@ -12,6 +12,8 @@ import ServicesSection from "./ServicesSection";
 
 const HomeSection = () => {
   const navigate = useNavigate();
+  const aboutRef = useRef(null);
+  const servicesRef = useRef(null);
 
   const handleOurWorks = () => {
     navigate("/our-works");
@@ -21,8 +23,20 @@ const HomeSection = () => {
     AOS.init({ duration: 2000 });
   }, []);
 
+  const handleGetStarted = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behaviour: "smooth" });
+    }
+  };
+
+  const handleKnowMore = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="w-full bg-[#F6F9FE]">
+    <div className="w-full bg-[#F6F9FE] font-poppins">
       {/* Navbar */}
       <Navbar />
 
@@ -51,6 +65,7 @@ const HomeSection = () => {
             data-aos-delay="800"
             className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-base sm:text-lg md:text-xl lg:text-lg text-gray-50 bg-[#106eea] backdrop-blur-md lg:font-semibold border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#FFFFFF] hover:text-black before:-z-10 before:aspect-square before:hover:scale-200 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
             type="submit"
+            onClick={handleGetStarted}
           >
             Get Started
             <svg
@@ -68,7 +83,7 @@ const HomeSection = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="py-16 bg-[#F6F9FE]" id="about">
+      <section ref={aboutRef} className="py-16 bg-[#F6F9FE]" id="about">
         <div className="container mx-auto px-4 relative">
           <MainHeading title="About us" backgroundTitle="About us" />
           <div className="relative flex flex-col md:flex-row items-center mt-10 md:mt-20">
@@ -121,6 +136,7 @@ const HomeSection = () => {
                   className="z-20 cursor-pointer transition-all bg-[#106eea] text-white px-4 py-2 rounded-md w-36 text-center border-blue-600 border-b-[2px] sm:border-b-[4px] hover:brightness-110 hover:-translate-y-1 hover:border-b-[4px] active:border-b-[2px] active:brightness-90 active:translate-y-1"
                   data-aos="fade-up"
                   data-aos-delay="700"
+                  onClick={handleKnowMore}
                 >
                   Know More
                 </button>
@@ -228,7 +244,9 @@ const HomeSection = () => {
       </section>
 
       {/* Services Section */}
-      <ServicesSection />
+      <section ref={servicesRef} id="services">
+        <ServicesSection />
+      </section>
 
       {/* Mission and Vision Section */}
       <MissionVisionSection />

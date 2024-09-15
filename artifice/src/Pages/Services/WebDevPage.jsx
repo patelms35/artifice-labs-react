@@ -6,14 +6,13 @@ import Explanation from "./Explanation";
 import Technologies from "./Technologies";
 import WebDevelopmentProcess from "./WebDevelopmentProcess";
 
-
 const Services = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div>
+    <div className="font-poppins">
       {/* Navbar */}
       <Navbar />
 

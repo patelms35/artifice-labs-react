@@ -7,6 +7,9 @@ export default {
         designer: "url('./artifice/public/Designer.jpeg')",
       },
     },
+    fontFamily: {
+      poppins: ["poppins", "sans-serif"],
+    },
     // screens: {
     //   xxs: "430px", // min-width
     // },

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight } from "react-feather";
 import { useNavigate } from "react-router-dom";
-import MainHeading from "./MainHeading";
 import Learn from "./Buttons/learn-more/learn-more.jsx"; // Import the Learn component
+import MainHeading from "./MainHeading";
 
 const ServicesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -70,17 +70,21 @@ const ServicesSection = () => {
   }
 
   return (
-    <section
+    <div
       id="services"
-      className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] mt-[4rem]">
+      className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] mt-[4rem]"
+    >
       <div className="text-center mb-12">
         <MainHeading title="Services" backgroundTitle="Services" />
-        <p className="text-left text-[32px] ml-10 font-bold text-black mt-12" data-aos="fade-right" >
+        <p
+          className="text-left text-[32px] ml-10 font-bold text-black mt-12"
+          data-aos="fade-right"
+        >
           Discover our wide range of services.
         </p>
       </div>
 
-      <div className="relative" data-aos="fade-up" >
+      <div className="relative" data-aos="fade-up">
         {/* Cards container */}
         <div className="flex text-center justify-center items-center space-x-4">
           {slides.map((item, index) => (
@@ -113,7 +117,7 @@ const ServicesSection = () => {
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
