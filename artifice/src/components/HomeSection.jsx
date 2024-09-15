@@ -33,13 +33,22 @@ const HomeSection = () => {
       >
         <div className="bg-black opacity-50 w-full h-full absolute top-0 left-0"></div>
         <div className="text-center text-white px-6 relative z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            data-aos="zoom-in-up"
+          >
             Inspired and passionate about innovation.
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8">
+          <p
+            className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8"
+            data-aos="zoom-in-up"
+            data-aos-delay="500"
+          >
             Lorem, ipsum dolor sit amet
           </p>
           <button
+            data-aos="zoom-in-up"
+            data-aos-delay="800"
             className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-base sm:text-lg md:text-xl lg:text-lg text-gray-50 bg-[#106eea] backdrop-blur-md lg:font-semibold border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#FFFFFF] hover:text-black before:-z-10 before:aspect-square before:hover:scale-200 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
             type="submit"
           >
@@ -64,7 +73,10 @@ const HomeSection = () => {
           <MainHeading title="About us" backgroundTitle="About us" />
           <div className="relative flex flex-col md:flex-row items-center mt-10 md:mt-20">
             {/* Left Image */}
-            <div className="z-30 w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0 relative">
+            <div
+              className="z-30 w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0 relative"
+              data-aos="fade-right"
+            >
               <img
                 src="/about.png"
                 alt="About Us"
@@ -74,17 +86,29 @@ const HomeSection = () => {
 
             {/* Right Text Content */}
             <div className="md:w-1/2 lg:w-3/5 md:pl-12 relative flex flex-col justify-between">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold text-black mb-4 z-20 relative">
+              <h1
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold text-black mb-4 z-20 relative"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 About <span className="text-[#106eea]">Artifice Labs</span>
               </h1>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-xl font-semibold mb-2 z-20 relative">
+              <h3
+                className="text-lg sm:text-xl md:text-2xl lg:text-xl font-semibold mb-2 z-20 relative"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores inventore
               </h3>
 
               {/* Text Paragraph */}
               <div className="relative flex-1">
-                <p className="text-gray-600 mb-6 relative z-20 text-base sm:text-lg md:text-xl">
+                <p
+                  className="text-gray-600 mb-6 relative z-20 text-base sm:text-lg md:text-xl"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Asperiores inventore expedita magnam veritatis facere vero
                   velit quasi quibusdam modi id pariatur ab saepe at sint ad
@@ -93,7 +117,11 @@ const HomeSection = () => {
                 </p>
 
                 {/* Know More Button */}
-                <button className="z-20 cursor-pointer transition-all bg-[#106eea] text-white px-4 py-2 rounded-md w-36 text-center border-blue-600 border-b-[2px] sm:border-b-[4px] hover:brightness-110 hover:-translate-y-1 hover:border-b-[4px] active:border-b-[2px] active:brightness-90 active:translate-y-1">
+                <button
+                  className="z-20 cursor-pointer transition-all bg-[#106eea] text-white px-4 py-2 rounded-md w-36 text-center border-blue-600 border-b-[2px] sm:border-b-[4px] hover:brightness-110 hover:-translate-y-1 hover:border-b-[4px] active:border-b-[2px] active:brightness-90 active:translate-y-1"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
                   Know More
                 </button>
               </div>
@@ -103,6 +131,8 @@ const HomeSection = () => {
                 src="/about-vector.png"
                 alt="Background"
                 className="absolute -bottom-28 md:-bottom-10 lg:-bottom-48 right-10 md: opacity-60 w-[200px] md:w-[300px] lg:w-[500px] object-contain z-10"
+                data-aos="zoom-in-up"
+                data-aos-delay="800"
               />
             </div>
           </div>
@@ -112,7 +142,7 @@ const HomeSection = () => {
       {/* Our Works */}
       <section
         id="works"
-        className="w-full py-16 flex flex-col justify-center items-center bg-[#F6F9FE] relative"
+        className="w-full py-20 flex flex-col justify-center items-center bg-[#F6F9FE] relative"
       >
         <div className="mb-10 md:mb-20">
           <MainHeading title="Our Works" backgroundTitle="Our Works" />
@@ -122,7 +152,11 @@ const HomeSection = () => {
           {/* Wrapper for alignment */}
           <div className="flex flex-wrap gap-6 md:gap-20 justify-center relative">
             {/* Single Card */}
-            <div className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]">
+            <div
+              className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
+              data-aos="zoom-in-up"
+              data-aos-delay="400"
+            >
               <img
                 src="/about.png"
                 alt="Work 1"
@@ -138,7 +172,11 @@ const HomeSection = () => {
             </div>
 
             {/* Second Card */}
-            <div className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]">
+            <div
+              className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
+              data-aos="zoom-in-up"
+              data-aos-delay="600"
+            >
               <img
                 src="/about.png"
                 alt="Work 2"
@@ -154,7 +192,11 @@ const HomeSection = () => {
             </div>
 
             {/* Third Card */}
-            <div className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]">
+            <div
+              className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
+              data-aos="zoom-in-up"
+              data-aos-delay="800"
+            >
               <img
                 src="/about.png"
                 alt="Work 3"
@@ -171,7 +213,10 @@ const HomeSection = () => {
           </div>
 
           {/* Button Container */}
-          <div className="absolute right-0 top-full flex justify-end pr-4 mt-4 lg:mt-8 max-w-full w-full">
+          <div
+            className="absolute right-0 top-full flex justify-end pr-4 mt-4 lg:mt-8 max-w-full w-full"
+            data-aos="fade-right"
+          >
             <button className="learn-more" onClick={handleOurWorks}>
               <span className="circle">
                 <span className="icon arrow"></span>

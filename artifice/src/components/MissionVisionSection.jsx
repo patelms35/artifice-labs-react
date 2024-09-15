@@ -12,7 +12,7 @@ const MissionVisionSection = () => {
         />
 
         {/* Mission Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center" data-aos="zoom-in-up" data-aos-delay="400">
           {/* Mission Text */}
           <div className="order-1 md:order-1">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
@@ -40,7 +40,7 @@ const MissionVisionSection = () => {
         </div>
 
         {/* Vision Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center mt-12" data-aos="zoom-in-up" data-aos-delay="600">
           {/* Vision Text */}
           <div className="order-3 md:order-2">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
