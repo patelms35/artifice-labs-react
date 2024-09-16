@@ -7,6 +7,8 @@ import MainHeading from "./MainHeading";
 const ServicesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(3);
+  const [isAnimating, setIsAnimating] = useState(false); // Control animation state
+  const [slides, setSlides] = useState([]); // Store visible slides
   const navigate = useNavigate();
 
   const data = [
@@ -56,18 +58,30 @@ const ServicesSection = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Initially set the visible slides based on currentSlide and cardsToShow
+    const newSlides = [];
+    for (let i = 0; i < cardsToShow; i++) {
+      newSlides.push(data[(currentSlide + i) % data.length]);
+    }
+    setSlides(newSlides);
+  }, [currentSlide, cardsToShow]);
+
   const handleNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % data.length);
+    setIsAnimating(true); // Start fade-out
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev + 1) % data.length); // Update slide after fade-out
+      setIsAnimating(false); // Start fade-in
+    }, 300); // Adjust the delay to match the CSS fade duration
   };
 
   const handlePrev = () => {
-    setCurrentSlide((prev) => (prev - 1 + data.length) % data.length);
+    setIsAnimating(true); // Start fade-out
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev - 1 + data.length) % data.length); // Update slide after fade-out
+      setIsAnimating(false); // Start fade-in
+    }, 300); // Adjust the delay to match the CSS fade duration
   };
-
-  const slides = [];
-  for (let i = 0; i < cardsToShow; i++) {
-    slides.push(data[(currentSlide + i) % data.length]);
-  }
 
   return (
     <div
@@ -90,7 +104,10 @@ const ServicesSection = () => {
           {slides.map((item, index) => (
             <div
               key={index}
-              className="shadow-lg hover:shadow-2xl h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center border-2 border-[#E0E0E0] hover:border-[#106EEA] hover:border-opacity-40 hover:shadow-[#106EEA]/40 transition-all duration-300 ease-in-out"
+              className={`shadow-lg hover:shadow-2xl h-[435px] w-[350px] text-black rounded-xl bg-white p-6 flex flex-col justify-between items-center border-2 border-[#E0E0E0] hover:border-[#106EEA] hover:border-opacity-40 hover:shadow-[#106EEA]/40 transition-all duration-300 ease-in-out
+              ${
+                isAnimating ? "opacity-0" : "opacity-100"
+              } transition-opacity duration-300`}
             >
               <div className="h-16 w-16 bg-gray-300 rounded-full mb-6"></div>
               <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>

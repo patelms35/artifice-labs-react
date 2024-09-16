@@ -8,6 +8,7 @@ const OurWorks = () => {
     title: "",
     imgSrc: "",
     description: "",
+    link: "", // New property to hold the link
   });
 
   const cardData = [
@@ -36,19 +37,22 @@ const OurWorks = () => {
       title: "Web Development",
       imgSrc: "/web-dev-work.png",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem. Quod, sequi delectus neque vel beatae omnis magnam. Praesentium dolor sit asperiores repudiandae sint error.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem.",
+      link: "#", // Link for the project
     },
     2: {
       title: "Application Development",
       imgSrc: "/app-dev-work.png",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem. Quod, sequi delectus neque vel beatae omnis magnam. Praesentium dolor sit asperiores repudiandae sint error.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem.",
+      link: "#", // Link for the project
     },
     3: {
       title: "AI/ML",
       imgSrc: "/ai-ml-work.png",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem. Quod, sequi delectus neque vel beatae omnis magnam. Praesentium dolor sit asperiores repudiandae sint error.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem.",
+      link: "#", // Link for the project
     },
   };
 
@@ -99,12 +103,25 @@ const OurWorks = () => {
           >
             &times;
           </button>
-          <h2 className="text-2xl font-bold mb-4">{modalContent.title}</h2>
+          <h2 className="text-2xl font-bold mb-2">{modalContent.title}</h2>
+
+          <a
+            href={modalContent.link}
+            className="text-blue-500 underline mb-4 inline-block"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
+
+          {/* Render the image */}
           <img
             src={modalContent.imgSrc}
             alt={modalContent.title}
             className="w-full mb-4 rounded"
           />
+
+          {/* Render the description */}
           <p className="text-gray-600">{modalContent.description}</p>
         </div>
       </Modal>
