@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/footer.png";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center h-16 ">
             <div className="flex-shrink-0">
-              <img src={logo} alt="Logo" className="h-8 w-10" />
+              <img src={logo} alt="Logo" className="h-14 w-14" />
             </div>
             <div className="hidden md:flex">
               <div className="ml-10 flex items-baseline">

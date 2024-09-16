@@ -45,7 +45,7 @@ const HomeSection = () => {
         className="h-screen flex flex-col justify-center items-center bg-[url('/Background.jpeg')] bg-cover bg-center relative"
         id="home"
       >
-        <div className="bg-black opacity-50 w-full h-full absolute top-0 left-0"></div>
+        <div className="bg-black opacity-40 w-full h-full absolute top-0 left-0"></div>
         <div className="text-center text-white px-6 relative z-10">
           <h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
