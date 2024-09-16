@@ -114,7 +114,7 @@ const HomeSection = () => {
                 data-aos-delay="500"
               >
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores inventore
+                Asperiores inventore amet
               </h3>
 
               {/* Text Paragraph */}
