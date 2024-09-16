@@ -1,4 +1,4 @@
-import artLogo from "../assets/Footer.png";
+import logo from "../assets/AR.png";
 import Media from "./Buttons/media-icon/media.jsx";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="md:mb-0" data-aos="fade-up" data-aos-delay="50">
             <a href="#" className="flex flex-col items-center">
               <img
-                src={artLogo}
+                src={logo}
                 alt="Artifice Labs Logo"
                 className="h-16 flex items-center justify-center mr-3"
               />

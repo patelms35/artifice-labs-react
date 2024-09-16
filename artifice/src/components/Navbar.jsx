@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/footer.png";
+import logo from "../assets/AR.png";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
