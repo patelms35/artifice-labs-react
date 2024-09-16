@@ -1,4 +1,4 @@
-import artLogo from "../assets/footer.png";
+import artLogo from "../assets/Footer.png";
 import Media from "./Buttons/media-icon/media.jsx";
 
 const Footer = () => {
