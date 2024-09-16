@@ -1,4 +1,4 @@
-import artLogo from "../assets/logo.png";
+import artLogo from "../assets/footer.png";
 import Media from "./Buttons/media-icon/media.jsx";
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
               <img
                 src={artLogo}
                 alt="Artifice Labs Logo"
-                className="h-10 mr-3"
+                className="h-16 flex items-center justify-center mr-3"
               />
               <span className="font-bold text-xl">Artifice Labs</span>
             </a>
