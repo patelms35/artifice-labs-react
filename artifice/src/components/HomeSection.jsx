@@ -84,6 +84,9 @@ const HomeSection = () => {
 
       {/* About Us Section */}
       <section ref={aboutRef} className="py-16 bg-[#F6F9FE]" id="about">
+        <div className="flex items-baseline justify-start z-0 fixed top-0 left-0">
+          <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-blue-300 via-blue-500 to-blue-700 opacity-60 "></div>
+        </div>
         <div className="container mx-auto px-4 relative">
           <MainHeading title="About us" backgroundTitle="About us" />
           <div className="relative flex flex-col md:flex-row items-center mt-10 md:mt-20">
@@ -153,12 +156,15 @@ const HomeSection = () => {
             </div>
           </div>
         </div>
+        <div className="flex items-baseline justify-end z-0 fixed bottom-0 right-0">
+          <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-pink-300 via-purple-400 to-purple-700 opacity-60"></div>
+        </div>
       </section>
 
       {/* Our Works */}
       <section
         id="works"
-        className="w-full py-32 flex flex-col justify-center items-center bg-[#F6F9FE] relative"
+        className="z-30 w-full py-32 flex flex-col justify-center items-center bg-[#F6F9FE] relative"
       >
         <div className="mb-10 md:mb-20">
           <MainHeading title="Our Works" backgroundTitle="Our Works" />

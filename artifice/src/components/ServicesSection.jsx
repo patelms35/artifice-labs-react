@@ -121,13 +121,13 @@ const ServicesSection = () => {
 
         <div className="flex justify-around mt-6 lg:mt-0 lg:absolute lg:top-1/2 lg:left-0 lg:right-0 lg:flex lg:justify-between lg:px-10">
           <button
-            className="lg:absolute lg:left-[-70px] lg:top-1/2 transform lg:-translate-y-1/2 z-10"
+            className="shadow-xl hover:shadow-2xl hover:shadow-[#106EEA] rounded-full lg:absolute lg:left-[-70px] lg:top-1/2 transform lg:-translate-y-1/2 z-10"
             onClick={handlePrev}
           >
             <ArrowLeft className="text-black transition duration-300 hover:bg-[#0B5EFF] hover:text-white w-12 h-12 bg-white rounded-full p-2" />
           </button>
           <button
-            className="lg:absolute lg:right-[-70px] lg:top-1/2 transform lg:-translate-y-1/2 z-10"
+            className="shadow-xl hover:shadow-2xl hover:shadow-[#106EEA] rounded-full lg:absolute lg:right-[-70px] lg:top-1/2 transform lg:-translate-y-1/2 z-10"
             onClick={handleNext}
           >
             <ArrowRight className="text-black transition duration-300 hover:bg-[#0B5EFF] hover:text-white w-12 h-12 bg-white rounded-full p-2" />

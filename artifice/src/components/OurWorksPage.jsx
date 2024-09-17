@@ -66,17 +66,14 @@ const OurWorks = () => {
   };
 
   return (
-    <section className="bg-white py-10 font-poppins">
-      <div className="flex items-top justify-start">
-        <div className="relative w-64 h-64 rounded-full ">
-          <div className="absolute top-0 left-0 w-full h-full rounded-full opacity-0 blur-3xl bg-gradient-to-br from-blue-300 via-blue-500 to-blue-700 animate-pulse"></div>
-        </div>
-      </div>
+    <section className="bg-white py-10 font-poppins">    
+        <div className="flex items-baseline justify-end absolute z-20 w-64 h-64 rounded-full blur-3xl opacity-60 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-700"></div>
+      
       <Navbar />
       <h2 className="text-center text-2xl font-bold text-blue-600 mb-6 mt-20">
         Project Done By Artifice Labs
       </h2>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+      <div className="flex flex-col md:flex-row justify-center relative z-20 items-center gap-6">
         {cardData.map((card) => (
           <div
             key={card.id}
@@ -130,11 +127,9 @@ const OurWorks = () => {
           <p className="text-gray-600">{modalContent.description}</p>
         </div>
       </Modal>
-      <div className="flex items-end justify-end">
-      <div className="relative w-64 h-64 rounded-full">
-        <div className="absolute top-0 left-0 w-full h-full rounded-full opacity-0 blur-3xl bg-gradient-to-br from-pink-300 via-purple-400 to-blue-500 animate-pulse"></div>
+      <div className="flex items-baseline justify-end z-30 mt-48">
+        <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-pink-300 via-purple-400 to-purple-700 opacity-60"></div>
       </div>
-    </div>
     </section>
   );
 };
