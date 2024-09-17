@@ -17,7 +17,7 @@ const Services = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/Designer.jpeg')] bg-center">
+      <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/ui.jpeg')] bg-center">
         <div className="absolute inset-0 bg-black opacity-60"></div>
 
         {/* Content */}
@@ -45,15 +45,17 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10">
-              <span className="text-black">What are </span>
-              <span className="text-[#0B5EFF]">web development services?</span>
+              <span className="text-black">What are</span>
+              <span className="text-[#0B5EFF]">UI/UX Design services?</span>
             </div>
 
             <div className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10">
-              Web development encompasses a wide range of services, which
-              include delivering websites or web apps, cybersecurity solutions,
-              UX/UI design, eCommerce solutions, website architectures, QA
-              testing, maintenance, consulting, and even a custom CMS.
+              UI/UX design services focus on creating intuitive and engaging
+              user experiences for websites and applications. This includes
+              designing user interfaces, conducting user research, prototyping,
+              testing for usability, and ensuring a seamless interaction flow.
+              The goal is to enhance user satisfaction and drive engagement
+              through effective design solutions.
             </div>
           </div>
         </div>
@@ -62,67 +64,44 @@ const Services = () => {
       {/* Section - Achieve your business goals */}
       <section className="py-24 px-6 md:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24">
+          <div className="flex flex-col items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24">
             <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2">
-              Achieve your business goals{" "}
-              <span className="text-[#0B5EFF]">
-                with web development solutions
-              </span>
+              UI / UX design Service we provide
             </h2>
-            <p className="text-lg text-gray-700 lg:w-1/2">
-              Our battle-tested developers specialize in a wide range of web
-              development services. Here are some of the solutions that we can
-              deliver for you.
+            <p className="text-lg text-center text-gray-700 lg:w-1/2">
+              Successful UI/UX design blends art, technology, and strategy. Our
+              team offers expert services in user interface and experience
+              design.
             </p>
           </div>
 
           {/* Cards */}
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-center mb-16">
             {/* Card 1 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14">
-              <img src="/globe.png" className="pb-6" />
+            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 max-w-lg mx-auto">
+              <img src="/webappdesign.png" className="pb-6 " />
+              <h1 className="text-xl font-bold">Web app design</h1>
               <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Websites.&nbsp;
-                </span>
-                A well-designed website is a powerful marketing and
-                communication tool that helps build trust and generate leads.
+                Creative and understandable website design significantly
+                increases the chances of a visitor taking the target action we
+                need. There must be no extra distractions that will influence
+                the website navigation. The design&apos;s role is to create a
+                likable atmosphere for the selected product or service and
+                encourage users to make a choice.
               </p>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 lg:mt-0">
-              <img src="/ecommerce.png" className="pb-6" />
+            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 max-w-lg mx-auto">
+              <img src="/mobileappdesign.png" className="pb-6 " />
+              <h1 className="text-xl font-bold">Mobile app design</h1>
               <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Ecommerce.&nbsp;
-                </span>
-                With eCommerce solutions, businesses can operate 24/7 and reach
-                customers in any time zone.
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14">
-              <img src="/webapp.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Web Applications.&nbsp;
-                </span>
-                Web applications can reach a global audience. They are
-                interactive and engaging, holding users&apos; attention.
-              </p>
-            </div>
-
-            {/* Card 4 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform lg:mt-0 pb-14">
-              <img src="/cms.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Content Management System.&nbsp;
-                </span>
-                A dedicated CMS designed to meet your business&apos;s needs by
-                optimizing internal workflows.
+                Mobile UX design defines the correct user flow of the app. How
+                many actions will the user take to reach what they want? What
+                additional features will they face on this path (read reviews,
+                specifications, check photos, rate, watch ads)? How to combine
+                all this and not confuse the user? Our team can answer these
+                questions.
               </p>
             </div>
           </div>
@@ -143,26 +122,28 @@ const Services = () => {
 
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Elevate your digital presence with a top-tier <br />
+            <h2 className="text-3xl md:text-3xl font-bold mb-6">
+              Elevate your digital presence with a premier
+              <br />
               <span className="text-[#0B5EFF]">
-                web development company that stands out from the rest.
+                UI/UX design company that sets the standard for exceptional user
+                experiences and innovative interfaces.
               </span>
             </h2>
             <p className="text-lg text-gray-700 mb-10">
-              At <span className="text-[#0B5EFF]">Artifice Labs</span>, we
-              provide a complete range of web development services to help you
-              create a fully-featured web-based product, including:
+              At <span className="text-[#0B5EFF]">Artifice Labs</span>, we offer
+              a comprehensive range of UI/UX design services to help you craft
+              an exceptional user experience, including:
             </p>
-
-            <ul className="text-lg text-gray-700 space-y-2 mb-10">
+            <ul className="text-md text-gray-700 space-y-2 mb-10">
               <li className="flex flex-row items-start">
                 <img
                   src="/listSymbol.png"
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Website Development
+                User research to understand needs and enhance design
+                effectiveness.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -170,7 +151,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Web Application Development
+                Wireframing and prototyping for clear, interactive design
+                visualization.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -178,7 +160,7 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                eCommerce Solutions Development
+                Visual design to create appealing and cohesive user interfaces.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -186,7 +168,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                No-code & Low-code Development
+                Usability testing to ensure intuitive and user-friendly
+                experiences.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -194,7 +177,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Project Management - UI/UX Design, Coding, QA Testing
+                Interaction design for smooth, engaging user interactions and
+                flows.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -202,18 +186,26 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Dedicated Content Management System Development
+                Accessibility design to ensure inclusivity for all user groups.
+              </li>
+              <li className="flex flex-row items-start">
+                <img
+                  src="/listSymbol.png"
+                  className="mt-1.5 mr-2"
+                  alt="list symbol"
+                />
+                User feedback integration for continuous improvement and refined
+                solutions.
               </li>
             </ul>
-
             <p className="text-lg text-gray-700 mt-6">
               <span className="font-extrabold">
-                A web development company&apos;s mission is to identify and
-                implement solutions that align with a client&apos;s specific
-                business objectives.
+                A UI/UX design company&apos;s mission is to craft solutions that
+                align with a client&apos;s specific business goals.
               </span>{" "}
-              With the right services, you can create a successful product from
-              the ground up or enhance the performance of an existing one.
+              By focusing on user-centered design, we help create engaging and
+              intuitive experiences from the ground up or enhance the usability
+              and appeal of existing products.
             </p>
           </div>
         </div>
