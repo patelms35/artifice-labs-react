@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import ContactUsSection from "../../components/ContactUsSection";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
+import ContactUsSection from "../../../components/ContactUsSection";
+import Footer from "../../../components/Footer";
+import Navbar from "../../../components/Navbar";
 import Explanation from "./Explanation";
 import Technologies from "./Technologies";
 import WebDevelopmentProcess from "./WebDevelopmentProcess";

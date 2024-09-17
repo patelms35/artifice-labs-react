@@ -83,7 +83,7 @@ const HomeSection = () => {
       </section>
 
       {/* About Us Section */}
-      <section ref={aboutRef} className="py-16 bg-[#F6F9FE]" id="about">
+      <section ref={aboutRef} className="py-16 bg-[#F6F9FE] mb-14" id="about">
         <div className="flex items-baseline justify-start z-0 fixed top-0 left-0">
           <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-blue-300 via-blue-500 to-blue-700 opacity-60 "></div>
         </div>
@@ -149,14 +149,15 @@ const HomeSection = () => {
               <img
                 src="/about-vector.png"
                 alt="Background"
-                className="absolute -bottom-28 md:-bottom-10 lg:-bottom-48 right-10 md: opacity-60 w-[200px] md:w-[300px] lg:w-[500px] object-contain z-10"
+                style={{ opacity: 0.7 }}
+                className="absolute -bottom-28 md:-bottom-10 lg:-bottom-52 right-10 w-[200px] md:w-[300px] lg:w-[500px] object-contain z-10"
                 data-aos="zoom-in-up"
                 data-aos-delay="800"
               />
             </div>
           </div>
         </div>
-        <div className="flex items-baseline justify-end z-0 fixed bottom-0 right-0">
+        <div className="flex items-baseline justify-end z-0 bottom-0 right-0 fixed">
           <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-pink-300 via-purple-400 to-purple-700 opacity-60"></div>
         </div>
       </section>
@@ -164,7 +165,7 @@ const HomeSection = () => {
       {/* Our Works */}
       <section
         id="works"
-        className="z-30 w-full py-32 flex flex-col justify-center items-center bg-[#F6F9FE] relative"
+        className="w-full py-32 flex flex-col justify-center items-center bg-[#F6F9FE]"
       >
         <div className="mb-10 md:mb-20">
           <MainHeading title="Our Works" backgroundTitle="Our Works" />
