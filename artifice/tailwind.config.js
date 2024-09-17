@@ -5,6 +5,7 @@ export default {
       backgroundImage: {
         hero: "url('./artifice/public/Background.jpeg')",
         designer: "url('./artifice/public/Designer.jpeg')",
+        ui: "url('./artifice/public/ui.jpeg')",
       },
     },
     fontFamily: {
