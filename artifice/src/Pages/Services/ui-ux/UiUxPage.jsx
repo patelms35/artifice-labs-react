@@ -3,7 +3,7 @@ import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
 import Explanation from "./Explanation";
-import Technologies from "./Technologies";
+import DesignProcess from './DesignProcess'
 import WebDevelopmentProcess from "./WebDevelopmentProcess";
 
 const Services = () => {
@@ -65,7 +65,7 @@ const Services = () => {
       <section className="py-24 px-6 md:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24">
-            <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2">
+            <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2 text-center">
               UI / UX design Service we provide
             </h2>
             <p className="text-lg text-center text-gray-700 lg:w-1/2">
@@ -212,7 +212,7 @@ const Services = () => {
       </section>
 
       {/* Technologies */}
-      <Technologies />
+      <DesignProcess />
 
       {/* Web Development Process */}
       <WebDevelopmentProcess />

@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center h-16 ">
             <div className="flex-shrink-0">
-              <img src={logo} alt="Logo" className="h-14 w-14" />
+              <img src={logo} alt="Logo" className="ml-5 h-14 w-12 mb-2" />
             </div>
             <div className="hidden md:flex">
               <div className="ml-10 flex items-baseline">
@@ -65,7 +65,7 @@ const Navbar = () => {
             </div>
 
             {/* Contact Us Button */}
-            <div className="">
+            <div className="lg:mr-4 md:mr-10 xl:-mr-4">
               <a href="#contact" className="hidden md:block">
                 <svg
                   width="220"
