@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
+import DesignProcess from "../ui-ux/DesignProcess";
 import Explanation from "./Explanation";
-import Technologies from "./Technologies";
 import WebDevelopmentProcess from "./WebDevelopmentProcess";
 
 const Services = () => {
@@ -17,18 +17,18 @@ const Services = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/Designer.jpeg')] bg-center">
+      <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/ui.jpeg')] bg-center">
         <div className="absolute inset-0 bg-black opacity-60"></div>
 
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-            Web Development Services
+            Application Development Services
           </h1>
           <p className="text-lg md:text-2xl mb-8 leading-relaxed">
             We design and build industry-leading web-based products that bring
             <br />
-            value to your customers, delivered with compelling UX.
+            value to your customers, delivered with compelling UX.{" "}
           </p>
 
           <button
@@ -45,15 +45,21 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10">
-              <span className="text-black">What are </span>
-              <span className="text-[#0B5EFF]">web development services?</span>
+              <span className="text-black">What are</span>
+              <span className="text-[#0B5EFF]">
+                Application Development services?
+              </span>
             </div>
 
             <div className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10">
-              Web development encompasses a wide range of services, which
-              include delivering websites or web apps, cybersecurity solutions,
-              UX/UI design, eCommerce solutions, website architectures, QA
-              testing, maintenance, consulting, and even a custom CMS.
+              Application development services focus on delivering user-centric
+              solutions that ensure seamless functionality and engagement. This
+              process includes crafting intuitive user interfaces, performing
+              in-depth research to understand user needs, developing prototypes,
+              conducting thorough usability testing, and optimizing interaction
+              flows. The aim is to create applications that provide a smooth,
+              satisfying user experience while driving value and engagement
+              through innovative design and development approaches.
             </div>
           </div>
         </div>
@@ -62,67 +68,92 @@ const Services = () => {
       {/* Section - Achieve your business goals */}
       <section className="py-24 px-6 md:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24">
-            <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2">
-              Achieve your business goals{" "}
-              <span className="text-[#0B5EFF]">
-                with web development solutions
-              </span>
+          <div className="flex flex-col items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24">
+            <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2 text-center">
+              Application Development Services We Provide
             </h2>
-            <p className="text-lg text-gray-700 lg:w-1/2">
-              Our battle-tested developers specialize in a wide range of web
-              development services. Here are some of the solutions that we can
-              deliver for you.
+            <p className="text-lg text-center text-[#808080] lg:w-1/2">
+              Expert application development blends art, technology, and
+              strategy. Our team ensures intuitive, user-focused designs for
+              impactful digital experiences.
             </p>
           </div>
 
           {/* Cards */}
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-center mb-16">
             {/* Card 1 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14">
-              <img src="/globe.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Websites.&nbsp;
-                </span>
-                A well-designed website is a powerful marketing and
-                communication tool that helps build trust and generate leads.
+            <div className="bg-white max-w-xl p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 mx-auto">
+              <img
+                src="/mobileappdesign.png"
+                className="pb-6"
+                alt="Web app design"
+              />
+              <h1 className="text-xl font-bold">
+                Custom Mobile Application Development
+              </h1>
+              <p className="text-[#AFAFAF]">
+                We develop solutions that are specifically created to satisfy
+                your goals and specifications while offering a distinctive app
+                experience. Our mobile app development services create highly
+                effective and aesthetically pleasing apps for iOS and Android
+                stores.
               </p>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 lg:mt-0">
-              <img src="/ecommerce.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Ecommerce.&nbsp;
-                </span>
-                With eCommerce solutions, businesses can operate 24/7 and reach
-                customers in any time zone.
+            <div className="bg-white max-w-xl p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 mx-auto">
+              <img
+                src="/mobileappdesign.png"
+                className="pb-6"
+                alt="Mobile app design"
+              />
+              <h1 className="text-xl font-bold">
+                Android Mobile App Development
+              </h1>
+              <p className="text-[#AFAFAF]">
+                We curate web-based Android applications to cater to a large
+                audience of Android users. Our mobile app development company is
+                an expert at creating high-end native apps utilizing modern,
+                platform- specific programming languages and tools that adhere
+                to all performance metrics.
               </p>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14">
-              <img src="/webapp.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Web Applications.&nbsp;
-                </span>
-                Web applications can reach a global audience. They are
-                interactive and engaging, holding users&apos; attention.
+            <div className="bg-white max-w-xl p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 mx-auto">
+              <img
+                src="/mobileappdesign.png"
+                className="pb-6"
+                alt="Mobile app design"
+              />
+              <h1 className="text-xl font-bold">
+                Hybrid Mobile App Development Services
+              </h1>
+              <p className="text-[#AFAFAF]">
+                By combining native and web app technologies in a novel way, you
+                can acquire very useful cross-platform apps that excel in a
+                variety of settings. You can create hybrid or cross-platform
+                apps with our hybrid mobile development and consulting to cater
+                a variety of platforms.
               </p>
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform lg:mt-0 pb-14">
-              <img src="/cms.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Content Management System.&nbsp;
-                </span>
-                A dedicated CMS designed to meet your business&apos;s needs by
-                optimizing internal workflows.
+            <div className="bg-white max-w-xl p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 mx-auto">
+              <img
+                src="/mobileappdesign.png"
+                className="pb-6"
+                alt="Mobile app design"
+              />
+              <h1 className="text-xl font-bold">
+                iPhone Mobile App Development
+              </h1>
+              <p className="text-[#AFAFAF]">
+                Our cross-platform mobile app development services design
+                cutting-edge and future-ready applications that maximize
+                engagement with iPhone users. When developing iOS apps, our
+                skilled developers use advanced tools like Swift and Objective-C
+                to meet each client&apos;s specific needs.
               </p>
             </div>
           </div>
@@ -135,7 +166,7 @@ const Services = () => {
           {/* Image */}
           <div className="lg:w-1/2">
             <img
-              src="/laptops.png"
+              src="/ui-card.jpeg"
               alt="Laptops"
               className="rounded-xl shadow-lg"
             />
@@ -143,26 +174,28 @@ const Services = () => {
 
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Elevate your digital presence with a top-tier <br />
-              <span className="text-[#0B5EFF]">
-                web development company that stands out from the rest.
-              </span>
+            <h2 className="text-3xl md:text-3xl font-bold mb-6">
+              Expert application development blends art, technology, and
+              strategy. Our team ensures intuitive, user-focused designs for
+              impactful digital experiences.
             </h2>
             <p className="text-lg text-gray-700 mb-10">
-              At <span className="text-[#0B5EFF]">Artifice Labs</span>, we
-              provide a complete range of web development services to help you
-              create a fully-featured web-based product, including:
+              At{" "}
+              <span className="text-[#0B5EFF] font-semibold">
+                Artifice Labs
+              </span>
+              , we provide a complete range of web development services to help
+              you create a fully-featured web-based product, including:
             </p>
-
-            <ul className="text-lg text-gray-700 space-y-2 mb-10">
+            <ul className="text-md text-gray-700 space-y-2 mb-10">
               <li className="flex flex-row items-start">
                 <img
                   src="/listSymbol.png"
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Website Development
+                User research to understand needs and enhance design
+                effectiveness.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -170,7 +203,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Web Application Development
+                Wireframing and prototyping for clear, interactive design
+                visualization.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -178,7 +212,7 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                eCommerce Solutions Development
+                Visual design to create appealing and cohesive user interfaces.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -186,7 +220,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                No-code & Low-code Development
+                Usability testing to ensure intuitive and user-friendly
+                experiences.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -194,7 +229,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Project Management - UI/UX Design, Coding, QA Testing
+                Interaction design for smooth, engaging user interactions and
+                flows.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -202,25 +238,33 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Dedicated Content Management System Development
+                Accessibility design to ensure inclusivity for all user groups.
+              </li>
+              <li className="flex flex-row items-start">
+                <img
+                  src="/listSymbol.png"
+                  className="mt-1.5 mr-2"
+                  alt="list symbol"
+                />
+                User feedback integration for continuous improvement and refined
+                solutions.
               </li>
             </ul>
-
             <p className="text-lg text-gray-700 mt-6">
               <span className="font-extrabold">
-                A web development company&apos;s mission is to identify and
-                implement solutions that align with a client&apos;s specific
-                business objectives.
+                A UI/UX design company&apos;s mission is to craft solutions that
+                align with a client&apos;s specific business goals.
               </span>{" "}
-              With the right services, you can create a successful product from
-              the ground up or enhance the performance of an existing one.
+              By focusing on user-centered design, we help create engaging and
+              intuitive experiences from the ground up or enhance the usability
+              and appeal of existing products.
             </p>
           </div>
         </div>
       </section>
 
       {/* Technologies */}
-      <Technologies />
+      <DesignProcess />
 
       {/* Web Development Process */}
       <WebDevelopmentProcess />
