@@ -73,7 +73,7 @@ const Navbar = () => {
                   viewBox="0 0 260 74"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="md:-mr-[2.4rem] xl:-mr-[0.9rem] lg:-mr-[0.89rem]"
+                  className="md:-mr-[2.4rem] xl:-mr-[1.4rem] lg:-mr-[0.89rem]"
                 >
                   <rect
                     width="260"

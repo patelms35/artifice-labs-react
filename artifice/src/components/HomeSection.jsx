@@ -84,7 +84,8 @@ const HomeSection = () => {
 
       {/* About Us Section */}
       <section ref={aboutRef} className="py-16 bg-[#F6F9FE] mb-14" id="about">
-        <div className="flex items-baseline justify-start z-0 fixed top-0 left-0">
+        {/* circle */}
+        <div className="flex items-baseline justify-start z-0 fixed top-0 left-[-100px]">
           <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-blue-300 via-blue-500 to-blue-700 opacity-60 "></div>
         </div>
         <div className="container mx-auto px-4 relative">
@@ -157,7 +158,7 @@ const HomeSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-baseline justify-end z-0 bottom-0 right-0 fixed">
+        <div className="flex items-baseline justify-end z-0 bottom-0 right-[-100px] fixed">
           <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-pink-300 via-purple-400 to-purple-700 opacity-60"></div>
         </div>
       </section>

@@ -66,9 +66,14 @@ const OurWorks = () => {
   };
 
   return (
+<<<<<<< HEAD
     <section className="bg-white py-10 font-poppins">    
         <div className="flex items-baseline justify-end absolute w-64 h-64 rounded-full blur-3xl opacity-60 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-700"></div>
       
+=======
+    <section className="bg-white py-10 font-poppins">
+      <div className="flex items-baseline justify-end absolute z-20 w-64 h-64 rounded-full blur-3xl opacity-60 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-700"></div>
+>>>>>>> bb7c104be743d5b01818af983b99bb1fcb216c10
       <Navbar />
       <h2 className="text-center text-2xl font-bold text-blue-600 mb-6 mt-20">
         Project Done By Artifice Labs
@@ -90,6 +95,7 @@ const OurWorks = () => {
       </div>
 
       {/* Modal */}
+<<<<<<< HEAD
 <Modal
   isOpen={modalIsOpen}
   onRequestClose={closeModal}
@@ -106,6 +112,24 @@ const OurWorks = () => {
       &times;
     </button>
     <h2 className="text-2xl font-bold mb-2">{modalContent.title}</h2>
+=======
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        shouldCloseOnOverlayClick={true}
+        className="fixed inset-0 flex items-center justify-center p-4 z-50"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-50 z-40"
+        contentLabel="Project Details"
+      >
+        <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-lg relative">
+          <button
+            onClick={closeModal}
+            className="text-gray-500 hover:text-gray-700 absolute top-4 right-4"
+          >
+            &times;
+          </button>
+          <h2 className="text-2xl font-bold mb-2">{modalContent.title}</h2>
+>>>>>>> bb7c104be743d5b01818af983b99bb1fcb216c10
 
     <a
       href={modalContent.link}
