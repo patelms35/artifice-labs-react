@@ -115,7 +115,7 @@ const Services = () => {
           {/* Image */}
           <div className="lg:w-1/2">
             <img
-              src="/laptops.png"
+              src="/ui-card.jpeg"
               alt="Laptops"
               className="rounded-xl shadow-lg"
             />

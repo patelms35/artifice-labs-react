@@ -158,7 +158,7 @@ const HomeSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-baseline justify-end z-0 bottom-0 right-0 fixed">
+        <div className="flex items-baseline justify-end z-0 bottom-0 right-[-100px] fixed">
           <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-pink-300 via-purple-400 to-purple-700 opacity-60"></div>
         </div>
       </section>
