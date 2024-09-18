@@ -1,13 +1,13 @@
 const MainHeading = ({ title, backgroundTitle }) => {
   return (
-    <div className="flex flex-col items-center relative" data-aos="fade-up" >
+    <div className="flex flex-col items-center relative" data-aos="fade-up">
       <div className="relative">
         {/* First About Us */}
-        <span className="text-6xl font-bold text-gray-200">
+        <span className="text-5xl md:text-6xl  font-bold text-gray-200">
           {backgroundTitle}
         </span>
         {/* Second About Us overlapping between the top and middle of the first */}
-        <span className="text-4xl font-bold text-gray-800 absolute top-8 left-12">
+        <span className="text-3xl md:text-4xl font-bold text-gray-800 absolute top-8 left-12">
           {title}
         </span>
       </div>

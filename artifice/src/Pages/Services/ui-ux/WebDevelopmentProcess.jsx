@@ -5,17 +5,18 @@ const WebDevelopmentProcess = () => {
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-bold leading-tight mt-14 mb-20">
           <span className="text-[#0B5EFF]">
-            Leverage our established web development <br /> process&nbsp;
+            Leverage our established UI/UX design process
+            <br />
           </span>
           to ensure the success of your project.
         </h2>
         {/* Description */}
         <p className="text-lg text-gray-700 w-3/4">
           We understand that the most intricate projects require meticulous
-          attention to every detail throughout the web development process. With
-          over 1000 projects successfully delivered at Artifice labs , we have
-          the expertise needed to ensure a smooth and efficient web-based
-          software development experience.
+          attention to every detail throughout the UI/UX design process. We have
+          the expertise needed to ensure a smooth and efficient user experience
+          and interface design that elevates the quality and functionality of
+          your product.
         </p>
       </div>
     </section>

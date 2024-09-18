@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
+import DesignProcess from "./DesignProcess";
 import Explanation from "./Explanation";
-import DesignProcess from './DesignProcess'
 import WebDevelopmentProcess from "./WebDevelopmentProcess";
 
 const Services = () => {
@@ -124,16 +124,19 @@ const Services = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
             <h2 className="text-3xl md:text-3xl font-bold mb-6">
-              Elevate your digital presence with a premier 	&nbsp;
+              Elevate your digital presence with a premier &nbsp;
               <span className="text-[#0B5EFF]">
                 UI/UX design company that sets the standard for exceptional user
                 experiences and innovative interfaces.
               </span>
             </h2>
             <p className="text-lg text-gray-700 mb-10">
-              At <span className="text-[#0B5EFF] font-semibold">Artifice Labs</span>, we offer
-              a comprehensive range of UI/UX design services to help you craft
-              an exceptional user experience, including:
+              At{" "}
+              <span className="text-[#0B5EFF] font-semibold">
+                Artifice Labs
+              </span>
+              , we offer a comprehensive range of UI/UX design services to help
+              you craft an exceptional user experience, including:
             </p>
             <ul className="text-md text-gray-700 space-y-2 mb-10">
               <li className="flex flex-row items-start">
@@ -146,7 +149,7 @@ const Services = () => {
                 effectiveness.
               </li>
               <li className="flex flex-row items-start">
-                <img  
+                <img
                   src="/listSymbol.png"
                   className="mt-1.5 mr-2"
                   alt="list symbol"

@@ -18,62 +18,60 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        className={
-          "absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500 bg-gray-800 bg-opacity-10 backdrop-blur-lg"
-        }
-      >
+      <nav className="absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500 bg-gray-800 bg-opacity-10 backdrop-blur-lg">
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-center h-16 ">
-            <div className="flex-shrink-0">
-              <img src={logo} alt="Logo" className="ml-5 h-14 w-12 mb-2" />
-            </div>
-            <div className="hidden md:flex">
-              <div className="ml-10 flex items-baseline">
-                <a
-                  href="#home"
-                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                  onClick={navigateHome}
-                >
-                  Home
-                </a>
-                <a
-                  href="#about"
-                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                >
-                  About Us
-                </a>
-                <a
-                  href="#works"
-                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                >
-                  Our Works
-                </a>
-                <a
-                  href="#services"
-                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                >
-                  Services
-                </a>
-                <a
-                  href="#mission"
-                  className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                >
-                  Mission & Vision
-                </a>
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center flex-grow">
+              <div className="flex-shrink-0">
+                <img src={logo} alt="Logo" className="ml-5 h-14 w-12 mb-2" />
+              </div>
+              <div className="hidden lg:flex flex-grow justify-center">
+                <div className="ml-10 flex items-baseline space-x-4">
+                  <a
+                    href="#home"
+                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                    onClick={navigateHome}
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="#about"
+                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href="#works"
+                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  >
+                    Our Works
+                  </a>
+                  <a
+                    href="#services"
+                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  >
+                    Services
+                  </a>
+                  <a
+                    href="#mission"
+                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                  >
+                    Mission & Vision
+                  </a>
+                </div>
               </div>
             </div>
 
             {/* Contact Us Button */}
-            <div className="lg:mr-4 md:mr-10 xl:-mr-4">
-              <a href="#contact" className="hidden md:block">
+            <div className="hidden xl:block translate-y-1">
+              <a href="#contact" className="inline-block">
                 <svg
                   width="220"
                   height="65"
                   viewBox="0 0 260 74"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="md:-mr-[2.4rem] xl:-mr-[1.4rem] lg:-mr-[0.89rem]"
+                  className="h-full"
                 >
                   <rect
                     width="260"
@@ -100,11 +98,11 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div className="block md:hidden">
+            <div className="block md:block xl:hidden">
               <button
                 onClick={toggleSidebar}
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none"
               >
                 <svg
                   className="h-6 w-6"

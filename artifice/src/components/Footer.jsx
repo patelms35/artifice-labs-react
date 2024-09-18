@@ -11,7 +11,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Artifice Labs Logo"
-                className="h-16 flex items-center justify-center mr-3"
+                className="h-16 w-14 flex items-center justify-center mr-3"
               />
               <span className="font-bold text-xl">Artifice Labs</span>
             </a>
@@ -20,7 +20,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-center md:text-left" data-aos="fade-up" data-aos-delay="250">
+          <div
+            className="text-center md:text-left"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
             <h3 className="font-semibold text-center mb-4">More</h3>
             <ul className="flex flex-col md:flex-row gap-6">
               <li>
@@ -55,7 +59,11 @@ const Footer = () => {
           </div>
 
           {/* Social Media Section */}
-          <div className="mt-2 md:mt-0 text-center" data-aos="fade-up" data-aos-delay="500">
+          <div
+            className="mt-2 md:mt-0 text-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <h3 className="font-semibold mb-2">Follow</h3>
             <div className="flex justify-center gap-6">
               <Media />
@@ -66,8 +74,8 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="mt-8 text-center">
           <p className="text-sm">
-            © Copyright <span className="font-bold">Artifice Labs</span>.
-            All Rights Reserved
+            © Copyright <span className="font-bold">Artifice Labs</span>. All
+            Rights Reserved
           </p>
         </div>
       </div>
