@@ -23,12 +23,13 @@ const Services = () => {
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-            Web Development Services
+            UI / UX Design Services
           </h1>
           <p className="text-lg md:text-2xl mb-8 leading-relaxed">
-            We design and build industry-leading web-based products that bring
+            We craft user-centric designs and experiences for web products,
+            ensuring
             <br />
-            value to your customers, delivered with compelling UX.
+            intuitive interfaces and compelling UX to maximize customer value.{" "}
           </p>
 
           <button
@@ -68,7 +69,7 @@ const Services = () => {
             <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2">
               UI / UX design Service we provide
             </h2>
-            <p className="text-lg text-center text-gray-700 lg:w-1/2">
+            <p className="text-lg text-center text-[#808080] lg:w-1/2">
               Successful UI/UX design blends art, technology, and strategy. Our
               team offers expert services in user interface and experience
               design.
@@ -81,7 +82,7 @@ const Services = () => {
             <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 max-w-lg mx-auto">
               <img src="/webappdesign.png" className="pb-6 " />
               <h1 className="text-xl font-bold">Web app design</h1>
-              <p className="text-gray-700">
+              <p className="text-[#AFAFAF]">
                 Creative and understandable website design significantly
                 increases the chances of a visitor taking the target action we
                 need. There must be no extra distractions that will influence
@@ -95,7 +96,7 @@ const Services = () => {
             <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 max-w-lg mx-auto">
               <img src="/mobileappdesign.png" className="pb-6 " />
               <h1 className="text-xl font-bold">Mobile app design</h1>
-              <p className="text-gray-700">
+              <p className="text-[#AFAFAF]">
                 Mobile UX design defines the correct user flow of the app. How
                 many actions will the user take to reach what they want? What
                 additional features will they face on this path (read reviews,
@@ -123,15 +124,14 @@ const Services = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
             <h2 className="text-3xl md:text-3xl font-bold mb-6">
-              Elevate your digital presence with a premier
-              <br />
+              Elevate your digital presence with a premier 	&nbsp;
               <span className="text-[#0B5EFF]">
                 UI/UX design company that sets the standard for exceptional user
                 experiences and innovative interfaces.
               </span>
             </h2>
             <p className="text-lg text-gray-700 mb-10">
-              At <span className="text-[#0B5EFF]">Artifice Labs</span>, we offer
+              At <span className="text-[#0B5EFF] font-semibold">Artifice Labs</span>, we offer
               a comprehensive range of UI/UX design services to help you craft
               an exceptional user experience, including:
             </p>
@@ -146,7 +146,7 @@ const Services = () => {
                 effectiveness.
               </li>
               <li className="flex flex-row items-start">
-                <img
+                <img  
                   src="/listSymbol.png"
                   className="mt-1.5 mr-2"
                   alt="list symbol"

@@ -66,9 +66,8 @@ const OurWorks = () => {
   };
 
   return (
-    <section className="bg-white py-10 font-poppins">    
-        <div className="flex items-baseline justify-end absolute z-20 w-64 h-64 rounded-full blur-3xl opacity-60 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-700"></div>
-      
+    <section className="bg-white py-10 font-poppins">
+      <div className="flex items-baseline justify-end absolute z-20 w-64 h-64 rounded-full blur-3xl opacity-60 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-700"></div>
       <Navbar />
       <h2 className="text-center text-2xl font-bold text-blue-600 mb-6 mt-20">
         Project Done By Artifice Labs
@@ -94,8 +93,8 @@ const OurWorks = () => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         shouldCloseOnOverlayClick={true}
-        className="fixed inset-0 flex items-center justify-center z-50 p-4"
-        overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+        className="fixed inset-0 flex items-center justify-center p-4 z-50"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-50 z-40"
         contentLabel="Project Details"
       >
         <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-lg relative">
