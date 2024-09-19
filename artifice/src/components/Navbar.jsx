@@ -25,7 +25,7 @@ const Navbar = () => {
               <div className="flex-shrink-0">
                 <img src={logo} alt="Logo" className="ml-5 h-14 w-12 mb-2" />
               </div>
-              <div className="hidden lg:flex flex-grow justify-center">
+              <div className="hidden lg:flex flex-grow xl:justify-start xl:ml-20 2xl:justify-around">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
                     href="#home"
@@ -63,7 +63,7 @@ const Navbar = () => {
             </div>
 
             {/* Contact Us Button */}
-            <div className="hidden xl:block translate-y-1">
+            <div className="hidden xl:block absolute right-0 translate-y-1">
               <a href="#contact" className="inline-block">
                 <svg
                   width="220"
