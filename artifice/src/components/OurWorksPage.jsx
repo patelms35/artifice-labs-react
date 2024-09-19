@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "react-modal";
-import Navbar from "./Navbar.jsx";
+import NavbarOurWorks from "./NavbarOurWorks.jsx";
 
 const OurWorks = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -69,7 +69,7 @@ const OurWorks = () => {
     <section className="bg-white py-10 font-poppins">
       <div className="flex items-baseline justify-end absolute w-64 h-64 rounded-full blur-3xl opacity-60 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-700"></div>
 
-      <Navbar />
+      <NavbarOurWorks />
       <h2 className="text-center text-2xl font-bold text-blue-600 mb-6 mt-20">
         Project Done By Artifice Labs
       </h2>

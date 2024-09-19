@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/AR.png";
 import Sidebar from "./Sidebar";
+import logo from "/arBlue.png";
 
-const Navbar = () => {
+const NavbarOurWorks = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navigate = useNavigate();
@@ -18,43 +18,47 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500 bg-gray-800 bg-opacity-10 backdrop-blur-lg">
+      <nav className="absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-600 bg-gray-800 bg-opacity-10 backdrop-blur-lg">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center flex-grow">
               <div className="flex-shrink-0">
-                <img src={logo} alt="Logo" className="ml-5 h-14 w-12 mb-2" />
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="ml-5 m-auto h-10 w-12 mb-2"
+                />
               </div>
-              <div className="hidden text-center lg:flex flex-grow xl:justify-around 2xl:justify-around">
-                <div className="ml-10 flex items-baseline space-x-4">
+              <div className="hidden lg:flex flex-grow xl:justify-start xl:ml-20 2xl:justify-around">
+                <div className="ml-10 mt-2 flex items-baseline space-x-4">
                   <a
                     href="#home"
-                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                     onClick={navigateHome}
                   >
                     Home
                   </a>
                   <a
                     href="#about"
-                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                   >
                     About Us
                   </a>
                   <a
                     href="#works"
-                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                   >
                     Our Works
                   </a>
                   <a
                     href="#services"
-                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                   >
                     Services
                   </a>
                   <a
                     href="#mission"
-                    className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                   >
                     Mission & Vision
                   </a>
@@ -63,7 +67,7 @@ const Navbar = () => {
             </div>
 
             {/* Contact Us Button */}
-            <div className="hidden xl:block 2xl:absolute right-0 translate-y-1">
+            <div className="hidden xl:block absolute right-0 translate-y-1">
               <a href="#contact" className="inline-block">
                 <svg
                   width="220"
@@ -77,14 +81,14 @@ const Navbar = () => {
                     width="260"
                     height="74"
                     rx="37"
-                    fill="white"
+                    fill="black"
                     fillOpacity="0.26"
                   />
-                  <circle cx="224" cy="37" r="32" fill="white" />
-                  <rect x="202" y="15" width="44" height="44" fill="white" />
+                  <circle cx="224" cy="37" r="32" fill="black" />
+                  <rect x="202" y="15" width="44" height="44" fill="black" />
                   <path
                     d="M213.487 47.7002L234.7 26.4873M234.7 26.4873L234.701 41.461M234.7 26.4873L219.725 26.4879"
-                    stroke="black"
+                    stroke="white"
                     strokeWidth="4.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -102,7 +106,7 @@ const Navbar = () => {
               <button
                 onClick={toggleSidebar}
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-black focus:outline-none"
               >
                 <svg
                   className="h-6 w-6"
@@ -137,4 +141,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarOurWorks;
