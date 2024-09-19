@@ -1,4 +1,4 @@
-const WebDevelopmentProcess = () => {
+const UiUxProcess = () => {
   return (
     <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left">
       <div className="max-w-7xl mx-auto">
@@ -23,4 +23,4 @@ const WebDevelopmentProcess = () => {
   );
 };
 
-export default WebDevelopmentProcess;
+export default UiUxProcess;

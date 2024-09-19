@@ -4,7 +4,7 @@ import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
 import DesignProcess from "./DesignProcess";
 import Explanation from "./Explanation";
-import WebDevelopmentProcess from "./WebDevelopmentProcess";
+import UiUxProcess from "./UiUxProcess";
 
 const Services = () => {
   useEffect(() => {
@@ -218,7 +218,7 @@ const Services = () => {
       <DesignProcess />
 
       {/* Web Development Process */}
-      <WebDevelopmentProcess />
+      <UiUxProcess />
 
       {/* Explanation */}
       <Explanation />

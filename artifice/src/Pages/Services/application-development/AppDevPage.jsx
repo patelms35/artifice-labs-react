@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
-import DesignProcess from "../ui-ux/DesignProcess";
+import AppDevProcess from "./AppDevProcess";
 import Explanation from "./Explanation";
-import WebDevelopmentProcess from "./WebDevelopmentProcess";
+import Technologies from "./Technologies";
 
 const Services = () => {
   useEffect(() => {
@@ -175,17 +175,19 @@ const Services = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
             <h2 className="text-3xl md:text-3xl font-bold mb-6">
-              Expert application development blends art, technology, and
-              strategy. Our team ensures intuitive, user-focused designs for
-              impactful digital experiences.
+              Enhance your digital presence with a leading {""}
+              <span className="text-[#0B5EFF]">
+                application development company that sets the standard for
+                outstanding user experiences and innovative features.
+              </span>
             </h2>
             <p className="text-lg text-gray-700 mb-10">
               At{" "}
               <span className="text-[#0B5EFF] font-semibold">
                 Artifice Labs
               </span>
-              , we provide a complete range of web development services to help
-              you create a fully-featured web-based product, including:
+              , we provide a wide array of application development services to
+              help you create an outstanding user experience, including...
             </p>
             <ul className="text-md text-gray-700 space-y-2 mb-10">
               <li className="flex flex-row items-start">
@@ -194,8 +196,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                User research to understand needs and enhance design
-                effectiveness.
+                User research to understand needs and improve application
+                functionality.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -203,7 +205,7 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Wireframing and prototyping for clear, interactive design
+                Wireframing and prototyping for clear, interactive application
                 visualization.
               </li>
               <li className="flex flex-row items-start">
@@ -212,7 +214,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Visual design to create appealing and cohesive user interfaces.
+                Visual design to create attractive and cohesive application
+                interfaces.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -229,45 +232,28 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Interaction design for smooth, engaging user interactions and
-                flows.
-              </li>
-              <li className="flex flex-row items-start">
-                <img
-                  src="/listSymbol.png"
-                  className="mt-1.5 mr-2"
-                  alt="list symbol"
-                />
-                Accessibility design to ensure inclusivity for all user groups.
-              </li>
-              <li className="flex flex-row items-start">
-                <img
-                  src="/listSymbol.png"
-                  className="mt-1.5 mr-2"
-                  alt="list symbol"
-                />
-                User feedback integration for continuous improvement and refined
-                solutions.
+                Dedicated Content Management System Development
               </li>
             </ul>
             <p className="text-lg text-gray-700 mt-6">
               <span className="font-extrabold">
-                A UI/UX design company&apos;s mission is to craft solutions that
-                align with a client&apos;s specific business goals.
+                Our mission in application development is to build solutions
+                that align with your business goals.
               </span>{" "}
-              By focusing on user-centered design, we help create engaging and
-              intuitive experiences from the ground up or enhance the usability
-              and appeal of existing products.
+              By prioritizing user-centric design, we create engaging and
+              intuitive applications from scratch or enhance the usability and
+              appeal of existing ones, ensuring a seamless and compelling user
+              experience.
             </p>
           </div>
         </div>
       </section>
 
       {/* Technologies */}
-      <DesignProcess />
+      <Technologies />
 
       {/* Web Development Process */}
-      <WebDevelopmentProcess />
+      <AppDevProcess />
 
       {/* Explanation */}
       <Explanation />

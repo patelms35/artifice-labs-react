@@ -4,29 +4,31 @@ const Explanation = () => {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-10">
-          Why choose <span className="text-[#0B5EFF]">Artifice Labs</span> to
-          develop your web-based product?
+          Why choose <span className="text-[#0B5EFF]">Artifice Labs </span>for{" "}
+          your application development needs?
         </h2>
 
         {/* Paragraph */}
         <p className="text-lg text-gray-700 mb-16">
-          No matter if you&apos;re an entrepreneur, a start-up leader, or head
-          of a large company, your digital product&apos;s success will hinge on
-          achieving key strategic goals. Your ideal web development partner
-          should serve as both a guide and advisor throughout this critical
-          journey. With us, you can be confident that the final product will
-          align with both your and your customers&apos; expectations.
+          Whether you&apos;re an entrepreneur, start-up founder, or leader of a
+          large organization, the success of your application will depend on
+          meeting essential strategic objectives. Your ideal application
+          development partner should act as both a mentor and advisor during
+          this crucial process. With our expertise, you can trust that the end
+          product will not only meet your goals but also exceed your
+          customers&apos; expectations.
         </p>
 
         {/* Team Section */}
         <h3 className="text-2xl md:text-3xl font-bold mb-6">
-          Web development team
+          Application development team
         </h3>
         <p className="text-lg text-gray-700 mb-16">
-          The composition of our team is tailored to the specific needs of each
-          project. Each member is meticulously chosen to contribute significant
-          value to your product&apos;s development. We possess the expertise to
-          handle every facet of web development.
+          Our team composition is customized to meet the unique demands of each
+          project, with every member selected for their ability to add
+          substantial value to your app&apos;s development. We have the
+          expertise to manage every aspect of application development, ensuring
+          a seamless and effective process.
         </p>
 
         {/* Team Roles */}
@@ -50,7 +52,7 @@ const Explanation = () => {
             <span className="text-lg text-gray-700">
               UX designers ensure that all visual and interactive elements of an
               app are intuitive, practical, and effective at keeping users
-              engaged.
+              engaged. engaged.
             </span>
           </li>
           <li className="flex items-start">
@@ -94,7 +96,7 @@ const Explanation = () => {
               alt="Checkmark"
             />
             <span className="text-lg text-gray-700">
-              The project manager oversees the project&apos;s progress, ensures
+              The project manager oversees the project’s progress, ensures
               timely task completion, and aligns the product with business
               goals.
             </span>
