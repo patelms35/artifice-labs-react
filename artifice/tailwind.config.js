@@ -6,6 +6,7 @@ export default {
         hero: "url('./artifice/public/Background.jpeg')",
         designer: "url('./artifice/public/Designer.jpeg')",
         ui: "url('./artifice/public/ui.jpeg')",
+        app: "url('./artifice/public/App-main.jpg')",
       },
     },
     fontFamily: {
