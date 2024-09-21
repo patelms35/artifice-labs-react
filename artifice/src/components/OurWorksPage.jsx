@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Modal from "react-modal";
 import NavbarOurWorks from "./NavbarOurWorks.jsx";
 
 const OurWorks = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState({
     title: "",
@@ -67,17 +72,21 @@ const OurWorks = () => {
 
   return (
     <section className="bg-white py-10 font-poppins">
-      <div className="flex items-baseline justify-end absolute w-64 h-64 rounded-full blur-3xl opacity-60 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-700"></div>
-
+      <div className="flex items-baseline justify-start z-0 fixed top-0 left-[-100px]">
+        <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-blue-300 via-blue-500 to-blue-700 opacity-60 "></div>
+      </div>
       <NavbarOurWorks />
       <h2 className="text-center text-2xl font-bold text-blue-600 mb-6 mt-20">
         Project Done By Artifice Labs
       </h2>
-      <div className="flex flex-col md:flex-row justify-center relative z-20 items-center gap-6">
+      <div
+        className="flex flex-col md:flex-row justify-center relative z-20 items-center gap-6"
+        data-aos="fade-up"
+      >
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="max-w-[380px] bg-white rounded-lg overflow-hidden hover:shadow-2xl border-2 cursor-pointer"
+            className="max-w-[380px] bg-white rounded-lg overflow-hidden hover:shadow-2xl border-2 transition-all cursor-pointer"
             onClick={() => openModal(card.id)}
           >
             <img className="w-full" src={card.imgSrc} alt={card.title} />
@@ -127,7 +136,7 @@ const OurWorks = () => {
           <p className="text-gray-600">{modalContent.description}</p>
         </div>
       </Modal>
-      <div className="flex items-baseline justify-end z-30 mt-48">
+      <div className="flex items-baseline justify-end z-0 bottom-0 right-[-100px] fixed">
         <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-pink-300 via-purple-400 to-purple-700 opacity-60"></div>
       </div>
     </section>
