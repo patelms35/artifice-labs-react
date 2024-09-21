@@ -67,8 +67,8 @@ const DesignProcess = () => {
   return (
     <section className="py-24 px-6 md:px-16 bg-white">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-8">UI/UX Design Process</h2>
-        <p className="text-lg text-gray-600 mb-16">
+        <h2 className="text-4xl font-bold mb-8" data-aos="fade-up"  data-aos-delay="300" >UI/UX Design Process</h2>
+        <p className="text-lg text-gray-600 mb-16" data-aos="fade-up" data-aos-delay="500" >
           As a top provider of UI/UX design services, we regularly refine each
           element of your project. Our approach guarantees a user experience
           that is carefully designed to align with your business objectives and
@@ -81,8 +81,8 @@ const DesignProcess = () => {
             <div
               key={index}
               className={`relative flex flex-col lg:flex-row items-center mb-12 lg:mb-32 ${
-                index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-              } `}
+                index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse" 
+              } `} data-aos="fade-right"
             >
               {/* Step Content */}
               <div className="lg:w-1/2 px-8 lg:px-12 py-8 text-left bg-white border border-gray-200 rounded-lg shadow-md z-10">

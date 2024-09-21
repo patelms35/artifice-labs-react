@@ -3,13 +3,15 @@ const Technologies = () => {
     <section className="py-24 px-6 md:px-16 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between space-y-4 lg:space-y-0 mb-24">
-          <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2">
+          <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2" data-aos="fade-up"
+            data-aos-delay="300" >
             What technologies will deliver the{" "}
             <span className="text-[#0B5EFF]">
               greatest value to your business?
             </span>
           </h2>
-          <p className="text-lg text-gray-700 lg:w-1/2">
+          <p className="text-lg text-gray-700 lg:w-1/2" data-aos="fade-up"
+            data-aos-delay="500" >
             Address customer challenges by selecting advanced technologies for
             your tech stack. Elevate your business with customized solutions
             designed to meet your specific needs.
@@ -17,7 +19,7 @@ const Technologies = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16" data-aos="fade-up" >
           {/* Card 1 */}
           <div className="bg-white p-6 rounded-lg shadow-lg w-80 flex flex-col items-start transform lg:translate-y-0">
             <div className="flex items-center mb-4">
