@@ -39,25 +39,25 @@ const NavbarOurWorks = () => {
                     Home
                   </a>
                   <a
-                    href="#about"
+                    href="/#about"
                     className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                   >
                     About Us
                   </a>
                   <a
-                    href="#works"
+                    href="/#works"
                     className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                   >
                     Our Works
                   </a>
                   <a
-                    href="#services"
+                    href="/#services"
                     className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                   >
                     Services
                   </a>
                   <a
-                    href="#mission"
+                    href="/#mission"
                     className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
                   >
                     Mission & Vision
@@ -68,7 +68,7 @@ const NavbarOurWorks = () => {
 
             {/* Contact Us Button */}
             <div className="hidden xl:block absolute right-0 translate-y-1">
-              <a href="#contact" className="inline-block">
+              <a href="/#contact" className="inline-block">
                 <svg
                   width="220"
                   height="65"
