@@ -23,7 +23,7 @@ const MissionVisionSection = () => {
               Our Mission
               <div className="h-1 w-10 bg-blue-500 ml-[6rem]"></div>
             </h3>
-            <p className="text-gray-600 text-2xl font-semibold ">
+            <p className="text-gray-600 md:text-2xl  font-semibold ">
               To bridge the gap between people and technology by creating
               innovative solutions that simplify daily tasks, enhance user
               experiences, and improve quality of life.
@@ -52,7 +52,7 @@ const MissionVisionSection = () => {
               Our Vision
               <div className="h-1 w-10 bg-blue-500 ml-[4.8rem]"></div>
             </h3>
-            <p className="text-gray-600 text-2xl font-semibold">
+            <p className="text-gray-600 md:text-2xl  font-semibold">
               To be a global leader in technology solutions, empowering
               individuals and businesses through innovative, user-friendly, and
               impactful technological advancements.

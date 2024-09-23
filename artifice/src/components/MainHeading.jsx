@@ -8,13 +8,13 @@ const MainHeading = ({ title, backgroundTitle }) => {
         </span>
 
         {/* Foreground Title */}
-        <span className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800 absolute top-4 sm:top-4 md:top-8 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-24 2xl:left-20">
+        <span className="text-[20px] md:text-5xl lg:text-6xl font-bold text-gray-800 absolute top-4 md:top-11 left-8 md:left-12 lg:left-24 xl:left-24 2xl:left-20">
           {title}
         </span>
       </div>
 
       {/* Line below the title */}
-      <div className="h-1 w-16 bg-[#106eea] mt-2 sm:mt-3 md:mt-4 ml-[2rem] sm:ml-[3rem] md:ml-[5rem]"></div>
+      <div className="h-1 w-16 bg-[#106eea] mt-2 md:mt-2 ml-[2rem] md:ml-44"></div>
     </div>
   );
 };
