@@ -1,39 +1,42 @@
 import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight } from "react-feather";
-import { useNavigate } from "react-router-dom";
-import Learn from "./Buttons/learn-more/learn-more.jsx"; // Import the Learn component
+import Learn from "./Buttons/learn-more/learn-more.jsx";
 import MainHeading from "./MainHeading";
 
 const ServicesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(3);
-  const [isAnimating, setIsAnimating] = useState(false); // Control animation state
-  const [slides, setSlides] = useState([]); // Store visible slides
-  const navigate = useNavigate();
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [slides, setSlides] = useState([]);
 
   const data = [
     {
       title: "Web Development",
+      image: "/web.png",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
     },
     {
       title: "Application Development",
+      image: "/app.png",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
     },
     {
       title: "AR/VR",
+      image: "vr.png",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
     },
     {
       title: "AI/ML",
+      image: "ai.png",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
     },
     {
       title: "UI/UX Design",
+      image: "ui.png",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
     },
@@ -59,7 +62,6 @@ const ServicesSection = () => {
   }, []);
 
   useEffect(() => {
-    // Initially set the visible slides based on currentSlide and cardsToShow
     const newSlides = [];
     for (let i = 0; i < cardsToShow; i++) {
       newSlides.push(data[(currentSlide + i) % data.length]);
@@ -68,19 +70,19 @@ const ServicesSection = () => {
   }, [currentSlide, cardsToShow]);
 
   const handleNext = () => {
-    setIsAnimating(true); // Start fade-out
+    setIsAnimating(true);
     setTimeout(() => {
-      setCurrentSlide((prev) => (prev + 1) % data.length); // Update slide after fade-out
-      setIsAnimating(false); // Start fade-in
-    }, 300); // Adjust the delay to match the CSS fade duration
+      setCurrentSlide((prev) => (prev + 1) % data.length);
+      setIsAnimating(false);
+    }, 300);
   };
 
   const handlePrev = () => {
-    setIsAnimating(true); // Start fade-out
+    setIsAnimating(true);
     setTimeout(() => {
-      setCurrentSlide((prev) => (prev - 1 + data.length) % data.length); // Update slide after fade-out
-      setIsAnimating(false); // Start fade-in
-    }, 300); // Adjust the delay to match the CSS fade duration
+      setCurrentSlide((prev) => (prev - 1 + data.length) % data.length);
+      setIsAnimating(false);
+    }, 300);
   };
 
   return (
@@ -109,7 +111,7 @@ const ServicesSection = () => {
                 isAnimating ? "opacity-0" : "opacity-100"
               } transition-opacity duration-300`}
             >
-              <div className="h-16 w-16 bg-gray-300 rounded-full mb-6"></div>
+              <img src={item.image} className="h-16 w-16 mb-6" />
               <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
               <p className="text-center text-gray-600 mb-6">{item.content}</p>
 
