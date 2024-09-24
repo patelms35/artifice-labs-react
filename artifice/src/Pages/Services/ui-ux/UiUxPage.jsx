@@ -1,6 +1,6 @@
-import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
@@ -25,10 +25,18 @@ const Services = () => {
 
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight" data-aos="fade-up" data-aos-delay="300" >
+          <h1
+            className="text-4xl md:text-5xl font-bold mb-8 leading-tight"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             UI / UX Design Services
           </h1>
-          <p className="text-lg md:text-2xl mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="600" >
+          <p
+            className="text-lg md:text-2xl mb-8 leading-relaxed"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             We craft user-centric designs and experiences for web products,
             ensuring
             <br />
@@ -37,7 +45,9 @@ const Services = () => {
 
           <button
             className="text-gray-50 bg-[#0B5EFF] p-3 rounded-md "
-            type="submit"  data-aos="fade-up"  data-aos-delay="800"
+            type="submit"
+            data-aos="fade-up"
+            data-aos-delay="800"
           >
             Let&apos;s work together
           </button>
@@ -48,12 +58,20 @@ const Services = () => {
       <section className="py-16 px-6 md:px-16 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10" data-aos="fade-up"  data-aos-delay="300" >
+            <div
+              className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <span className="text-black">What are</span>
               <span className="text-[#0B5EFF]">UI/UX Design services?</span>
             </div>
 
-            <div className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10" data-aos="fade-up"  data-aos-delay="600" >
+            <div
+              className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               UI/UX design services focus on creating intuitive and engaging
               user experiences for websites and applications. This includes
               designing user interfaces, conducting user research, prototyping,
@@ -68,11 +86,19 @@ const Services = () => {
       {/* Section - Achieve your business goals */}
       <section className="py-24 px-6 md:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24" data-aos="fade-up"  data-aos-delay="300" >
+          <div
+            className="flex flex-col items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2 text-center">
               UI / UX design Service we provide
             </h2>
-            <p className="text-lg text-center text-[#808080] lg:w-1/2" data-aos="fade-up"  data-aos-delay="500" >
+            <p
+              className="text-lg text-center text-[#808080] lg:w-1/2"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               Successful UI/UX design blends art, technology, and strategy. Our
               team offers expert services in user interface and experience
               design.
@@ -80,7 +106,11 @@ const Services = () => {
           </div>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-center mb-16" data-aos="fade-up"  data-aos-delay="600">
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-center mb-16"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             {/* Card 1 */}
             <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 max-w-lg mx-auto">
               <img src="/webappdesign.png" className="pb-6 " />
@@ -127,14 +157,22 @@ const Services = () => {
 
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
-            <h2 className="text-3xl md:text-3xl font-bold mb-6" data-aos="fade-up"  data-aos-delay="200" >
+            <h2
+              className="text-3xl md:text-3xl font-bold mb-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               Elevate your digital presence with a premier &nbsp;
               <span className="text-[#0B5EFF]">
                 UI/UX design company that sets the standard for exceptional user
                 experiences and innovative interfaces.
               </span>
             </h2>
-            <p className="text-lg text-gray-700 mb-10" data-aos="fade-up"  data-aos-delay="300" >
+            <p
+              className="text-lg text-gray-700 mb-10"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               At{" "}
               <span className="text-[#0B5EFF] font-semibold">
                 Artifice Labs
@@ -142,7 +180,11 @@ const Services = () => {
               , we offer a comprehensive range of UI/UX design services to help
               you craft an exceptional user experience, including:
             </p>
-            <ul className="text-md text-gray-700 space-y-2 mb-10" data-aos="fade-up"  data-aos-delay="400" >
+            <ul
+              className="text-md text-gray-700 space-y-2 mb-10"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <li className="flex flex-row items-start">
                 <img
                   src="/listSymbol.png"
@@ -205,7 +247,11 @@ const Services = () => {
                 solutions.
               </li>
             </ul>
-            <p className="text-lg text-gray-700 mt-6" data-aos="fade-up"  data-aos-delay="500" >
+            <p
+              className="text-lg text-gray-700 mt-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <span className="font-extrabold">
                 A UI/UX design company&apos;s mission is to craft solutions that
                 align with a client&apos;s specific business goals.

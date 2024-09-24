@@ -1,14 +1,75 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
-import Explanation from "./Explanation";
-import Technologies from "./Technologies";
-import WebDevelopmentProcess from "./WebDevelopmentProcess";
+import ARVRProcess from "./ARVRProcess";
+import ArVrExplanation from "./ArVrExplanation";
+
+const cards = [
+  {
+    image: "arVrPage/arconsultancy.png",
+    alt: "ar vr consultancy services",
+    title: "AR & VR Consultation Services",
+    content:
+      "With our AR/VR app consultation services, we help you blur the line between the physical and virtual worlds and translate your app vision into reality. This way, you can understand the true potential of tapping into AR/VR technologies to make your business shine.",
+  },
+  {
+    image: "arVrPage/argamedev.png",
+    alt: "ar vr game development",
+    title: "AR/VR Game Development",
+    content:
+      "We have a dedicated team of technology enthusiasts who create high-quality gaming solutions for various platforms such as Oculus Life, Samsung Gear, etc. On top of that, we'll redefine the entire gaming landscape using AR/VR solutions that make the players tick online and create enhanced gaming experiences that were not possible before.",
+  },
+  {
+    image: "arVrPage/arlocation.png",
+    alt: "Location-Based VR and AR Development Services",
+    title: "Location-Based VR and AR Development Services",
+    content:
+      "As an AR/VR development company, we possess technical expertise in creating high-performing AR apps that use GPS, beacons, and location-based sensors to direct customers to your business. Thus, investing in location-based AR/VR services helps you to target audiences in a particular region.",
+  },
+  {
+    image: "arVrPage/arrecognition.png",
+    alt: "Visual Recognition Solutions",
+    title: "Visual Recognition Solutions",
+    content:
+      "Transform the lives of your customers with our AR/VR visualization solutions enabling them to interact with digital objects. Such smart applications take visual content such as images and videos as input to drive immersive experiences that will win your customers' hearts.",
+  },
+  {
+    image: "arVrPage/ar3ddesign.png",
+    alt: "3D Design and Development",
+    title: "3D Design and Development",
+    content:
+      "As an AR/VR app development agency, we combine 5+ years of knowledge in creating digital 3D models (animations, simulations) that provide next-level user interactions and immersive experiences. Whether you're a startup, a renowned brand, or an established enterprise, the 3D models we develop add a digital layer in the real world which increases your customer engagement.",
+  },
+  {
+    image: "arVrPage/armixedreality.png",
+    alt: "Mixed Reality Solutions",
+    title: "Mixed Reality Solutions",
+    content:
+      "We provide AR/VR solutions at affordable prices, one of which is Mixed reality solutions. After working on 23+ AR/VR projects for different industries, we know how to double your business productivity by blending physical and virtual worlds, so your business is always on top of customers' minds.",
+  },
+  {
+    image: "arVrPage/ariot.png",
+    alt: "IoT in AR/VR",
+    title: "IoT in AR/VR",
+    content:
+      "Our application developers are proficient in building powerful solutions by integrating AR/VR technologies with IoT devices which facilitate data visualization, monitoring, and control.",
+  },
+  {
+    image: "arVrPage/arsupport.png",
+    alt: "AR & VR Support And Maintenance",
+    title: "AR & VR Support And Maintenance",
+    content:
+      "To keep your AR/VR applications running all the time, we provide exceptional support and maintenance services that include keeping your app updated to the new version and fixing bugs and security patches.",
+  },
+];
 
 const Services = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    AOS.init({ duration: 2000 });
   }, []);
 
   return (
@@ -17,18 +78,20 @@ const Services = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/Designer.jpeg')] bg-center">
+      <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/App-main.jpg')] bg-center">
         <div className="absolute inset-0 bg-black opacity-60"></div>
 
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-            Web Development Services
+            AR/VR Services
           </h1>
           <p className="text-lg md:text-2xl mb-8 leading-relaxed">
-            We design and build industry-leading web-based products that bring
+            We design and build cutting-edge AR/VR experiences that deliver
             <br />
-            value to your customers, delivered with compelling UX.
+            immersive value to your customers, enhanced with compelling user
+            <br />
+            experiences.{" "}
           </p>
 
           <button
@@ -46,14 +109,17 @@ const Services = () => {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10">
               <span className="text-black">What are </span>
-              <span className="text-[#0B5EFF]">web development services?</span>
+              <span className="text-[#0B5EFF]">AR / VR services?</span>
             </div>
 
             <div className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10">
-              Web development encompasses a wide range of services, which
-              include delivering websites or web apps, cybersecurity solutions,
-              UX/UI design, eCommerce solutions, website architectures, QA
-              testing, maintenance, consulting, and even a custom CMS.
+              AR/VR development encompasses a wide range of services, including
+              delivering immersive AR/VR applications, spatial computing
+              solutions, 3D content design, intuitive UX/UI for virtual
+              environments, eCommerce integration within AR/VR spaces, custom
+              virtual architectures, QA testing for interactive experiences,
+              continuous maintenance, consulting, and custom-built immersive
+              platforms.
             </div>
           </div>
         </div>
@@ -63,68 +129,49 @@ const Services = () => {
       <section className="py-24 px-6 md:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24">
-            <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2">
+            <h2
+              className="text-3xl md:text-4xl font-bold lg:w-1/2"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               Achieve your business goals{" "}
-              <span className="text-[#0B5EFF]">
-                with web development solutions
-              </span>
+              <span className="text-[#0B5EFF]">with AR / VR solutions</span>
             </h2>
-            <p className="text-lg text-gray-700 lg:w-1/2">
-              Our battle-tested developers specialize in a wide range of web
-              development services. Here are some of the solutions that we can
-              deliver for you.
+            <p
+              className="text-lg text-gray-700 lg:w-1/2"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              Our experienced AR/VR developers specialize in delivering a
+              diverse range of immersive solutions. Here are some of the
+              cutting-edge AR/VR services we can create for you, bringing
+              innovation and value to your projects.
             </p>
           </div>
 
           {/* Cards */}
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-16">
-            {/* Card 1 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14">
-              <img src="/globe.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Websites.&nbsp;
-                </span>
-                A well-designed website is a powerful marketing and
-                communication tool that helps build trust and generate leads.
-              </p>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 lg:mt-0">
-              <img src="/ecommerce.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Ecommerce.&nbsp;
-                </span>
-                With eCommerce solutions, businesses can operate 24/7 and reach
-                customers in any time zone.
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14">
-              <img src="/webapp.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Web Applications.&nbsp;
-                </span>
-                Web applications can reach a global audience. They are
-                interactive and engaging, holding users&apos; attention.
-              </p>
-            </div>
-
-            {/* Card 4 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform lg:mt-0 pb-14">
-              <img src="/cms.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Content Management System.&nbsp;
-                </span>
-                A dedicated CMS designed to meet your business&apos;s needs by
-                optimizing internal workflows.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-center mb-16">
+            {cards.map((card, index) => (
+              <div
+                key={index}
+                className="border border-gray-200 rounded-lg p-8 max-w-lg shadow-sm bg-white flex flex-col items-start transform mx-auto"
+                data-aos="fade-up"
+              >
+                <div className="flex justify-between items-center w-full mb-4">
+                  <h1 className="text-xl font-semibold text-gray-800">
+                    {card.title}
+                  </h1>
+                  <img
+                    src={card.image}
+                    alt={card.alt}
+                    className="h-12 w-12 object-contain"
+                  />
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {card.content}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -135,7 +182,7 @@ const Services = () => {
           {/* Image */}
           <div className="lg:w-1/2">
             <img
-              src="/laptops.png"
+              src="/app-card.jpeg"
               alt="Laptops"
               className="rounded-xl shadow-lg"
             />
@@ -143,90 +190,41 @@ const Services = () => {
 
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Elevate your digital presence with a top-tier <br />
+            <h2 className="text-3xl md:text-3xl font-bold mb-6">
+              Enhance your digital presence with a leading {""}
               <span className="text-[#0B5EFF]">
-                web development company that stands out from the rest.
+                AR/VR service provider, delivering innovative, immersive
+                solutions with unmatched user-centric design.
               </span>
             </h2>
             <p className="text-lg text-gray-700 mb-10">
-              At <span className="text-[#0B5EFF]">Artifice Labs</span>, we
-              provide a complete range of web development services to help you
-              create a fully-featured web-based product, including:
+              At{" "}
+              <span className="text-[#0B5EFF] font-semibold">
+                Artifice Labs
+              </span>
+              , we provide a complete range of AR/VR development services to
+              help you create fully-featured immersive experiences, tailored to
+              your specific needs and goals.
             </p>
-
-            <ul className="text-lg text-gray-700 space-y-2 mb-10">
-              <li className="flex flex-row items-start">
-                <img
-                  src="/listSymbol.png"
-                  className="mt-1.5 mr-2"
-                  alt="list symbol"
-                />
-                Website Development
-              </li>
-              <li className="flex flex-row items-start">
-                <img
-                  src="/listSymbol.png"
-                  className="mt-1.5 mr-2"
-                  alt="list symbol"
-                />
-                Web Application Development
-              </li>
-              <li className="flex flex-row items-start">
-                <img
-                  src="/listSymbol.png"
-                  className="mt-1.5 mr-2"
-                  alt="list symbol"
-                />
-                eCommerce Solutions Development
-              </li>
-              <li className="flex flex-row items-start">
-                <img
-                  src="/listSymbol.png"
-                  className="mt-1.5 mr-2"
-                  alt="list symbol"
-                />
-                No-code & Low-code Development
-              </li>
-              <li className="flex flex-row items-start">
-                <img
-                  src="/listSymbol.png"
-                  className="mt-1.5 mr-2"
-                  alt="list symbol"
-                />
-                Project Management - UI/UX Design, Coding, QA Testing
-              </li>
-              <li className="flex flex-row items-start">
-                <img
-                  src="/listSymbol.png"
-                  className="mt-1.5 mr-2"
-                  alt="list symbol"
-                />
-                Dedicated Content Management System Development
-              </li>
-            </ul>
-
             <p className="text-lg text-gray-700 mt-6">
               <span className="font-extrabold">
-                A web development company&apos;s mission is to identify and
-                implement solutions that align with a client&apos;s specific
-                business objectives.
+                An AR/VR development company&apos;s mission is to identify and
+                implement immersive solutions that align with a client&apos;s
+                specific business objectives.
               </span>{" "}
-              With the right services, you can create a successful product from
-              the ground up or enhance the performance of an existing one.
+              With the right services, you can create a successful virtual
+              experience from the ground up or enhance the functionality of an
+              existing one.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Technologies */}
-      <Technologies />
-
       {/* Web Development Process */}
-      <WebDevelopmentProcess />
+      <ARVRProcess />
 
       {/* Explanation */}
-      <Explanation />
+      <ArVrExplanation />
 
       {/* Contact Us */}
       <ContactUsSection />
