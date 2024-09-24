@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
@@ -10,6 +10,12 @@ const Services = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const contactRef = useRef(null);
+
+  const handleScrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="font-poppins">
@@ -34,6 +40,7 @@ const Services = () => {
           <button
             className="text-gray-50 bg-[#0B5EFF] p-3 rounded-md "
             type="submit"
+            onClick={handleScrollToContact}
           >
             Let&apos;s work together
           </button>
@@ -45,7 +52,7 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10">
-              <span className="text-black">What are  &nbsp; </span>
+              <span className="text-black">What are &nbsp; </span>
               <span className="text-[#0B5EFF]">
                 Application Development services?
               </span>
@@ -145,9 +152,7 @@ const Services = () => {
                 className="pb-6"
                 alt="Mobile app design"
               />
-              <h1 className="text-xl font-bold">
-                IOS App Development
-              </h1>
+              <h1 className="text-xl font-bold">IOS App Development</h1>
               <p className="text-[#AFAFAF]">
                 Our cross-platform mobile app development services design
                 cutting-edge and future-ready applications that maximize
@@ -259,7 +264,9 @@ const Services = () => {
       <Explanation />
 
       {/* Contact Us */}
-      <ContactUsSection />
+      <div ref={contactRef}>
+        <ContactUsSection />
+      </div>
 
       {/* Footer */}
       <Footer />

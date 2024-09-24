@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
@@ -72,6 +72,12 @@ const Services = () => {
     AOS.init({ duration: 2000 });
   }, []);
 
+  const contactRef = useRef(null);
+
+  const handleScrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="font-poppins">
       {/* Navbar */}
@@ -97,6 +103,7 @@ const Services = () => {
           <button
             className="text-gray-50 bg-[#0B5EFF] p-3 rounded-md "
             type="submit"
+            onClick={handleScrollToContact}
           >
             Let&apos;s work together
           </button>
@@ -227,7 +234,9 @@ const Services = () => {
       <ArVrExplanation />
 
       {/* Contact Us */}
-      <ContactUsSection />
+      <div ref={contactRef}>
+        <ContactUsSection />
+      </div>
 
       {/* Footer */}
       <Footer />

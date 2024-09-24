@@ -1,6 +1,6 @@
-import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect, useRef } from "react";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
@@ -13,6 +13,12 @@ const Services = () => {
     window.scrollTo(0, 0);
     AOS.init({ duration: 2000 });
   }, []);
+
+  const contactRef = useRef(null);
+
+  const handleScrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="font-poppins">
@@ -47,6 +53,7 @@ const Services = () => {
             type="submit"
             data-aos="fade-up"
             data-aos-delay="500"
+            onClick={handleScrollToContact}
           >
             Let&apos;s work together
           </button>
@@ -279,7 +286,9 @@ const Services = () => {
       <Explanation />
 
       {/* Contact Us */}
-      <ContactUsSection />
+      <div ref={contactRef}>
+        <ContactUsSection />
+      </div>
 
       {/* Footer */}
       <Footer />
