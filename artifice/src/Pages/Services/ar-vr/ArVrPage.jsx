@@ -78,7 +78,7 @@ const Services = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/App-main.jpg')] bg-center">
+      <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/ar-main.jpeg')] bg-center">
         <div className="absolute inset-0 bg-black opacity-60"></div>
 
         {/* Content */}
@@ -182,7 +182,7 @@ const Services = () => {
           {/* Image */}
           <div className="lg:w-1/2">
             <img
-              src="/app-card.jpeg"
+              src="/ar-card.jpg"
               alt="Laptops"
               className="rounded-xl shadow-lg"
             />

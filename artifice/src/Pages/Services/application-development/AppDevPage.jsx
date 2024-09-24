@@ -45,7 +45,7 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10">
-              <span className="text-black">What are</span>
+              <span className="text-black">What are  &nbsp; </span>
               <span className="text-[#0B5EFF]">
                 Application Development services?
               </span>
@@ -146,7 +146,7 @@ const Services = () => {
                 alt="Mobile app design"
               />
               <h1 className="text-xl font-bold">
-                iPhone Mobile App Development
+                IOS App Development
               </h1>
               <p className="text-[#AFAFAF]">
                 Our cross-platform mobile app development services design
