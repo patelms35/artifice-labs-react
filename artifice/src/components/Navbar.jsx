@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500 bg-gray-800 bg-opacity-10 backdrop-blur-lg">
+      <nav className="absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500 bg-gray-800 bg-opacity-10 backdrop-blur-lg 2xl:w-[90%]">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center flex-grow">

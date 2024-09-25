@@ -16,6 +16,13 @@ const cards = [
       "With our AR/VR app consultation services, we help you blur the line between the physical and virtual worlds and translate your app vision into reality. This way, you can understand the true potential of tapping into AR/VR technologies to make your business shine.",
   },
   {
+    image: "arVrPage/ariot.png",
+    alt: "AR/VR in education",
+    title: "AR/VR in Education",
+    content:
+      "AR and VR in education revolutionize learning by creating immersive, interactive experiences. These technologies enhance engagement, simplify complex concepts, and foster deeper understanding through hands-on, visual learning in a virtual environment.",
+  },
+  {
     image: "arVrPage/argamedev.png",
     alt: "ar vr game development",
     title: "AR/VR Game Development",
@@ -51,18 +58,25 @@ const cards = [
       "We provide AR/VR solutions at affordable prices, one of which is Mixed reality solutions. After working on 23+ AR/VR projects for different industries, we know how to double your business productivity by blending physical and virtual worlds, so your business is always on top of customers' minds.",
   },
   {
-    image: "arVrPage/ariot.png",
-    alt: "IoT in AR/VR",
-    title: "IoT in AR/VR",
-    content:
-      "Our application developers are proficient in building powerful solutions by integrating AR/VR technologies with IoT devices which facilitate data visualization, monitoring, and control.",
-  },
-  {
     image: "arVrPage/arsupport.png",
     alt: "AR & VR Support And Maintenance",
     title: "AR & VR Support And Maintenance",
     content:
       "To keep your AR/VR applications running all the time, we provide exceptional support and maintenance services that include keeping your app updated to the new version and fixing bugs and security patches.",
+  },
+  {
+    image: "arVrPage/arconsultancy.png",
+    alt: "ar vr in real estate",
+    title: "AR & VR in Real Estate",
+    content:
+      "AR and VR in real estate revolutionize property experiences by offering immersive virtual tours, 3D visualizations, and interactive floor plans, enabling buyers to explore properties remotely and make informed decisions efficiently.",
+  },
+  {
+    image: "arVrPage/ariot.png",
+    alt: "AR/VR in Retail",
+    title: "AR/VR in Retail",
+    content:
+      "AR and VR in retail revolutionize shopping experiences by enabling immersive product visualization, virtual try-ons, and interactive store environments, enhancing customer engagement, personalization, and driving higher sales conversions.",
   },
 ];
 
