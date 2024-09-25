@@ -23,9 +23,13 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center flex-grow">
               <div className="flex-shrink-0">
-                <img src={logo} alt="Logo" className="ml-5 h-14 w-12 mb-2" />
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="absolute sm:left-2 bottom-0 ml-5 h-14 w-12 mb-2"
+                />
               </div>
-              <div className="hidden text-center lg:flex flex-grow xl:justify-around 2xl:justify-around">
+              <div className="hidden text-center xl:flex flex-grow xl:justify-around 2xl:justify-around">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
                     href="#home"
