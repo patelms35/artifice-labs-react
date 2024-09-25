@@ -1,16 +1,26 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const Technologies = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className="py-24 px-6 md:px-16 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Title Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold">
+          <h2 className="text-3xl md:text-4xl font-bold" data-aos="fade-up" data-aos-delay="300" >
             What technologies will deliver the{" "}
             <span className="text-[#0B5EFF]">
               greatest value to your business?
             </span>
           </h2>
-          <p className="text-lg text-gray-700 mt-4">
+          <p className="text-lg text-gray-700 mt-4" data-aos="fade-up" data-aos-delay="400" >
             Address customer challenges by selecting advanced technologies for
             your tech stack. Elevate your business with customized solutions
             designed to meet your specific needs.
@@ -18,7 +28,7 @@ const Technologies = () => {
         </div>
 
         {/* Cards Section */}
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2" data-aos="fade-up" data-aos-delay="500" >
           {/* Card 1 - Construction */}
           <div className="bg-white p-6 max-w-lg shadow-md flex items-center">
             <img

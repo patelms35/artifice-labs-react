@@ -1,15 +1,25 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const Explanation = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className="py-16 px-6 md:px-16 bg-gray-50 text-left">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10" data-aos="fade-up" data-aos-delay="500" >
           Why choose <span className="text-[#0B5EFF]">Artifice Labs </span>for{" "}
           your application development needs?
         </h2>
 
         {/* Paragraph */}
-        <p className="text-lg text-gray-700 mb-16">
+        <p className="text-lg text-gray-700 mb-16" data-aos="fade-up" data-aos-delay="600">
           Whether you&apos;re an entrepreneur, start-up founder, or leader of a
           large organization, the success of your application will depend on
           meeting essential strategic objectives. Your ideal application
@@ -20,10 +30,10 @@ const Explanation = () => {
         </p>
 
         {/* Team Section */}
-        <h3 className="text-2xl md:text-3xl font-bold mb-6">
+        <h3 className="text-2xl md:text-3xl font-bold mb-6" data-aos="fade-up" data-aos-delay="700" >
           Application development team
         </h3>
-        <p className="text-lg text-gray-700 mb-16">
+        <p className="text-lg text-gray-700 mb-16" data-aos="fade-up" data-aos-delay="800" >
           Our team composition is customized to meet the unique demands of each
           project, with every member selected for their ability to add
           substantial value to your app&apos;s development. We have the
@@ -32,7 +42,7 @@ const Explanation = () => {
         </p>
 
         {/* Team Roles */}
-        <ul className="space-y-4">
+        <ul className="space-y-4" data-aos="fade-up" data-aos-delay="900" >
           <li className="flex items-start">
             <img
               src="/listSymbol.png"
