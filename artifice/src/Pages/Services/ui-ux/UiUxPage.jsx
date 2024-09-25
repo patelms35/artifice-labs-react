@@ -115,8 +115,7 @@ const Services = () => {
           {/* Cards */}
           <div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-center mb-16"
-            data-aos="fade-up"
-            data-aos-delay="600"
+            data-aos="zoom-in"
           >
             {/* Card 1 */}
             <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 max-w-lg mx-auto">
@@ -167,7 +166,7 @@ const Services = () => {
             <h2
               className="text-3xl md:text-3xl font-bold mb-6"
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="300"
             >
               Elevate your digital presence with a premier &nbsp;
               <span className="text-[#0B5EFF]">
@@ -178,7 +177,7 @@ const Services = () => {
             <p
               className="text-lg text-gray-700 mb-10"
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="400"
             >
               At{" "}
               <span className="text-[#0B5EFF] font-semibold">
@@ -190,7 +189,7 @@ const Services = () => {
             <ul
               className="text-md text-gray-700 space-y-2 mb-10"
               data-aos="fade-up"
-              data-aos-delay="400"
+              data-aos-delay="500"
             >
               <li className="flex flex-row items-start">
                 <img
@@ -257,7 +256,7 @@ const Services = () => {
             <p
               className="text-lg text-gray-700 mt-6"
               data-aos="fade-up"
-              data-aos-delay="500"
+              data-aos-delay="600"
             >
               <span className="font-extrabold">
                 A UI/UX design company&apos;s mission is to craft solutions that
