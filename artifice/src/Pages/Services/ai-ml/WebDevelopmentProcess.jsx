@@ -1,6 +1,12 @@
+import { Icons } from "../../../Orbit/icons";
+import { OrbitingCirclesDemo } from "../../../Orbit/magic";
+
 const WebDevelopmentProcess = () => {
+  const innerIcons = [Icons.whatsapp, Icons.notion];
+  console.log(innerIcons);
+  const outerIcons = [Icons.googleDrive, Icons.gitHub];
   return (
-    <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left">
+    <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left md:flex">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-bold leading-tight mt-14 mb-20">
@@ -17,6 +23,9 @@ const WebDevelopmentProcess = () => {
           the expertise needed to ensure a smooth and efficient web-based
           software development experience.
         </p>
+      </div>
+      <div>
+        <OrbitingCirclesDemo innerIcons={innerIcons}  outerIcons={outerIcons}/>
       </div>
     </section>
   );

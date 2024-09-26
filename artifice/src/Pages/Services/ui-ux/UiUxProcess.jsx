@@ -1,6 +1,11 @@
+import { Icons } from "../../../Orbit/icons";
+import { OrbitingCirclesDemo } from "../../../Orbit/magic";
+
 const UiUxProcess = () => {
+  const innerIcons = [Icons.framer, Icons.figma];
+  const outerIcons = [Icons.gitHub];
   return (
-    <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left">
+    <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left md:flex">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-bold leading-tight mt-14 mb-20" data-aos="fade-up"  data-aos-delay="300" >
@@ -18,6 +23,9 @@ const UiUxProcess = () => {
           and interface design that elevates the quality and functionality of
           your product.
         </p>
+      </div>
+      <div>
+        <OrbitingCirclesDemo innerIcons={innerIcons} outerIcons={outerIcons} />
       </div>
     </section>
   );
