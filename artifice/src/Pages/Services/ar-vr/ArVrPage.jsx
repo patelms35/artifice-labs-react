@@ -110,7 +110,11 @@ const Services = () => {
           >
             AR / VR Services
           </h1>
-          <p className="text-lg md:text-2xl mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="400" >
+          <p
+            className="text-lg md:text-2xl mb-8 leading-relaxed"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             We design and build cutting-edge AR/VR experiences that deliver
             <br />
             immersive value to your customers, enhanced with compelling user
@@ -134,12 +138,20 @@ const Services = () => {
       <section className="py-16 px-6 md:px-16 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10" data-aos="fade-up" data-aos-delay="200" >
+            <div
+              className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <span className="text-black">What are </span>
               <span className="text-[#0B5EFF]">AR / VR services?</span>
             </div>
 
-            <div className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10" data-aos="fade-up" data-aos-delay="300" >
+            <div
+              className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               AR/VR development encompasses a wide range of services, including
               delivering immersive AR/VR applications, spatial computing
               solutions, 3D content design, intuitive UX/UI for virtual
@@ -181,7 +193,9 @@ const Services = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="border border-gray-200 rounded-lg p-8 max-w-lg shadow-sm bg-white flex flex-col items-start transform mx-auto" data-aos="fade-up" >
+                className="border border-gray-200 rounded-lg p-8 max-w-lg shadow-sm bg-white flex flex-col items-start transform mx-auto"
+                data-aos="fade-up"
+              >
                 <div className="flex justify-between items-center w-full mb-4">
                   <h1 className="text-xl font-semibold text-gray-800">
                     {card.title}
@@ -205,7 +219,7 @@ const Services = () => {
       <section className="py-24 px-6 md:px-16 mt-10">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
           {/* Image */}
-          <div className="lg:w-1/2" data-aos="fade-right" >
+          <div className="lg:w-1/2" data-aos="fade-right">
             <img
               src="/ar-card.jpg"
               alt="Laptops"
@@ -215,14 +229,22 @@ const Services = () => {
 
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
-            <h2 className="text-3xl md:text-3xl font-bold mb-6" data-aos="fade-up" data-aos-delay="300" >
+            <h2
+              className="text-3xl md:text-3xl font-bold mb-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               Enhance your digital presence with a leading {""}
               <span className="text-[#0B5EFF]">
                 AR/VR service provider, delivering innovative, immersive
                 solutions with unmatched user-centric design.
               </span>
             </h2>
-            <p className="text-lg text-gray-700 mb-10" data-aos="fade-up" data-aos-delay="400" >
+            <p
+              className="text-lg text-gray-700 mb-10"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               At{" "}
               <span className="text-[#0B5EFF] font-semibold">
                 Artifice Labs
@@ -231,7 +253,11 @@ const Services = () => {
               help you create fully-featured immersive experiences, tailored to
               your specific needs and goals.
             </p>
-            <p className="text-lg text-gray-700 mt-6" data-aos="fade-up" data-aos-delay="500" >
+            <p
+              className="text-lg text-gray-700 mt-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <span className="font-extrabold">
                 An AR/VR development company&apos;s mission is to identify and
                 implement immersive solutions that align with a client&apos;s

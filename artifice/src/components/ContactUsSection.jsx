@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useForm } from "react-hook-form";
 import contactUs from "../assets/Get-in-touch.png";
 import MainHeading from "./MainHeading";
@@ -9,8 +10,28 @@ const ContactUsSection = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    const formattedData = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      message: data.message,
+    };
+
+    try {
+      const response = await axios.post(
+        "https://api.artificelabs.com/v1/inquiry",
+        formattedData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Response:", response.data);
+    } catch (error) {
+      console.error("There was an error!", error);
+    }
   };
 
   return (
@@ -19,7 +40,8 @@ const ContactUsSection = () => {
       <div className="container mt-20 mb-32 mx-auto px-4 md:gap-32  flex flex-col-reverse md:flex-row items-center justify-between">
         <div
           className="md:w-1/2 w-11/12 bg-white p-10 rounded-lg shadow-md"
-          data-aos="fade-up" data-aos-delay="200"
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           <h2 className="text-3xl font-bold mb-6 text-center text-[#106eea] ">
             Get in touch
@@ -123,7 +145,8 @@ const ContactUsSection = () => {
 
         <div
           className="md:w-1/2 mt-8 md:mt-0 flex justify-center"
-        data-aos="fade-up" data-aos-delay="400"
+          data-aos="fade-up"
+          data-aos-delay="400"
         >
           <img
             src={contactUs}

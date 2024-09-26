@@ -11,21 +11,21 @@ const WebDevelopmentProcess = () => {
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-bold leading-tight mt-14 mb-20">
           <span className="text-[#0B5EFF]">
-            Leverage our established web development <br /> process&nbsp;
+            Leverage our proven AI/ML development process{" "}
           </span>
-          to ensure the success of your project.
+          to ensure the success of your project with innovative, data-driven
+          solutions.
         </h2>
         {/* Description */}
         <p className="text-lg text-gray-700 w-3/4">
-          We understand that the most intricate projects require meticulous
-          attention to every detail throughout the web development process. With
-          over 1000 projects successfully delivered at Artifice labs , we have
-          the expertise needed to ensure a smooth and efficient web-based
-          software development experience.
+          We understand that the most intricate AI/ML projects require
+          meticulous attention to every detail throughout the development
+          process. With our expertise, we ensure a smooth and efficient AI/ML
+          solution development experience.
         </p>
       </div>
       <div>
-        <OrbitingCirclesDemo innerIcons={innerIcons}  outerIcons={outerIcons}/>
+        <OrbitingCirclesDemo innerIcons={innerIcons} outerIcons={outerIcons} />
       </div>
     </section>
   );

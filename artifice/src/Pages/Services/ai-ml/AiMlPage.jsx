@@ -2,9 +2,54 @@ import { useEffect, useRef } from "react";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
-import Explanation from "./Explanation";
-import Technologies from "./Technologies";
-import WebDevelopmentProcess from "./WebDevelopmentProcess";
+import AiMlExplanation from "./AiMlExplanation";
+import AiMlProcess from "./AiMlProcess";
+import AiMlTechnologies from "./AiMlTechnologies";
+
+const cards = [
+  {
+    title: "Understanding Your Business",
+    image: "/aimlpage/aibusiness.png",
+    alt: "understanding your business",
+    content: [
+      "Exploring business needs and challenges",
+      "Collecting stakeholder requirements",
+      "Defining the scope of work",
+    ],
+  },
+  {
+    title: "Data Acquisition & Analysis",
+    image: "/aimlpage/aidataanalysis.png",
+    alt: "Data Acquisition & Analysis",
+    content: [
+      "Selecting data source: on-premises or cloud",
+      "Building data pipelines",
+      "Choosing an environment for data acquisition",
+      "Data wrangling and exploratory data analysis",
+    ],
+  },
+  {
+    title: "Creating a Machine-Learning Model",
+    image: "/aimlpage/aimodeldeployment.png",
+    alt: "Creating a Machine-Learning Model",
+    content: [
+      "Feature engineering: creating data features from the raw data",
+      "Model training: choosing the most suitable model",
+      "Model evaluation: assessing the machine learning model efficiency",
+    ],
+  },
+  {
+    title: "Model Deployment",
+    image: "/aimlpage/aimodeldeployment.png",
+    alt: "Model Deployment",
+    content: [
+      "Scoring: applying the trained model to a new dataset",
+      "Performance: measuring the model performance",
+      "Monitoring: tracking the performance of ML models in production",
+      "Post-project support",
+    ],
+  },
+];
 
 const Services = () => {
   useEffect(() => {
@@ -29,7 +74,7 @@ const Services = () => {
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-            Web Development Services
+            AI / ML Services
           </h1>
           <p className="text-lg md:text-2xl mb-8 leading-relaxed">
             We design and build industry-leading web-based products that bring
@@ -47,91 +92,57 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Web Development Services */}
-      <section className="py-16 px-6 md:px-16 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10">
-              <span className="text-black">What are </span>
-              <span className="text-[#0B5EFF]">web development services?</span>
-            </div>
-
-            <div className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10">
-              Web development encompasses a wide range of services, which
-              include delivering websites or web apps, cybersecurity solutions,
-              UX/UI design, eCommerce solutions, website architectures, QA
-              testing, maintenance, consulting, and even a custom CMS.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section - Achieve your business goals */}
+      {/* AI / ML Services */}
       <section className="py-24 px-6 md:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24">
-            <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-20">
+            <h2
+              className="text-3xl md:text-4xl font-bold lg:w-1/2"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               Achieve your business goals{" "}
-              <span className="text-[#0B5EFF]">
-                with web development solutions
-              </span>
+              <span className="text-[#0B5EFF]">with AI / ML solutions</span>
             </h2>
-            <p className="text-lg text-gray-700 lg:w-1/2">
-              Our battle-tested developers specialize in a wide range of web
-              development services. Here are some of the solutions that we can
-              deliver for you.
+            <p
+              className="text-lg text-gray-700 lg:w-1/2"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              Our battle-tested AI/ML experts specialize in a wide range of
+              services. Here are some of the innovative solutions we can deliver
+              for you.
             </p>
           </div>
 
           {/* Cards */}
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-16">
-            {/* Card 1 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14">
-              <img src="/globe.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Websites.&nbsp;
-                </span>
-                A well-designed website is a powerful marketing and
-                communication tool that helps build trust and generate leads.
-              </p>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 lg:mt-0">
-              <img src="/ecommerce.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Ecommerce.&nbsp;
-                </span>
-                With eCommerce solutions, businesses can operate 24/7 and reach
-                customers in any time zone.
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14">
-              <img src="/webapp.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Web Applications.&nbsp;
-                </span>
-                Web applications can reach a global audience. They are
-                interactive and engaging, holding users&apos; attention.
-              </p>
-            </div>
-
-            {/* Card 4 */}
-            <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform lg:mt-0 pb-14">
-              <img src="/cms.png" className="pb-6" />
-              <p className="text-gray-700">
-                <span className="text-xl font-bold mb-2 text-[#0B5EFF]">
-                  Content Management System.&nbsp;
-                </span>
-                A dedicated CMS designed to meet your business&apos;s needs by
-                optimizing internal workflows.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-center mb-10">
+            {cards.map((card, index) => (
+              <div
+                key={index}
+                className="border border-gray-200 rounded-lg p-8 max-w-lg bg-white flex flex-col items-start space-y-6"
+                data-aos="fade-up"
+              >
+                <div className="flex justify-between items-center w-full mb-6">
+                  <h1 className="text-xl mr-10 font-semibold text-gray-800">
+                    {card.title}
+                  </h1>
+                  <img
+                    src={card.image}
+                    alt={card.alt}
+                    className="h-12 w-12 object-contain"
+                  />
+                </div>
+                <ul className="list-none text-gray-600 text-sm leading-relaxed space-y-4">
+                  {card.content.map((item, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <span className="h-2 w-2 mt-1 mr-3 rounded-full border border-blue-400"></span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -151,15 +162,16 @@ const Services = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Elevate your digital presence with a top-tier <br />
+              Elevate your digital with a top-tier{" "}
               <span className="text-[#0B5EFF]">
-                web development company that stands out from the rest.
+                AI/ML solutions that set you apart, driving innovation and
+                delivering exceptional results.
               </span>
             </h2>
             <p className="text-lg text-gray-700 mb-10">
               At <span className="text-[#0B5EFF]">Artifice Labs</span>, we
-              provide a complete range of web development services to help you
-              create a fully-featured web-based product, including:
+              provide a complete range of AI/ML services to help you create
+              fully-featured, intelligent web-based products.
             </p>
 
             <ul className="text-lg text-gray-700 space-y-2 mb-10">
@@ -169,7 +181,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Website Development
+                Predictive Analytics - Deliver insights that forecast trends and
+                drive data-driven decisions.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -177,7 +190,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                Web Application Development
+                Natural Language Processing (NLP) - Enhance communication with
+                AI-powered chatbots and language models.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -185,7 +199,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                eCommerce Solutions Development
+                Computer Vision - Enable real-time image and video recognition
+                for automation and analysis.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -193,7 +208,8 @@ const Services = () => {
                   className="mt-1.5 mr-2"
                   alt="list symbol"
                 />
-                No-code & Low-code Development
+                Recommendation Systems - Provide personalized content and
+                product recommendations to boost user engagement.
               </li>
               <li className="flex flex-row items-start">
                 <img
@@ -215,25 +231,26 @@ const Services = () => {
 
             <p className="text-lg text-gray-700 mt-6">
               <span className="font-extrabold">
-                A web development company&apos;s mission is to identify and
-                implement solutions that align with a client&apos;s specific
+                An AI/ML company&apos;s mission is to identify and implement
+                intelligent solutions that align with a client&apos;s specific
                 business objectives.
               </span>{" "}
-              With the right services, you can create a successful product from
-              the ground up or enhance the performance of an existing one.
+              With the right AI/ML services, you can develop innovative products
+              from the ground up or optimize the performance of existing ones
+              using data-driven insights.
             </p>
           </div>
         </div>
       </section>
 
       {/* Technologies */}
-      <Technologies />
+      <AiMlTechnologies />
 
       {/* Web Development Process */}
-      <WebDevelopmentProcess />
+      <AiMlProcess />
 
       {/* Explanation */}
-      <Explanation />
+      <AiMlExplanation />
 
       {/* Contact Us */}
       <div ref={contactRef}>

@@ -43,7 +43,7 @@ const OurWorks = () => {
       imgSrc: "/web-dev-work.png",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem.",
-      link: "#", // Link for the project
+      link: "#",
     },
     2: {
       title: "Application Development",
