@@ -26,7 +26,7 @@ const NavbarOurWorks = () => {
           </div>
 
           {/* Centered Links */}
-          <div className="flex-grow">
+          <div className="flex-grow hidden xl:block">
             <div className="flex justify-center space-x-8">
               <a
                 href="#home"
@@ -63,7 +63,7 @@ const NavbarOurWorks = () => {
           </div>
 
           {/* Contact Us Button on the right */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 hidden xl:block">
             <a href="#contact" className="inline-block">
               <ContactSvgOurWorks />
             </a>
