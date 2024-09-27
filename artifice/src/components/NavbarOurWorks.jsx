@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ContactSvgOurWorks from "./ContactSvgOurWorks";
 import Sidebar from "./Sidebar";
-import logo from "/arBlue.png";
+import logo from "/arBlue.png"; // adjust your logo path as needed
 
 const NavbarOurWorks = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const navigate = useNavigate();
 
   const navigateHome = () => {
@@ -18,120 +18,87 @@ const NavbarOurWorks = () => {
 
   return (
     <>
-      <nav className="absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-600 bg-gray-800 bg-opacity-10 backdrop-blur-lg 2xl:w-[90%]">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center flex-grow">
-              <div className="flex-shrink-0">
-                <img
-                  src={logo}
-                  alt="Logo"
-                  className="ml-5 m-auto h-10 w-12 mb-2"
-                />
-              </div>
-              <div className="hidden lg:flex flex-grow xl:justify-start xl:ml-20 2xl:justify-around">
-                <div className="ml-10 mt-2 flex items-baseline space-x-4">
-                  <a
-                    href="#home"
-                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                    onClick={navigateHome}
-                  >
-                    Home
-                  </a>
-                  <a
-                    href="/#about"
-                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                  >
-                    About Us
-                  </a>
-                  <a
-                    href="/#works"
-                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                  >
-                    Our Works
-                  </a>
-                  <a
-                    href="/#services"
-                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                  >
-                    Services
-                  </a>
-                  <a
-                    href="/#mission"
-                    className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
-                  >
-                    Mission & Vision
-                  </a>
-                </div>
-              </div>
-            </div>
+      <nav className="absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500 bg-gray-800 bg-opacity-10 backdrop-blur-lg 2xl:w-[90%]">
+        <div className="flex justify-between items-center w-full h-16">
+          {/* Logo on the left */}
+          <div className="flex-shrink-0 ml-5">
+            <img src={logo} alt="Logo" className="h-8 w-10" />
+          </div>
 
-            {/* Contact Us Button */}
-            <div className="hidden xl:block absolute right-0 translate-y-1">
-              <a href="/#contact" className="inline-block">
-                <svg
-                  width="220"
-                  height="65"
-                  viewBox="0 0 260 74"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-full"
-                >
-                  <rect
-                    width="260"
-                    height="74"
-                    rx="37"
-                    fill="black"
-                    fillOpacity="0.26"
-                  />
-                  <circle cx="224" cy="37" r="32" fill="black" />
-                  <rect x="202" y="15" width="44" height="44" fill="black" />
-                  <path
-                    d="M213.487 47.7002L234.7 26.4873M234.7 26.4873L234.701 41.461M234.7 26.4873L219.725 26.4879"
-                    stroke="white"
-                    strokeWidth="4.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M36.77 36.3C36.77 34.7893 37.1073 33.44 37.782 32.252C38.4713 31.0493 39.4027 30.118 40.576 29.458C41.764 28.7833 43.0913 28.446 44.558 28.446C46.274 28.446 47.7773 28.886 49.068 29.766C50.3587 30.646 51.2607 31.8633 51.774 33.418H48.232C47.88 32.6847 47.3813 32.1347 46.736 31.768C46.1053 31.4013 45.372 31.218 44.536 31.218C43.6413 31.218 42.842 31.4307 42.138 31.856C41.4487 32.2667 40.906 32.8533 40.51 33.616C40.1287 34.3787 39.938 35.2733 39.938 36.3C39.938 37.312 40.1287 38.2067 40.51 38.984C40.906 39.7467 41.4487 40.3407 42.138 40.766C42.842 41.1767 43.6413 41.382 44.536 41.382C45.372 41.382 46.1053 41.1987 46.736 40.832C47.3813 40.4507 47.88 39.8933 48.232 39.16H51.774C51.2607 40.7293 50.3587 41.954 49.068 42.834C47.792 43.6993 46.2887 44.132 44.558 44.132C43.0913 44.132 41.764 43.802 40.576 43.142C39.4027 42.4673 38.4713 41.536 37.782 40.348C37.1073 39.16 36.77 37.8107 36.77 36.3ZM59.8167 44.198C58.6434 44.198 57.5874 43.9413 56.6487 43.428C55.7101 42.9 54.9694 42.1593 54.4267 41.206C53.8987 40.2527 53.6347 39.1527 53.6347 37.906C53.6347 36.6593 53.9061 35.5593 54.4487 34.606C55.0061 33.6527 55.7614 32.9193 56.7147 32.406C57.6681 31.878 58.7314 31.614 59.9047 31.614C61.0781 31.614 62.1414 31.878 63.0947 32.406C64.0481 32.9193 64.7961 33.6527 65.3387 34.606C65.8961 35.5593 66.1747 36.6593 66.1747 37.906C66.1747 39.1527 65.8887 40.2527 65.3167 41.206C64.7594 42.1593 63.9967 42.9 63.0287 43.428C62.0754 43.9413 61.0047 44.198 59.8167 44.198ZM59.8167 41.514C60.3741 41.514 60.8947 41.382 61.3787 41.118C61.8774 40.8393 62.2734 40.4287 62.5667 39.886C62.8601 39.3433 63.0067 38.6833 63.0067 37.906C63.0067 36.7473 62.6987 35.86 62.0827 35.244C61.4814 34.6133 60.7407 34.298 59.8607 34.298C58.9807 34.298 58.2401 34.6133 57.6387 35.244C57.0521 35.86 56.7587 36.7473 56.7587 37.906C56.7587 39.0647 57.0447 39.9593 57.6167 40.59C58.2034 41.206 58.9367 41.514 59.8167 41.514ZM75.188 31.636C76.64 31.636 77.8133 32.098 78.708 33.022C79.6027 33.9313 80.05 35.2073 80.05 36.85V44H76.97V37.268C76.97 36.3 76.728 35.5593 76.244 35.046C75.76 34.518 75.1 34.254 74.264 34.254C73.4133 34.254 72.7387 34.518 72.24 35.046C71.756 35.5593 71.514 36.3 71.514 37.268V44H68.434V31.812H71.514V33.33C71.9247 32.802 72.4453 32.3913 73.076 32.098C73.7213 31.79 74.4253 31.636 75.188 31.636ZM86.5649 34.342V40.238C86.5649 40.6487 86.6603 40.9493 86.8509 41.14C87.0563 41.316 87.3936 41.404 87.8629 41.404H89.2929V44H87.3569C84.7609 44 83.4629 42.7387 83.4629 40.216V34.342H82.0109V31.812H83.4629V28.798H86.5649V31.812H89.2929V34.342H86.5649ZM90.7162 37.862C90.7162 36.63 90.9582 35.5373 91.4422 34.584C91.9409 33.6307 92.6082 32.8973 93.4442 32.384C94.2949 31.8707 95.2409 31.614 96.2822 31.614C97.1916 31.614 97.9836 31.7973 98.6582 32.164C99.3476 32.5307 99.8976 32.9927 100.308 33.55V31.812H103.41V44H100.308V42.218C99.9122 42.79 99.3622 43.2667 98.6582 43.648C97.9689 44.0147 97.1696 44.198 96.2602 44.198C95.2336 44.198 94.2949 43.934 93.4442 43.406C92.6082 42.878 91.9409 42.1373 91.4422 41.184C90.9582 40.216 90.7162 39.1087 90.7162 37.862ZM100.308 37.906C100.308 37.158 100.162 36.52 99.8682 35.992C99.5749 35.4493 99.1789 35.0387 98.6802 34.76C98.1816 34.4667 97.6462 34.32 97.0742 34.32C96.5022 34.32 95.9742 34.4593 95.4902 34.738C95.0062 35.0167 94.6102 35.4273 94.3022 35.97C94.0089 36.498 93.8622 37.1287 93.8622 37.862C93.8622 38.5953 94.0089 39.2407 94.3022 39.798C94.6102 40.3407 95.0062 40.7587 95.4902 41.052C95.9889 41.3453 96.5169 41.492 97.0742 41.492C97.6462 41.492 98.1816 41.3527 98.6802 41.074C99.1789 40.7807 99.5749 40.37 99.8682 39.842C100.162 39.2993 100.308 38.654 100.308 37.906ZM105.626 37.906C105.626 36.6447 105.883 35.5447 106.396 34.606C106.91 33.6527 107.621 32.9193 108.53 32.406C109.44 31.878 110.481 31.614 111.654 31.614C113.165 31.614 114.412 31.9953 115.394 32.758C116.392 33.506 117.059 34.562 117.396 35.926H114.074C113.898 35.398 113.598 34.9873 113.172 34.694C112.762 34.386 112.248 34.232 111.632 34.232C110.752 34.232 110.056 34.5547 109.542 35.2C109.029 35.8307 108.772 36.7327 108.772 37.906C108.772 39.0647 109.029 39.9667 109.542 40.612C110.056 41.2427 110.752 41.558 111.632 41.558C112.879 41.558 113.693 41.0007 114.074 39.886H117.396C117.059 41.206 116.392 42.2547 115.394 43.032C114.397 43.8093 113.15 44.198 111.654 44.198C110.481 44.198 109.44 43.9413 108.53 43.428C107.621 42.9 106.91 42.1667 106.396 41.228C105.883 40.2747 105.626 39.1673 105.626 37.906ZM123.239 34.342V40.238C123.239 40.6487 123.334 40.9493 123.525 41.14C123.73 41.316 124.067 41.404 124.537 41.404H125.967V44H124.031C121.435 44 120.137 42.7387 120.137 40.216V34.342H118.685V31.812H120.137V28.798H123.239V31.812H125.967V34.342H123.239ZM136.46 28.644V38.148C136.46 39.1893 136.732 39.9887 137.274 40.546C137.817 41.0887 138.58 41.36 139.562 41.36C140.56 41.36 141.33 41.0887 141.872 40.546C142.415 39.9887 142.686 39.1893 142.686 38.148V28.644H145.788V38.126C145.788 39.4313 145.502 40.5387 144.93 41.448C144.373 42.3427 143.618 43.0173 142.664 43.472C141.726 43.9267 140.677 44.154 139.518 44.154C138.374 44.154 137.333 43.9267 136.394 43.472C135.47 43.0173 134.737 42.3427 134.194 41.448C133.652 40.5387 133.38 39.4313 133.38 38.126V28.644H136.46ZM153.428 44.198C152.431 44.198 151.536 44.022 150.744 43.67C149.952 43.3033 149.321 42.812 148.852 42.196C148.397 41.58 148.148 40.898 148.104 40.15H151.206C151.265 40.6193 151.492 41.008 151.888 41.316C152.299 41.624 152.805 41.778 153.406 41.778C153.993 41.778 154.447 41.6607 154.77 41.426C155.107 41.1913 155.276 40.8907 155.276 40.524C155.276 40.128 155.071 39.8347 154.66 39.644C154.264 39.4387 153.626 39.2187 152.746 38.984C151.837 38.764 151.089 38.5367 150.502 38.302C149.93 38.0673 149.431 37.708 149.006 37.224C148.595 36.74 148.39 36.0873 148.39 35.266C148.39 34.5913 148.581 33.9753 148.962 33.418C149.358 32.8607 149.915 32.4207 150.634 32.098C151.367 31.7753 152.225 31.614 153.208 31.614C154.66 31.614 155.819 31.9807 156.684 32.714C157.549 33.4327 158.026 34.408 158.114 35.64H155.166C155.122 35.156 154.917 34.7747 154.55 34.496C154.198 34.2027 153.721 34.056 153.12 34.056C152.563 34.056 152.13 34.1587 151.822 34.364C151.529 34.5693 151.382 34.8553 151.382 35.222C151.382 35.6327 151.587 35.948 151.998 36.168C152.409 36.3733 153.047 36.586 153.912 36.806C154.792 37.026 155.518 37.2533 156.09 37.488C156.662 37.7227 157.153 38.0893 157.564 38.588C157.989 39.072 158.209 39.7173 158.224 40.524C158.224 41.228 158.026 41.8587 157.63 42.416C157.249 42.9733 156.691 43.4133 155.958 43.736C155.239 44.044 154.396 44.198 153.428 44.198Z"
-                    fill="white"
-                    className="md:text-sm lg:text-base"
-                  />
-                </svg>
+          {/* Centered Links */}
+          <div className="flex-grow">
+            <div className="flex justify-center space-x-8">
+              <a
+                href="#home"
+                className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                onClick={navigateHome}
+              >
+                Home
+              </a>
+              <a
+                href="#about"
+                className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+              >
+                About Us
+              </a>
+              <a
+                href="#works"
+                className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+              >
+                Our Works
+              </a>
+              <a
+                href="#services"
+                className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+              >
+                Services
+              </a>
+              <a
+                href="#mission"
+                className="text-black hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+              >
+                Mission & Vision
               </a>
             </div>
+          </div>
 
-            <div className="block md:block xl:hidden">
-              <button
-                onClick={toggleSidebar}
-                type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-black focus:outline-none"
+          {/* Contact Us Button on the right */}
+          <div className="flex-shrink-0">
+            <a href="#contact" className="inline-block">
+              <ContactSvgOurWorks />
+            </a>
+          </div>
+
+          {/* Sidebar Toggle for mobile view */}
+          <div className="block xl:hidden">
+            <button
+              onClick={toggleSidebar}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-black focus:outline-none"
+            >
+              <svg
+                className="h-6 w-6"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  className="h-6 w-6"
-                  stroke="currentColor"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  {menuOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    />
-                  )}
-                </svg>
-              </button>
-            </div>
+                {menuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                )}
+              </svg>
+            </button>
           </div>
         </div>
       </nav>
