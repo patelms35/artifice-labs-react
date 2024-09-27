@@ -58,8 +58,8 @@ const Services = () => {
       <section className="py-16 px-6 md:px-16 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10" data-aos="fade-up" data-aos-delay="300" >
-              <span className="text-black">What are </span>
+            <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10">
+              <span className="text-black">What are</span>
               <span className="text-[#0B5EFF]">
                 Application Development services?
               </span>
@@ -159,7 +159,9 @@ const Services = () => {
                 className="pb-6"
                 alt="Mobile app design"
               />
-              <h1 className="text-xl font-bold">IOS App Development</h1>
+              <h1 className="text-xl font-bold">
+                iPhone Mobile App Development
+              </h1>
               <p className="text-[#AFAFAF]">
                 Our cross-platform mobile app development services design
                 cutting-edge and future-ready applications that maximize

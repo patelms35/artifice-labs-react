@@ -3,7 +3,7 @@ import { OrbitingCirclesDemo } from "../../../Orbit/magic";
 
 const UiUxProcess = () => {
   const innerIcons = [Icons.framer, Icons.figma];
-  const outerIcons = [Icons.gitHub];
+  const outerIcons = [Icons.adobe, Icons.sketch,Icons.miro];
   return (
     <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left md:flex">
       <div className="max-w-7xl mx-auto">

@@ -99,3 +99,16 @@
 .wrapper .facebook:hover .tooltip::before {
   background: #1877f2;
 }
+
+
+/* YouTube hover styles */
+.wrapper .youtube:hover {
+  background: #FF0000;
+  color: #fff;
+}
+
+/* youtube Tooltip hover */
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #FF0000;
+}
