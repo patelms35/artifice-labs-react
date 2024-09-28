@@ -19,8 +19,8 @@ const OurWorks = () => {
   const cardData = [
     {
       id: 1,
-      title: "Web Development",
-      imgSrc: "/web-dev-work.png",
+      title: "UI / UX Design",
+      imgSrc: "/Trip-Planner.png",
       paragraph: "Amazon.in",
     },
     {
@@ -86,7 +86,7 @@ const OurWorks = () => {
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="max-w-[380px] bg-white rounded-lg overflow-hidden hover:shadow-2xl border-2 transition-all cursor-pointer"
+            className="max-w-[380px] bg-white rounded-lg overflow-hidden hover:shadow-2xl border-2 hover:transition-all transition-all cursor-pointer"
             onClick={() => openModal(card.id)}
           >
             <img className="w-full" src={card.imgSrc} alt={card.title} />
