@@ -20,8 +20,8 @@ const OurWorks = () => {
     {
       id: 1,
       title: "UI / UX Design",
-      imgSrc: "/Trip-Planner.png",
-      paragraph: "Amazon.in",
+      imgSrc: "/trip.png",
+      paragraph: "Near Me",
     },
     {
       id: 2,
@@ -45,10 +45,10 @@ const OurWorks = () => {
 
   const modalData = {
     1: {
-      title: "Web Development",
-      imgSrc: "/web-dev-work.png",
+      title: "UI / UX Design",
+      imgSrc: "/Trip-Planner.png",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem.",
+        "At Artifice Labs, we recently created the UI/UX design for an AI-powered travel app that aims to transform the travel experience. The design emphasizes user-friendly navigation and provides easy access to personalized travel recommendations, streamlined itinerary planning, and real-time updates. With a focus on intuitive interaction and visual appeal, the app's interface is crafted to make it simple for users to explore flights, accommodations, and local attractions, delivering a seamless and enjoyable experience. This design showcases our expertise in creating innovative and user-centric solutions.",
     },
     2: {
       title: "Augmented Reality Merge Cube",
