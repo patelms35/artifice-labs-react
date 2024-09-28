@@ -88,7 +88,7 @@ const ServicesSection = () => {
   return (
     <div
       id="services"
-      className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] h-screen mt-[4rem]"
+      className="w-full md:w-3/4 mx-auto py-16 bg-[#F6F9FE] h-screen mt-[4rem] md:mb-[9rem]"
     >
       <div className="text-center mb-12">
         <MainHeading title="Services" backgroundTitle="Services" />

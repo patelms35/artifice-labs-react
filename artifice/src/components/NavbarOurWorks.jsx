@@ -18,7 +18,7 @@ const NavbarOurWorks = () => {
 
   return (
     <>
-      <nav className="absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-50 transition-transform duration-300 rounded-full shadow-lg border border-gray-500 bg-gray-800 bg-opacity-10 backdrop-blur-lg 2xl:w-[90%]">
+      <nav className="absolute top-10 left-1/2 transform -translate-x-1/2 w-[85%] lg:w-[70%] z-30 transition-transform duration-300 rounded-full shadow-lg border border-gray-500 bg-gray-800 bg-opacity-10 backdrop-blur-lg 2xl:w-[90%]">
         <div className="flex justify-between items-center w-full h-16">
           {/* Logo on the left */}
           <div className="flex-shrink-0 ml-5">
