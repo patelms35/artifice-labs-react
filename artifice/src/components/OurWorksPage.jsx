@@ -3,24 +3,29 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Modal from "react-modal";
 import NavbarOurWorks from "./NavbarOurWorks.jsx";
+import "./ourworks.css";
 
 const OurWorks = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState({
     title: "",
     imgSrc: "",
     description: "",
-    link: "", // New property to hold the link
+    link: "",
   });
+
+  const [filter, setFilter] = useState("All");
+  const [currentTagIndex, setCurrentTagIndex] = useState(0);
 
   const cardData = [
     {
       id: 1,
       title: "UI / UX Design",
-      imgSrc: "/trip.png",
+      imgSrc: "/Trip-Planner.png",
       paragraph: "Near Me",
     },
     {
@@ -41,14 +46,20 @@ const OurWorks = () => {
       imgSrc: "/ai-ml-work.png",
       paragraph: "Cable TV and Broadband Billing system",
     },
+    {
+      id: 5,
+      title: "Web Development",
+      imgSrc: "/ai-ml-work.png",
+      paragraph: "Dynamic Role based access Panel",
+    },
   ];
 
   const modalData = {
     1: {
-      title: "UI / UX Design",
-      imgSrc: "/Trip-Planner.png",
+      title: "Web Development",
+      imgSrc: "/web-dev-work.png",
       description:
-        "At Artifice Labs, we recently created the UI/UX design for an AI-powered travel app that aims to transform the travel experience. The design emphasizes user-friendly navigation and provides easy access to personalized travel recommendations, streamlined itinerary planning, and real-time updates. With a focus on intuitive interaction and visual appeal, the app's interface is crafted to make it simple for users to explore flights, accommodations, and local attractions, delivering a seamless and enjoyable experience. This design showcases our expertise in creating innovative and user-centric solutions.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem.",
     },
     2: {
       title: "Augmented Reality Merge Cube",
@@ -68,6 +79,12 @@ const OurWorks = () => {
       description:
         "The system supports both Gujarati and English languages, providing user-friendly access. It includes a role-based access control module for Superadmin, admin, and regular users. Bills are generated according to predefined packages, with automated reminders for payments and renewals. The platform also manages complaints for helpers and office-related issues, ensuring efficient resolution. Additionally, it tracks extra expenses and income for accessories or services, giving users a comprehensive financial overview. This ensures streamlined user management and efficient financial handling.",
     },
+    5: {
+      title: "Dynamic Role based access Panel",
+      imgSrc: "/ai-ml-work.png",
+      description:
+        "Develop a dynamic role-based access control panel with multi-role creation and customizable permissions. Features include domain-based panel access, super admin control for comprehensive user management, and support for various login methods. Assign users to one or more branches with tailored access rights, ensuring flexible, secure, and scalable user and role management across different organizational branches.",
+    },
   };
 
   const openModal = (id) => {
@@ -77,6 +94,25 @@ const OurWorks = () => {
 
   const closeModal = () => {
     setIsOpen(false);
+  };
+
+  const filteredCardData =
+    filter === "All"
+      ? cardData
+      : cardData.filter((card) => card.title === filter);
+
+  const filterTags = ["All", ...new Set(cardData.map((card) => card.title))];
+
+  const nextTag = () => {
+    setCurrentTagIndex((prevIndex) =>
+      prevIndex === filterTags.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const previousTag = () => {
+    setCurrentTagIndex((prevIndex) =>
+      prevIndex === 0 ? filterTags.length - 1 : prevIndex - 1
+    );
   };
 
   return (
@@ -90,20 +126,69 @@ const OurWorks = () => {
         Project Done By Artifice Labs
       </h2>
 
-      <div className="flex justify-center w-full px-4">
+      {/* Filter Tags */}
+      <div className="flex justify-center mb-6 px-4 sm:px-0">
+        <div className="w-full max-w-screen-lg flex items-center space-x-2">
+          <button
+            className="md:hidden px-2 py-1 bg-blue-500 text-white rounded"
+            onClick={previousTag}
+          >
+            &lt;
+          </button>
+
+          <div className="flex w-full justify-center items-center sm:hidden">
+            <button
+              onClick={() => setFilter(filterTags[currentTagIndex])}
+              className={`flex-shrink-0 px-4 py-2 rounded ${
+                filter === filterTags[currentTagIndex]
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-200 text-gray-800"
+              }`}
+            >
+              {filterTags[currentTagIndex]}
+            </button>
+          </div>
+
+          <div className="hidden sm:flex w-full justify-center space-x-4">
+            {filterTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => setFilter(tag)}
+                className={`px-4 py-2 rounded ${
+                  filter === tag
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-gray-800"
+                }`}
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
+
+          <button
+            className="md:hidden px-2 py-1 bg-blue-500 text-white rounded"
+            onClick={nextTag}
+          >
+            &gt;
+          </button>
+        </div>
+      </div>
+
+      {/* Cards Container */}
+      <div className="flex justify-center items-center px-4">
         <div
-          className="w-full max-w-screen-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-20"
+          className="w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-10 gap-x-10 mx-auto"
           data-aos="fade-up"
         >
-          {cardData.map((card) => (
+          {filteredCardData.map((card) => (
             <div
               key={card.id}
-              className="bg-white w-[350px] mx-auto rounded-lg overflow-hidden hover:shadow-2xl border hover:transition-all transition-all cursor-pointer"
+              className="bg-white w-[350px] lg:w-[450px] mx-auto rounded-lg overflow-hidden hover:shadow-2xl border hover:transition-all transition-all cursor-pointer"
               onClick={() => openModal(card.id)}
             >
               <div className="p-4">
                 <img
-                  className="w-full h-[150px] sm:h-[200px] object-cover rounded-lg"
+                  className="w-full h-[150px] sm:h-[240px] object-cover rounded-lg"
                   src={card.imgSrc}
                   alt={card.title}
                 />
