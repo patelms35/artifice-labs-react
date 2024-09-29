@@ -1,6 +1,11 @@
+import { Icons } from "../../../Orbit/icons";
+import { OrbitingCirclesDemo } from "../../../Orbit/magic";
+
 const WebDevelopmentProcess = () => {
+  const innerIcons = [Icons.html,Icons.css,Icons.js,Icons.framer,Icons.php];
+  const outerIcons = [Icons.react,Icons.tailwind,Icons.node,Icons.framer,Icons.gitHub];
   return (
-    <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left">
+    <section className="py-16 px-6 md:px-16 mb-10 bg-white md:flex text-left">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <h2
@@ -25,6 +30,9 @@ const WebDevelopmentProcess = () => {
           the expertise needed to ensure a smooth and efficient web-based
           software development experience.
         </p>
+      </div>
+      <div>
+        <OrbitingCirclesDemo innerIcons={innerIcons} outerIcons={outerIcons} />
       </div>
     </section>
   );
