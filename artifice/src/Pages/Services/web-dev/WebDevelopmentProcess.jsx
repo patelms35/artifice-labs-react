@@ -37,7 +37,7 @@ const WebDevelopmentProcess = () => {
           software development experience.
         </p>
       </div>
-      <div>
+      <div className="flex justify-center items-center mt-10 md:mt-0">
         <OrbitingCirclesDemo innerIcons={innerIcons} outerIcons={outerIcons} />
       </div>
     </section>

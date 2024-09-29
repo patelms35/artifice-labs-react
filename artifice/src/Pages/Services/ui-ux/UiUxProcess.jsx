@@ -4,8 +4,9 @@ import { OrbitingCirclesDemo } from "../../../Orbit/magic";
 const UiUxProcess = () => {
   const innerIcons = [Icons.framer, Icons.figma];
   const outerIcons = [Icons.adobe, Icons.sketch, Icons.miro];
+
   return (
-    <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left md:flex">
+    <section className="py-16 px-6 md:px-16 mb-10 bg-white md:flex text-left">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <h2
@@ -14,8 +15,7 @@ const UiUxProcess = () => {
           data-aos-delay="300"
         >
           <span className="text-[#0B5EFF]">
-            Leverage our established UI/UX design process
-            <br />
+            Leverage our established web development <br /> process&nbsp;
           </span>
           to ensure the success of your project.
         </h2>
@@ -23,16 +23,16 @@ const UiUxProcess = () => {
         <p
           className="text-lg text-gray-700 w-3/4"
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="400"
         >
           We understand that the most intricate projects require meticulous
-          attention to every detail throughout the UI/UX design process. We have
-          the expertise needed to ensure a smooth and efficient user experience
-          and interface design that elevates the quality and functionality of
-          your product.
+          attention to every detail throughout the web development process. With
+          over 1000 projects successfully delivered at Artifice labs , we have
+          the expertise needed to ensure a smooth and efficient web-based
+          software development experience.
         </p>
       </div>
-      <div>
+      <div className="flex justify-center items-center mt-10 md:mt-0">
         <OrbitingCirclesDemo innerIcons={innerIcons} outerIcons={outerIcons} />
       </div>
     </section>

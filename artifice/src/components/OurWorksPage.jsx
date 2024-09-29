@@ -177,13 +177,13 @@ const OurWorks = () => {
       {/* Cards Container */}
       <div className="flex justify-center items-center px-4">
         <div
-          className="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-y-10 xl:gap-x-32 gap-x-10 mx-auto"
+          className="max-w-screen-xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-24 justify-items-center"
           data-aos="fade-up"
         >
           {filteredCardData.map((card) => (
             <div
               key={card.id}
-              className="bg-white w-[350px] lg:w-[450px] mx-auto rounded-lg overflow-hidden hover:shadow-2xl border hover:transition-all transition-all cursor-pointer"
+              className="bg-white w-[350px] xl:w-[450px] rounded-lg overflow-hidden hover:shadow-2xl border hover:transition-all transition-all cursor-pointer"
               onClick={() => openModal(card.id)}
             >
               <div className="p-4">
@@ -217,7 +217,7 @@ const OurWorks = () => {
           >
             &times;
           </button>
-          <h2 className="text-2xl font-bold mb-2">{modalContent.title}</h2>
+          <h2 className="text-2xl font-bold mb-6">{modalContent.title}</h2>
 
           <img
             src={modalContent.imgSrc}
