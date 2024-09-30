@@ -58,14 +58,14 @@ const Services = () => {
       <section className="py-16 px-6 md:px-16 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10">
+            <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10" data-aos="fade-up" data-aos-delay="300">
               <span className="text-black">What are</span>
               <span className="text-[#0B5EFF]">
                 Application Development services?
               </span>
             </div>
 
-            <div className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10" data-aos="fade-up" data-aos-delay="300" >
+            <div className="md:w-1/2 text-lg md:text-xl leading-relaxed text-gray-700 mt-4 md:mb-10 md:mt-10" data-aos="fade-up" data-aos-delay="400" >
               Application development services focus on delivering user-centric
               solutions that ensure seamless functionality and engagement. This
               process includes crafting intuitive user interfaces, performing

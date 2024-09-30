@@ -1,4 +1,315 @@
 export const Icons = {
+  blender: () => (
+    <svg
+      height="48"
+      width="48"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <linearGradient
+        id="a"
+        gradientUnits="userSpaceOnUse"
+        x1="406.501118"
+        x2="407.44639"
+        y1="543.694484"
+        y2="503.77261"
+      >
+        <stop offset="0" stop-color="#f15f19" />
+        <stop offset="1" stop-color="#fbb521" />
+      </linearGradient>
+      <linearGradient
+        id="b"
+        gradientUnits="userSpaceOnUse"
+        x1="-413.59451"
+        x2="-413.60806"
+        y1="-531.74385"
+        y2="-523.62898"
+      >
+        <stop offset="0" stop-color="#197cf1" />
+        <stop offset="1" stop-color="#21c9fb" />
+      </linearGradient>
+      <linearGradient
+        id="c"
+        gradientUnits="userSpaceOnUse"
+        x1="413.49097"
+        x2="413.70349"
+        y1="537.25555"
+        y2="517.87592"
+      >
+        <stop offset="0" stop-color="#e8ebec" />
+        <stop offset="1" stop-color="#fdfeff" />
+      </linearGradient>
+      <g transform="matrix(1.1146822 0 0 1.1146822 -430.797582 -559.861951)">
+        <path
+          d="m407.44643 503.77261a3.0003 3.0003 0 0 0 -1.70508 5.40234l3.41016 2.62305h-16.58008a3.0003 3.0003 0 1 0 0 6h7.51953l-12.2832 8.92383a3.0003 3.0003 0 1 0 3.52539 4.85351l6.27734-4.56054a15.999973 15.999973 0 0 0 -.0391.7832 15.999973 15.999973 0 0 0 16 16 15.999973 15.999973 0 0 0 16-16 15.999973 15.999973 0 0 0 -6.95508-13.19727 3.0003 3.0003 0 0 0 -.21679-.18164l-13-10a3.0003 3.0003 0 0 0 -1.95313-.64648z"
+          fill="url(#a)"
+        />
+        <circle cx="413.57144" cy="527.79797" fill="url(#c)" r="9.999989" />
+        <circle
+          cx="-413.57144"
+          cy="-527.79797"
+          fill="url(#b)"
+          r="3.999988"
+          transform="scale(-1)"
+        />
+      </g>
+    </svg>
+  ),
+  unity: () => (
+    <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="m498.11 206.4-52.8-191.68-197.11 51.36-29.2 50.06-59.2-.43-144.26 140.29 144.28 140.32 59.17-.43 29.24 50 197.08 51.36 52.8-191.62-30-49.63zm-274.34-82.2 150.78-37.69-86.55 145.82h-173.13zm0 263.63-108.9-108.12h173.13l86.55 145.81zm193 14-86.6-145.83 86.58-145.84 41.81 145.84z" />
+    </svg>
+  ),
+  unreal: () => (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 1.846c5.595.007 10.128 4.545 10.128 10.141 0 5.601-4.54 10.141-10.141 10.141s-10.141-4.54-10.141-10.141c0-2.8 1.135-5.335 2.97-7.17 1.837-1.835 4.374-2.97 7.176-2.97h.007zm0 2.77c-4.392.774-8.308 4.824-8.308 9.23 2.149-3.794 3.584-4.067 3.981-4.067s.606.206.606.663v5.654c0 .703-1.366.588-1.818.519 1.67 2.485 5.539 2.77 5.539 2.77l1.846-1.846 1.846.923c2.914-1.334 4.615-4.19 4.615-4.615-.701.868-1.646 1.515-2.731 1.836l-.039.01c-.245 0-.923-.126-.923-.462v-6.693c0-.581 1.342-2.354 1.846-3-3.332.873-4.298 2.394-4.298 2.394s-.253-.548-1.24-.548c.501.473.838 1.114.922 1.832l.001.014v5.654c-.525.373-1.144.653-1.813.801l-.034.006c-.64 0-.952-.26-.952-.75s.029-6.634.029-6.634-.923.339-.923-1.558c0-.949 1.846-2.135 1.846-2.135z" />
+    </svg>
+  ),
+  vuforia: () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      style="enable-background:new 0 0 1000 1000;"
+      version="1.1"
+      viewBox="0 0 1000 1000"
+      x="0px"
+      y="0px"
+      xml:space="preserve"
+    >
+      <path
+        class="k4"
+        style="fill:none;fill-rule:evenodd;stroke:#df871b;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+        d="m 275.924,699.49118 54.75863,60.10532"
+      />
+      <g class="isolate">
+        <path
+          class="blend t1"
+          style="opacity:1;fill:#dd5d20;fill-opacity:1;fill-rule:evenodd;stroke:#dd5d20;stroke-width:79.81949615;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+          d="m 215.47816,252.84847 115.22634,0"
+        />
+        <path
+          class="blend t2"
+          d="m 273.09133,252.65768 0,115.22634"
+          style="display:inline;opacity:1;fill:#dd5d20;fill-opacity:1;fill-rule:evenodd;stroke:#0b9444;stroke-width:79.81949615;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+        />
+        <path
+          class="blend h1"
+          style="display:inline;opacity:1;fill:#1f91ac;fill-opacity:1;fill-rule:evenodd;stroke:#1f91ac;stroke-width:79.81949615;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+          d="m 410.71374,252.65768 0,115.22634"
+        />
+        <path
+          class="blend h2"
+          d="m 410.47816,310.44844 115.22634,0"
+          style="opacity:1;fill:#dd5d20;fill-opacity:1;fill-rule:evenodd;stroke:#df871b;stroke-width:79.81949615;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+        />
+        <path
+          class="blend i1"
+          d="m 215.47816,448.64847 115.22634,0"
+          style="opacity:1;fill:#dd5d20;fill-opacity:1;fill-rule:evenodd;stroke:#dd5d20;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+        />
+        <path
+          class="blend i2"
+          style="opacity:1;fill:#dd5d20;fill-opacity:1;fill-rule:evenodd;stroke:#dd5d20;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+          d="m 215.47816,563.85818 115.22634,0"
+        />
+        <path
+          class="blend i3"
+          style="display:inline;opacity:1;fill:#dd5d20;fill-opacity:1;fill-rule:evenodd;stroke:#1f91ac;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+          d="m 273.09133,448.56614 0,115.22634"
+        />
+        <path
+          class="blend n1"
+          d="m 410.71374,448.36614 0,115.22634"
+          style="display:inline;opacity:1;fill:#1f91ac;fill-opacity:1;fill-rule:evenodd;stroke:#da3931;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+        />
+        <path
+          class="blend n2"
+          style="display:inline;opacity:1;fill:#1f91ac;fill-opacity:1;fill-rule:evenodd;stroke:#da3931;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+          d="m 526.004,448.36614 0,115.22634"
+        />
+        <path
+          class="blend n3"
+          style="fill:none;fill-rule:evenodd;stroke:#0b9444;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+          d="m 410.7,448.46218 115.37,115.013"
+        />
+        <path
+          class="blend k1"
+          style="display:inline;opacity:1;fill:#1f91ac;fill-opacity:1;fill-rule:evenodd;stroke:#da3931;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+          d="m 215.32637,644.48746 0,115.22634"
+        />
+        <path
+          class="blend k2"
+          d="m 215.31263,759.5965 115.37,-115.013"
+          style="fill:none;fill-rule:evenodd;stroke:#1f91ac;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+        />
+      </g>
+      <path
+        class="h3"
+        d="m 525.41374,252.65768 0,115.22634"
+        style="display:inline;opacity:1;fill:#1f91ac;fill-opacity:1;fill-rule:evenodd;stroke:#1f91ac;stroke-width:79.81949615;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+      />
+      <circle
+        class="h4"
+        style="opacity:1;fill:#df871b;fill-opacity:1;stroke:none;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+        cx="526"
+        cy="252.36218"
+        r="40"
+      />
+      <circle
+        class="i4"
+        r="40"
+        cy="448.36218"
+        cx="273"
+        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+      />
+      <circle
+        class="n4"
+        style="opacity:1;fill:#da3931;fill-opacity:1;stroke:none;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+        cx="410.70001"
+        cy="448.66217"
+        r="40"
+      />
+      <circle
+        class="n5"
+        r="40"
+        cy="563.16217"
+        cx="526"
+        style="opacity:1;fill:#da3931;fill-opacity:1;stroke:none;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+      />
+      <circle
+        class="k3"
+        r="40"
+        cy="759.39655"
+        cx="215.31264"
+        style="opacity:1;fill:#da3931;fill-opacity:1;stroke:none;stroke-width:80;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+      />
+    </svg>
+  ),
+  xcode: () => (
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="m3.62 14.95h54v41h-54z"
+        fill="#63b2ff"
+        transform="matrix(.98822838 -.15298584 .15298584 .98822838 -5.059959 5.099965)"
+      />
+      <path
+        d="m10 58-6-38m11 26-2-13m34 8-2-13m13 21-50 8m50-9.96-50 8m43-42.04 6 38m-54-29 51-8m-44 23 40-7m-38 14 39-7"
+        fill="none"
+        stroke="#fff"
+        stroke-miterlimit="10"
+      />
+      <path
+        d="m63.27 9.18c-2-.85-3.92-2.24-6.42-1.37a2.78 2.78 0 0 1 -2.53-.89c-1.53-2.74-4.32-3.44-6.84-3.92-11.26-2.12-15.93 3.65-17.14 4.74.12.26.24.52.37.78a.61.61 0 0 0 0 .12c.68-.1 5.63-2.19 9.22.06 1.62 1 2.75 2.35 2.45 4.25a3.84 3.84 0 0 1 -.09.44c-.06.2 0 .24-.06.45l.18.06 4.73 1.54c.07-.14.15-.35.23-.48 1.8-2.92 5.4-1.68 7.37.35 1.41 1.45 3 2 5 2.71 1.1.39 1.46-.22 1.6-.56.92-2.2 1.68-4.43 2.43-6.69a1.14 1.14 0 0 0 -.5-1.59z"
+        fill="#58595b"
+      />
+      <path
+        d="m63.27 10.33c-2-.86-3.92-2.25-6.42-1.38a2.78 2.78 0 0 1 -2.53-.89c-1.53-2.73-4.32-3.44-6.84-3.92-10.33-1.94-15.11 2.75-16.77 4.38a.61.61 0 0 0 0 .12c.68-.1 5.63-2.19 9.22.06 1.62 1 2.75 2.35 2.45 4.25a3.32 3.32 0 0 1 0 .95l4.73 1.54c.07-.14.15-.35.23-.48 1.8-2.92 5.4-1.68 7.37.35 1.41 1.45 3 2 5 2.71 1.1.39 1.46-.22 1.6-.56.92-2.2 1.68-4.43 2.43-6.69a1.07 1.07 0 0 0 -.47-.44z"
+        fill="#939598"
+      />
+      <path d="m42.34 13.49-5.22 13.64 4.46 1.76 5.72-13.7z" fill="#939598" />
+      <path d="m37.7 28.25 5.64-14.53 3.04 1.09-6.12 14.96z" fill="#a7a9ac" />
+      <path
+        d="m42.3 13.44-.44 1.33c.37-1 4.49.31 5 1.56l.53-1.25c.36-1.02-4.69-2.66-5.09-1.64z"
+        fill="#58595b"
+      />
+      <path d="m41.73 28.61-11 31a2 2 0 0 1 -2.59 1.13l-2.83-1.1a2 2 0 0 1 -1.14-2.59l12.92-30.05c.14-.37.82-.4 1.63-.24 1.44.24 3.28 1.24 3.01 1.85z" />
+      <path
+        d="m41.73 28.61-11 31a2 2 0 0 1 -1.11 1.11l-2.83-1.1a2 2 0 0 1 -1.14-2.62l12.89-30a.39.39 0 0 1 .18-.2c1.44.2 3.28 1.2 3.01 1.81z"
+        fill="#231f20"
+      />
+      <path
+        d="m29.8 22.76-.61-.24a2.63 2.63 0 0 0 -3.4 1.5l-7.79 19.98v7l6-5 7.3-19.84a2.63 2.63 0 0 0 -1.5-3.4zm-4.47 2.52 5.5 2.11m-12.77 16.28 5.72 2.5"
+        fill="#63b2ff"
+        stroke="#fff"
+        stroke-miterlimit="10"
+      />
+    </svg>
+  ),
+  flutter: () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Flutter"
+      role="img"
+      viewBox="0 0 512 512"
+    >
+      <rect width="512" height="512" rx="15%" fill="#e8e9eb" />
+      <defs>
+        <linearGradient
+          id="f"
+          x1="249"
+          x2="321"
+          y1="401"
+          y2="358"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-opacity=".4" />
+          <stop stop-color="#124793" stop-opacity="0" offset="1" />
+        </linearGradient>
+      </defs>
+      <g fill="#5cc8f8">
+        <path d="M191.45,342.89,249.11,401,407.75,241.12H292.4Z" />
+        <path d="M292.4,66.69H407.75L162.61,313.82l-57.7-58.13Z" />
+      </g>
+      <path fill="#075b9d" d="M249.11,401l43.29,43.59H407.75L306.8,342.89Z" />
+      <path d="M334.67,371.16,306.8,342.89,249.11,401Z" fill="url(#f)" />
+      <path
+        d="M191.45,342.87l57.69-58.18,57.7,58.15L249.14,401Z"
+        fill="#16b9fd"
+      />
+    </svg>
+  ),
+  android: () => (
+    <svg
+      enable-background="new 0 0 48 48"
+      height="48"
+      viewBox="0 0 48 48"
+      width="48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g fill="#7cb342">
+        <path d="m12 29.001c0 1.104-.896 2-2 2-1.104 0-2-.896-2-2v-9c0-1.104.896-2 2-2 1.104 0 2 .896 2 2z" />
+        <path d="m40 29.001c0 1.104-.896 2-2 2-1.104 0-2-.896-2-2v-9c0-1.104.896-2 2-2 1.104 0 2 .896 2 2z" />
+        <path d="m22 40c0 1.104-.896 2-2 2-1.104 0-2-.896-2-2v-9c0-1.104.896-2 2-2 1.104 0 2 .896 2 2z" />
+        <path d="m30 40c0 1.104-.896 2-2 2-1.104 0-2-.896-2-2v-9c0-1.104.896-2 2-2 1.104 0 2 .896 2 2z" />
+        <path d="m14 18.001v14.999c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2v-14.999z" />
+        <path d="m24 8c-6 0-9.655 3.645-10 8h20c-.346-4.355-4-8-10-8zm-4 5.598c-.552 0-1-.448-1-1s.448-1 1-1 1 .448 1 1-.448 1-1 1zm8 0c-.553 0-1-.448-1-1s.447-1 1-1 1 .448 1 1-.447 1-1 1z" />
+      </g>
+      <path
+        d="m30 7-1.666 2.499"
+        fill="none"
+        stroke="#7cb342"
+        stroke-linecap="round"
+        stroke-width="2"
+      />
+      <path
+        d="m18 7 1.333 2.082"
+        fill="none"
+        stroke="#7cb342"
+        stroke-linecap="round"
+        stroke-width="2"
+      />
+    </svg>
+  ),
+  vs: () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      width="48px"
+      height="48px"
+    >
+      <path
+        fill="#29b6f6"
+        d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"
+      />
+      <path
+        fill="#0277bd"
+        d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"
+      />
+      <path
+        fill="#0288d1"
+        d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"
+      />
+    </svg>
+  ),
   php: () => (
     <svg
       viewBox="0 0 32 32"

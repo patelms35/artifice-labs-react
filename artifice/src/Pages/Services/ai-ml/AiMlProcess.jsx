@@ -3,7 +3,6 @@ import { OrbitingCirclesDemo } from "../../../Orbit/magic";
 
 const WebDevelopmentProcess = () => {
   const innerIcons = [Icons.whatsapp, Icons.notion];
-  console.log(innerIcons);
   const outerIcons = [Icons.googleDrive, Icons.gitHub];
   return (
     <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left md:flex">
