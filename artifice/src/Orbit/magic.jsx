@@ -11,7 +11,7 @@ export function OrbitingCirclesDemo({ innerIcons =[], outerIcons = [] }) {
         <OrbitingCircles
         className="size-[30px] border-none bg-transparent"
         duration={20}
-        delay={index * 10}
+        delay={index * 8}
         radius={70} 
         key={index}
         reverse
@@ -24,7 +24,7 @@ export function OrbitingCirclesDemo({ innerIcons =[], outerIcons = [] }) {
         <OrbitingCircles
         className="size-[30px] border-none bg-transparent"
         duration={20}
-        delay={index * 10}
+        delay={index * 8}
         radius={180} 
         key={index}
         >
