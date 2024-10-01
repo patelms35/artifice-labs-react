@@ -5,8 +5,8 @@ const WebDevelopmentProcess = () => {
   const innerIcons = [Icons.whatsapp, Icons.notion];
   const outerIcons = [Icons.googleDrive, Icons.gitHub];
   return (
-    <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left md:flex">
-      <div className="max-w-7xl ml-60">
+    <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left lg:flex">
+      <div className="max-w-7xl xl:ml-60">
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-bold leading-tight mt-14 mb-20">
           <span className="text-[#0B5EFF]">
