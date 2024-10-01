@@ -7,6 +7,7 @@ import Navbar from "../../../components/Navbar";
 import AppDevProcess from "./AppDevProcess";
 import Explanation from "./Explanation";
 import Technologies from "./Technologies";
+import ServicesNavbar from "../../../components/ServicesNavbar";
 
 const Services = () => {
   useEffect(() => {
@@ -26,7 +27,7 @@ const Services = () => {
   return (
     <div className="font-poppins">
       {/* Navbar */}
-      <Navbar />
+      <ServicesNavbar />
 
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col justify-center items-start bg-[url('/App-main.jpg')] bg-center">

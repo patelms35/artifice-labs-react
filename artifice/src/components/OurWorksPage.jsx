@@ -177,7 +177,7 @@ const OurWorks = () => {
       {/* Cards Container */}
       <div className="flex justify-center items-center px-4">
         <div
-          className="max-w-screen-xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-24 justify-items-center"
+          className="max-w-screen-xl w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-y-16 gap-x-24 justify-items-center"
           data-aos="fade-up"
         >
           {filteredCardData.map((card) => (

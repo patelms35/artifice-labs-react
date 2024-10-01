@@ -6,6 +6,7 @@ import AppDevPage from "./Pages/Services/application-development/AppDevPage.jsx"
 import ArVrPage from "./Pages/Services/ar-vr/ArVrPage.jsx";
 import UiUxPage from "./Pages/Services/ui-ux/UiUxPage.jsx";
 import WebDevPage from "./Pages/Services/web-dev/WebDevPage.jsx";
+import Mark from './components/Mark.jsx';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/app-dev" element={<AppDevPage />} />
         <Route path="/ai-ml" element={<AiMlPage />} />
         <Route path="/our-works" element={<OurWorksPage />} />
+        <Route path="/nav" element={<Mark />} />
       </Routes>
     </Router>
   );
