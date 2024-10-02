@@ -5,8 +5,8 @@ import { Icons } from "../../../Orbit/icons";
 import { OrbitingCirclesDemo } from "../../../Orbit/magic";
 
 const ARVRProcess = () => {
-  const innerIcons = [Icons.framer, Icons.figma];
-  const outerIcons = [Icons.adobe, Icons.sketch, Icons.miro];
+  const innerIcons = [Icons.unity, Icons.blender];
+  const outerIcons = [Icons.unreal, Icons.vuforia];
 
   useEffect(() => {
     AOS.init({ duration: 2000 });

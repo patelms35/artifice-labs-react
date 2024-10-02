@@ -25,7 +25,7 @@ const OurWorks = () => {
     {
       id: 1,
       title: "UI / UX Design",
-      imgSrc: "/Trip-Planner.png",
+      imgSrc: "/ui-card.png",
       paragraph: "Near Me",
     },
     {
@@ -56,8 +56,8 @@ const OurWorks = () => {
 
   const modalData = {
     1: {
-      title: "Web Development",
-      imgSrc: "/web-dev-work.png",
+      title: "UI / UX Design",
+      imgSrc: "/Trip-Planner.png",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem.",
     },
