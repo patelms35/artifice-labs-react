@@ -49,7 +49,7 @@ const OurWorks = () => {
     {
       id: 5,
       title: "Web Development",
-      imgSrc: "/ai-ml-work.png",
+      imgSrc: "/web-front-1.png",
       paragraph: "Dynamic Role based access Panel",
     },
   ];
@@ -59,7 +59,7 @@ const OurWorks = () => {
       title: "UI / UX Design",
       imgSrc: "/Trip-Planner.png",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore, esse nesciunt itaque quia iure harum eligendi omnis, officiis officia facere possimus enim. Itaque numquam consequatur unde voluptates exercitationem repudiandae distinctio, tempora eum officiis quidem.",
+        "At Artifice Labs, we recently created the UI/UX design for an AI-powered travel app that aims to transform the travel experience. The design emphasizes user-friendly navigation and provides easy access to personalized travel recommendations, streamlined itinerary planning, and real-time updates. With a focus on intuitive interaction and visual appeal, the app's interface is crafted to make it simple for users to explore flights, accommodations, and local attractions, delivering a seamless and enjoyable experience. This design showcases our expertise in creating innovative and user-centric solutions.",
     },
     2: {
       title: "Augmented Reality Merge Cube",
@@ -81,7 +81,7 @@ const OurWorks = () => {
     },
     5: {
       title: "Dynamic Role based access Panel",
-      imgSrc: "/ai-ml-work.png",
+      imgSrc: "/web-back-1.png",
       description:
         "Develop a dynamic role-based access control panel with multi-role creation and customizable permissions. Features include domain-based panel access, super admin control for comprehensive user management, and support for various login methods. Assign users to one or more branches with tailored access rights, ensuring flexible, secure, and scalable user and role management across different organizational branches.",
     },
