@@ -43,7 +43,7 @@ const OurWorks = () => {
     {
       id: 4,
       title: "Web Development",
-      imgSrc: "/ai-ml-work.png",
+      imgSrc: "/web-front-2.png",
       paragraph: "Cable TV and Broadband Billing system",
     },
     {
@@ -75,7 +75,7 @@ const OurWorks = () => {
     },
     4: {
       title: "Cable TV and Broadband Billing management system",
-      imgSrc: "/ai-ml-work.png",
+      imgSrc: "/web-back-2.png",
       description:
         "The system supports both Gujarati and English languages, providing user-friendly access. It includes a role-based access control module for Superadmin, admin, and regular users. Bills are generated according to predefined packages, with automated reminders for payments and renewals. The platform also manages complaints for helpers and office-related issues, ensuring efficient resolution. Additionally, it tracks extra expenses and income for accessories or services, giving users a comprehensive financial overview. This ensures streamlined user management and efficient financial handling.",
     },
