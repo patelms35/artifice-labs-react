@@ -14,31 +14,31 @@ const ServicesSection = () => {
       title: "Web Development",
       image: "/web.png",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
+        "We design and develop top-tier web products, providing value to your customers through innovative solutions and engaging user experiences.",
     },
     {
       title: "Application Development",
       image: "/app.png",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
+        "We design and build industry-leading web products, delivering innovation, seamless experiences, and tailored solutions that drive customer success.",
     },
     {
       title: "AR/VR",
       image: "vr.png",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
+        "We design and build cutting-edge AR/VR experiences that deliver immersive value to your customers, enhanced with compelling user experiences.",
     },
     {
       title: "AI/ML",
       image: "ai.png",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
+      "We develop cutting-edge AI/ML solutions that deliver substantial value to your customers, focusing on providing a compelling and intuitive user experience throughout their journey.",
     },
     {
       title: "UI/UX Design",
       image: "ui.png",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore expedita magnam veritatis facere vero velit quasi quibusdam modi",
+        "We create user-focused designs for web products, delivering intuitive interfaces and engaging UX that enhance customer value and satisfaction.",
     },
   ];
 

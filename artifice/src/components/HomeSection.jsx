@@ -51,14 +51,14 @@ const HomeSection = () => {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
             data-aos="zoom-in-up"
           >
-            Inspired and passionate about innovation.
+            Driven by Innovation, Shaped by Expertise
           </h1>
           <p
             className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8"
             data-aos="zoom-in-up"
             data-aos-delay="500"
           >
-            Lorem, ipsum dolor sit amet
+            Explore Our Solutions
           </p>
           <button
             data-aos="zoom-in-up"
@@ -117,8 +117,7 @@ const HomeSection = () => {
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores inventore amet
+                Empowering Businesses with Next-Gen Technology Solutions
               </h3>
 
               {/* Text Paragraph */}
@@ -128,11 +127,13 @@ const HomeSection = () => {
                   data-aos="fade-up"
                   data-aos-delay="600"
                 >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores inventore expedita magnam veritatis facere vero
-                  velit quasi quibusdam modi id pariatur ab saepe at sint ad
-                  eius nemo voluptates, voluptas in temporibus dicta commodi
-                  atque molestiae aut.
+                  At Artifice Labs, we craft innovative solutions using AI, ML,
+                  AR/VR, web, and mobile development. Our user-centric approach
+                  ensures seamless, intuitive experiences that drive business
+                  growth. From immersive digital environments to responsive
+                  apps, we empower businesses with cutting-edge technology to
+                  stay ahead in a fast-evolving world. Let’s shape the future,
+                  together.
                 </p>
 
                 {/* Know More Button */}
@@ -182,15 +183,17 @@ const HomeSection = () => {
               data-aos-delay="400"
             >
               <img
-                src="/about.png"
+                src="/oil-drill.png"
                 alt="Work 1"
                 className="w-full h-3/5 object-cover rounded-lg"
               />
               <div className="p-4 h-2/5 flex flex-col justify-between">
-                <h3 className="text-base sm:text-lg font-bold">Headline</h3>
+                <h3 className="text-base sm:text-lg font-bold">
+                  VR Simulators
+                </h3>
                 <p className="text-[#666666] mb-4 text-sm sm:text-base">
-                  Please add your content here. Keep it short and simple. And
-                  smile :)
+                  VR simulators provide students virtual exposure to on-field
+                  work.
                 </p>
               </div>
             </div>
@@ -202,15 +205,17 @@ const HomeSection = () => {
               data-aos-delay="600"
             >
               <img
-                src="/about.png"
+                src="/web-front-2.png"
                 alt="Work 2"
                 className="w-full h-3/5 object-cover rounded-lg"
               />
               <div className="p-4 h-2/5 flex flex-col justify-between">
-                <h3 className="text-base sm:text-lg font-bold">Headline</h3>
+                <h3 className="text-base sm:text-lg font-bold">
+                  Broadband Billing system
+                </h3>
                 <p className="text-[#666666] mb-4 text-sm sm:text-base">
-                  Please add your content here. Keep it short and simple. And
-                  smile :)
+                  Comprehensive system for managing cable TV and broadband
+                  billing efficiently.
                 </p>
               </div>
             </div>
@@ -222,15 +227,15 @@ const HomeSection = () => {
               data-aos-delay="800"
             >
               <img
-                src="/about.png"
+                src="/ui-card.png"
                 alt="Work 3"
                 className="w-full h-3/5 object-cover rounded-lg"
               />
               <div className="p-4 h-2/5 flex flex-col justify-between">
-                <h3 className="text-base sm:text-lg font-bold">Headline</h3>
+                <h3 className="text-base sm:text-lg font-bold">Near Me</h3>
                 <p className="text-[#666666] mb-4 text-sm sm:text-base">
-                  Please add your content here. Keep it short and simple. And
-                  smile :)
+                  Discover local attractions and experiences with our AI travel
+                  app.
                 </p>
               </div>
             </div>

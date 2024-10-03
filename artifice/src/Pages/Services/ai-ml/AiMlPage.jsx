@@ -77,9 +77,7 @@ const Services = () => {
             AI / ML Services
           </h1>
           <p className="text-lg md:text-2xl mb-8 leading-relaxed">
-            We design and build industry-leading web-based products that bring
-            <br />
-            value to your customers, delivered with compelling UX.
+          We design and build industry-leading AI/ML solutions that bring value to your customers, delivered with compelling and intuitive UX.
           </p>
 
           <button

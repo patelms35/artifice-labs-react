@@ -24,33 +24,33 @@ const OurWorks = () => {
   const cardData = [
     {
       id: 1,
-      title: "UI / UX Design",
+      title: "Near Me",
       imgSrc: "/ui-card.png",
-      paragraph: "Near Me",
+      paragraph: "UI / UX Design",
     },
     {
       id: 2,
-      title: "AR / VR",
-      imgSrc: "/app-dev-work.png",
-      paragraph: "Augmented Reality Merge Cube",
+      title: "Augmented Reality Merge Cube",
+      imgSrc: "/cubeimg.png",
+      paragraph: "AR / VR",
     },
     {
       id: 3,
-      title: "AR / VR",
-      imgSrc: "/ai-ml-work.png",
-      paragraph: "VR Simulators",
+      title: "VR Simulators",
+      imgSrc: "/oil-drill.png",
+      paragraph: "AR / VR",
     },
     {
       id: 4,
-      title: "Web Development",
+      title: "Cable TV and Broadband Billing system",
       imgSrc: "/web-front-2.png",
-      paragraph: "Cable TV and Broadband Billing system",
+      paragraph: "Web Development",
     },
     {
       id: 5,
-      title: "Web Development",
+      title: "Dynamic Role based access Panel",
       imgSrc: "/web-front-1.png",
-      paragraph: "Dynamic Role based access Panel",
+      paragraph: "Web Development",
     },
   ];
 
@@ -63,13 +63,13 @@ const OurWorks = () => {
     },
     2: {
       title: "Augmented Reality Merge Cube",
-      imgSrc: "/app-dev-work.png",
+      imgSrc: "/cubeimg.png",
       description:
         "This is an advanced format for teaching the students differently and uniquely. This will help students to learn the concepts more deeply and accurately as they will be able to observe the objects in 3D as it's there in their hand. This will make the teaching phase of your school or institute one step ahead of everyone and will engage the students more deeply in learning the concepts and it will attract them.",
     },
     3: {
       title: "VR Simulators for training purpose and exposure",
-      imgSrc: "/ai-ml-work.png",
+      imgSrc: "/oil-drill.png",
       description:
         "VR simulators will help the students of universities and schools to get exposure of the on-field works with the help of VR headsets and its controller. One of the examples we have is of Oil-Drill Rig. This will give the exposure to the students of petroleum engineering by visiting the field virtually and doing all the work by themselves. This will make them know all about the field and the fieldwork.",
     },
@@ -99,9 +99,9 @@ const OurWorks = () => {
   const filteredCardData =
     filter === "All"
       ? cardData
-      : cardData.filter((card) => card.title === filter);
+      : cardData.filter((card) => card.paragraph === filter);
 
-  const filterTags = ["All", ...new Set(cardData.map((card) => card.title))];
+  const filterTags = ["All", ...new Set(cardData.map((card) => card.paragraph))];
 
   const nextTag = () => {
     setCurrentTagIndex((prevIndex) =>

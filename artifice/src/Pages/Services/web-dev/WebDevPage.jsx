@@ -14,10 +14,10 @@ const Services = () => {
     AOS.init({ duration: 2000 });
   }, []);
 
-  const contactRef = useRef(null);
+  const elevateRef = useRef(null);
 
   const handleScrollToContact = () => {
-    contactRef.current.scrollIntoView({ behavior: "smooth" });
+    elevateRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -183,7 +183,7 @@ const Services = () => {
           </div>
 
           {/* Text Content */}
-          <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
+          <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0" ref={elevateRef}>
             <h2
               className="text-3xl md:text-4xl font-bold mb-6"
               data-aos="fade-up"
@@ -286,7 +286,7 @@ const Services = () => {
       <Explanation />
 
       {/* Contact Us */}
-      <div ref={contactRef}>
+      <div>
         <ContactUsSection />
       </div>
 
