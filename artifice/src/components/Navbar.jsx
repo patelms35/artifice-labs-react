@@ -30,32 +30,32 @@ const Navbar = () => {
             <div className="flex justify-center space-x-8">
               <a
                 href="#home"
-                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium text-xs 2xl:text-base"
                 onClick={navigateHome}
               >
                 Home
               </a>
               <a
                 href="#about"
-                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium text-xs 2xl:text-base"
               >
                 About Us
               </a>
               <a
                 href="#works"
-                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium text-xs 2xl:text-base"
               >
                 Our Works
               </a>
               <a
                 href="#services"
-                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium text-xs 2xl:text-base"
               >
                 Services
               </a>
               <a
                 href="#mission"
-                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium md:text-sm lg:text-base"
+                className="text-white hover:text-[#106eea] transition-all px-3 py-2 rounded-md font-medium text-xs 2xl:text-base"
               >
                 Mission & Vision
               </a>
