@@ -28,27 +28,27 @@ const Footer = () => {
             <h3 className="font-semibold text-center mb-4">More</h3>
             <ul className="flex flex-col md:flex-row gap-6">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/#home" className="hover:underline">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/#about" className="hover:underline">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/#works" className="hover:underline">
                   Our Works
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/#services" className="hover:underline">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/#mission" className="hover:underline">
                   Mission & Vision
                 </a>
               </li>

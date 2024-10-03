@@ -33,7 +33,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               <img src="./home.png" alt="Home Icon" className="h-8 w-8" />
             </div>
             <a
-              href="#home"
+              href="/#home"
+              onClick={toggleSidebar}
               className="block px-3 py-2 rounded-md text-lg text-[#5D7285] font-bold"
             >
               Home
@@ -49,7 +50,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               />
             </div>
             <a
-              href="#about"
+              href="/#about"
+              onClick={toggleSidebar}
               className="block px-3 py-2 rounded-md text-lg text-[#5D7285] font-bold"
             >
               About Us
@@ -61,7 +63,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               <img src="./works.png" alt="Our Works Icon" className="h-8 w-8" />
             </div>
             <a
-              href="#works"
+              href="/#works"
+              onClick={toggleSidebar}
               className="block px-3 py-2 rounded-md text-lg text-[#5D7285] font-bold"
             >
               Our Works
@@ -73,7 +76,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               <img src="./Service.png" alt="Service Icon" className="h-8 w-8" />
             </div>
             <a
-              href="#services"
+              href="/#services"
+              onClick={toggleSidebar}
               className="block px-3 py-2 rounded-md text-lg text-[#5D7285] font-bold"
             >
               Services
@@ -89,7 +93,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               />
             </div>
             <a
-              href="#mission"
+              href="/#mission"
+              onClick={toggleSidebar}
               className="block px-3 py-2 rounded-md text-lg text-[#5D7285] font-bold"
             >
               Mission & Vision
@@ -100,7 +105,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
       {/* Contact Us Button at the Bottom */}
       <div className="flex justify-center mb-8">
-        <a href="#contact" className="flex items-center gap-2">
+        <a
+          href="/#contact"
+          className="flex items-center gap-2"
+          onClick={toggleSidebar}
+        >
           <div className="p-2">
             <ContactSvgOurWorks className="h-4 w-4 text-white" />
           </div>
