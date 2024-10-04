@@ -123,7 +123,7 @@ const HomeSection = () => {
               {/* Text Paragraph */}
               <div className="relative flex-1">
                 <p
-                  className="text-gray-600 mb-6 relative z-20 text-base sm:text-lg md:text-xl"
+                  className="text-gray-600 mb-6 relative z-20 text-base sm:text-lg md:text-lg"
                   data-aos="fade-up"
                   data-aos-delay="600"
                 >
@@ -151,7 +151,7 @@ const HomeSection = () => {
               <img
                 src="/about-vector.png"
                 alt="Background"
-                style={{ opacity: 0.7 }}
+                style={{ opacity: 0.4 }}
                 className="absolute -bottom-28 md:-bottom-10 lg:-bottom-52 right-10 w-[200px] md:w-[300px] lg:w-[500px] object-contain z-10"
                 data-aos="zoom-in-up"
                 data-aos-delay="800"
