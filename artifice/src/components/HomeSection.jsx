@@ -127,13 +127,13 @@ const HomeSection = () => {
                   data-aos="fade-up"
                   data-aos-delay="600"
                 >
-                  At Artifice Labs, we craft innovative solutions using AI, ML,
-                  AR/VR, web, and mobile development. Our user-centric approach
+                  At Artifice Labs, we craft innovative solutions using AI/ML,
+                  AR/VR, web and mobile development UI/UX Design. Our user-centric approach
                   ensures seamless, intuitive experiences that drive business
                   growth. From immersive digital environments to responsive
                   apps, we empower businesses with cutting-edge technology to
                   stay ahead in a fast-evolving world. Let’s shape the future,
-                  together.
+                  together.``
                 </p>
 
                 {/* Know More Button */}
