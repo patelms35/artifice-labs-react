@@ -178,7 +178,7 @@ const HomeSection = () => {
           <div className="flex flex-wrap gap-6 md:gap-20 justify-center relative">
             {/* Single Card */}
             <div
-              className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
+              className="bg-white rounded-xl p-4 max-w-80 border-2 hover:border-0 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem] "
               data-aos="zoom-in-up"
               data-aos-delay="400"
             >
@@ -200,7 +200,7 @@ const HomeSection = () => {
 
             {/* Second Card */}
             <div
-              className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
+              className="bg-white rounded-xl p-4 max-w-80 border-2 hover:border-0  transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
               data-aos="zoom-in-up"
               data-aos-delay="600"
             >
@@ -222,7 +222,7 @@ const HomeSection = () => {
 
             {/* Third Card */}
             <div
-              className="bg-white rounded-xl p-4 max-w-80 border-2 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
+              className="bg-white rounded-xl p-4 max-w-80 border-2 hover:border-0  transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
               data-aos="zoom-in-up"
               data-aos-delay="800"
             >
