@@ -3,7 +3,7 @@
 
 1. Clone the repository:
     ```bash
-    git https://github.com/patelms35/BroadBand.git
+    git https://github.com/patelms35/artifice-labs-react.git
     cd broadband
     ```
 
