@@ -8,6 +8,8 @@ import UiUxPage from "./Pages/Services/ui-ux/UiUxPage.jsx";
 import WebDevPage from "./Pages/Services/web-dev/WebDevPage.jsx";
 import Mark from "./components/Mark.jsx";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 
 const App = () => {
   return (
@@ -23,6 +25,7 @@ const App = () => {
         <Route path="/nav" element={<Mark />} />
       </Routes>
       <Analytics />
+      <SpeedInsights />
     </Router>
   );
 };

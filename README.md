@@ -16,4 +16,4 @@
     npm run dev
 
 
-4. Open [http://localhost:5174](http://localhost:5174) to view it in the browser.
+4. Open [http://localhost:5174](http://localhost:5173) to view it in the browser.
