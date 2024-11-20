@@ -11,6 +11,9 @@ export default {
       animation: {
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
       },
+      fontFamily: {
+        gentle: ["MADE Gentle PERSONAL USE", "sans-serif"],
+      },
       keyframes: {
         orbit: {
           "0%": {

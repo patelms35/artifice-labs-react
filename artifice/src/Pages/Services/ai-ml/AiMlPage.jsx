@@ -73,7 +73,7 @@ const Services = () => {
 
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+          <h1 className="text-4xl md:text-6xl mb-8 leading-tight" style={{ fontFamily: "MADE Gentle, sans-serif" }}>
             AI / ML Services
           </h1>
           <p className="text-lg md:text-2xl mb-8 leading-relaxed">
