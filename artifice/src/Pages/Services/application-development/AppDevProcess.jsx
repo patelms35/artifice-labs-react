@@ -38,7 +38,7 @@ const AppDevProcess = () => {
           enhancing both the quality and functionality of your application.
         </p>
       </div>
-      <div>
+      <div className="w-full max-w-full flex justify-center">
         <OrbitingCirclesDemo innerIcons={innerIcons} outerIcons={outerIcons} />
       </div>
     </section>
