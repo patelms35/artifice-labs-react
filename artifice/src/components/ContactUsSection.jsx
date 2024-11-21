@@ -26,7 +26,7 @@ const ContactUsSection = () => {
           headers: {
             "Content-Type": "application/json",
           },
-        }
+        },
       );
       console.log("Response:", response.data);
     } catch (error) {

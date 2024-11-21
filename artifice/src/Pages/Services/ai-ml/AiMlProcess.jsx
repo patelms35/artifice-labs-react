@@ -2,8 +2,20 @@ import { Icons } from "../../../Orbit/icons";
 import { OrbitingCirclesDemo } from "../../../Orbit/magic";
 
 const WebDevelopmentProcess = () => {
-  const innerIcons = [Icons.aws, Icons.gsp, Icons.pt, Icons.nvidia, Icons.llama];
-  const outerIcons = [Icons.openai, Icons.python, Icons.paddle, Icons.langchain, Icons.roboflow];
+  const innerIcons = [
+    Icons.aws,
+    Icons.gsp,
+    Icons.pt,
+    Icons.nvidia,
+    Icons.llama,
+  ];
+  const outerIcons = [
+    Icons.openai,
+    Icons.python,
+    Icons.paddle,
+    Icons.langchain,
+    Icons.roboflow,
+  ];
   return (
     <section className="py-16 px-6 md:px-16 mb-10 bg-white text-left lg:flex">
       <div className="max-w-7xl xl:ml-60">
@@ -23,7 +35,7 @@ const WebDevelopmentProcess = () => {
           solution development experience.
         </p>
       </div>
-      <div>
+      <div className="w-full max-w-full flex justify-center">
         <OrbitingCirclesDemo innerIcons={innerIcons} outerIcons={outerIcons} />
       </div>
     </section>
