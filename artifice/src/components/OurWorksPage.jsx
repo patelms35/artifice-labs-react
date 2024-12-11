@@ -24,30 +24,36 @@ const OurWorks = () => {
   const cardData = [
     {
       id: 1,
+      title: "Akash Broadband",
+      imgSrc: "/AB-Front.png",
+      paragraph: "Web Development",
+    },
+    {
+      id: 2,
       title: "Near Me",
       imgSrc: "/ui-card.png",
       paragraph: "UI / UX Design",
     },
     {
-      id: 2,
+      id: 3,
       title: "Augmented Reality Merge Cube",
       imgSrc: "/cubeimg.png",
       paragraph: "AR / VR",
     },
     {
-      id: 3,
+      id: 4,
       title: "VR Simulators",
       imgSrc: "/oil-drill.png",
       paragraph: "AR / VR",
     },
     {
-      id: 4,
+      id: 5,
       title: "Cable TV and Broadband Billing system",
       imgSrc: "/web-front-2.png",
       paragraph: "Web Development",
     },
     {
-      id: 5,
+      id: 6,
       title: "Dynamic Role based access Panel",
       imgSrc: "/web-front-1.png",
       paragraph: "Web Development",
@@ -56,30 +62,36 @@ const OurWorks = () => {
 
   const modalData = {
     1: {
+      title: "Akash Broadband",
+      imgSrc: "/AB-Back.jpeg",
+      description:
+        "🌐 **Welcome to Akash Broadband** – your gateway to lightning-fast internet and seamless connectivity! 🚀 Experience high-speed, reliable, and affordable internet services tailored for homes and offices. Our user-friendly website, designed in Figma, ensures effortless navigation and stunning visuals. Developed with cutting-edge React.js and sleek Tailwind CSS, it’s optimized for speed and responsiveness across all devices. Explore exciting plans, check coverage maps, and get 24/7 support at your fingertips. Whether you're streaming, gaming, or working, Akash Broadband keeps you connected to what matters most. 💻✨ Discover the future of internet with us – fast, reliable, and always by your side!",
+    },
+    2: {
       title: "UI / UX Design",
       imgSrc: "/Trip-Planner.png",
       description:
         "At Artifice Labs, we recently created the UI/UX design for an AI-powered travel app that aims to transform the travel experience. The design emphasizes user-friendly navigation and provides easy access to personalized travel recommendations, streamlined itinerary planning, and real-time updates. With a focus on intuitive interaction and visual appeal, the app's interface is crafted to make it simple for users to explore flights, accommodations, and local attractions, delivering a seamless and enjoyable experience. This design showcases our expertise in creating innovative and user-centric solutions.",
     },
-    2: {
+    3: {
       title: "Augmented Reality Merge Cube",
       imgSrc: "/cubeimg.png",
       description:
         "This is an advanced format for teaching the students differently and uniquely. This will help students to learn the concepts more deeply and accurately as they will be able to observe the objects in 3D as it's there in their hand. This will make the teaching phase of your school or institute one step ahead of everyone and will engage the students more deeply in learning the concepts and it will attract them.",
     },
-    3: {
+    4: {
       title: "VR Simulators for training purpose and exposure",
       imgSrc: "/oil-drill.png",
       description:
         "VR simulators will help the students of universities and schools to get exposure of the on-field works with the help of VR headsets and its controller. One of the examples we have is of Oil-Drill Rig. This will give the exposure to the students of petroleum engineering by visiting the field virtually and doing all the work by themselves. This will make them know all about the field and the fieldwork.",
     },
-    4: {
+    5: {
       title: "Cable TV and Broadband Billing management system",
       imgSrc: "/web-back-2.png",
       description:
         "The system supports both Gujarati and English languages, providing user-friendly access. It includes a role-based access control module for Superadmin, admin, and regular users. Bills are generated according to predefined packages, with automated reminders for payments and renewals. The platform also manages complaints for helpers and office-related issues, ensuring efficient resolution. Additionally, it tracks extra expenses and income for accessories or services, giving users a comprehensive financial overview. This ensures streamlined user management and efficient financial handling.",
     },
-    5: {
+    6: {
       title: "Dynamic Role based access Panel",
       imgSrc: "/web-back-1.png",
       description:
@@ -101,7 +113,10 @@ const OurWorks = () => {
       ? cardData
       : cardData.filter((card) => card.paragraph === filter);
 
-  const filterTags = ["All", ...new Set(cardData.map((card) => card.paragraph))];
+  const filterTags = [
+    "All",
+    ...new Set(cardData.map((card) => card.paragraph)),
+  ];
 
   const nextTag = () => {
     setCurrentTagIndex((prevIndex) =>
