@@ -64,6 +64,7 @@ const OurWorks = () => {
     1: {
       title: "Akash Broadband",
       imgSrc: "/AB-Back.jpeg",
+      link: "https://broad-band.vercel.app/",
       description:
         "🌐 **Welcome to Akash Broadband** – your gateway to lightning-fast internet and seamless connectivity! 🚀 Experience high-speed, reliable, and affordable internet services tailored for homes and offices. Our user-friendly website, designed in Figma, ensures effortless navigation and stunning visuals. Developed with cutting-edge React.js and sleek Tailwind CSS, it’s optimized for speed and responsiveness across all devices. Explore exciting plans, check coverage maps, and get 24/7 support at your fingertips. Whether you're streaming, gaming, or working, Akash Broadband keeps you connected to what matters most. 💻✨ Discover the future of internet with us – fast, reliable, and always by your side!",
     },
@@ -232,7 +233,19 @@ const OurWorks = () => {
           >
             &times;
           </button>
-          <h2 className="text-2xl font-bold mb-6">{modalContent.title}</h2>
+          <h2 className="text-2xl font-bold mb-2 text-blue-700">
+            {modalContent.title}
+          </h2>
+          {modalContent.link && (
+            <a
+              href={modalContent.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline mb-6 block"
+            >
+              Visit Project
+            </a>
+          )}
 
           <img
             src={modalContent.imgSrc}
