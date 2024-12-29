@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ContactSvgOurWorks from "./ContactSvgOurWorks";
 import Sidebar from "./Sidebar";
-import logo from "/arBlue.png"; // adjust your logo path as needed
+import logo from "/AR.png"; // adjust your logo path as needed
 
 const NavbarOurWorks = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const NavbarOurWorks = () => {
         <div className="flex justify-between items-center w-full h-16">
           {/* Logo on the left */}
           <div className="flex-shrink-0 ml-5">
-            <img src={logo} alt="Logo" className="h-8 w-10" />
+            <img src={logo} alt="Logo" className="h-14 w-14 contrast-200	" />
           </div>
 
           {/* Centered Links */}
