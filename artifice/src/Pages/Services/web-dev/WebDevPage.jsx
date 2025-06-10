@@ -62,7 +62,7 @@ const Services = () => {
 
       {/* Web Development Services */}
       <section className="py-16 px-6 md:px-16 bg-white">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row">
             <div
               className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10"
