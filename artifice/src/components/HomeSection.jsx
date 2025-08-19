@@ -173,70 +173,162 @@ const HomeSection = () => {
           <MainHeading title="Our Works" backgroundTitle="Our Works" />
         </div>
 
-        <div className="relative flex flex-wrap justify-center gap-6 md:gap-20 px-4 md:px-6 lg:px-12">
+        <div className="relative flex flex-wrap justify-center gap-8 px-4 md:px-6 lg:px-12">
           {/* Wrapper for alignment */}
-          <div className="flex flex-wrap gap-6 md:gap-20 justify-center relative">
-            {/* Single Card */}
+          <div className="flex flex-wrap gap-8 justify-center relative">
+            {/* Single Card - VR Simulators */}
             <div
-              className="bg-white rounded-xl p-4 max-w-80 border-2 hover:border-0 transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem] "
+              className="group relative bg-white rounded-2xl overflow-hidden max-w-sm w-full shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105"
               data-aos="zoom-in-up"
               data-aos-delay="400"
             >
-              <img
-                src="/oil-drill.png"
-                alt="Work 1"
-                className="w-full h-3/5 object-cover rounded-lg"
-              />
-              <div className="p-4 h-2/5 flex flex-col justify-between">
-                <h3 className="text-base sm:text-lg font-bold">
-                  VR Simulators
-                </h3>
-                <p className="text-[#666666] mb-4 text-sm sm:text-base">
-                  VR simulators provide students virtual exposure to on-field
-                  work.
-                </p>
+              {/* Image Container with Overlay */}
+              <div className="relative overflow-hidden h-56">
+                <img
+                  src="/oil-drill.png"
+                  alt="VR Simulators"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* Category Badge */}
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-blue-500 text-white text-xs font-semibold rounded-full shadow-lg">
+                    AR/VR
+                  </span>
+                </div>
+                {/* View Project Button */}
+                <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  <button className="bg-white/90 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-colors duration-200 shadow-lg">
+                    View Project →
+                  </button>
+                </div>
+              </div>
+              
+              {/* Content Container */}
+              <div className="p-6 relative">
+                {/* Decorative Element */}
+                <div className="absolute top-0 left-6 w-8 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+                
+                <div className="mt-2">
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                    VR Simulators
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    Immersive VR simulators providing students with realistic virtual exposure to on-field work environments and practical training scenarios.
+                  </p>
+                  
+                  {/* Tech Stack Tags */}
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium">Unity</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium">VR</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium">Education</span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Second Card */}
+            {/* Second Card - Billing System */}
             <div
-              className="bg-white rounded-xl p-4 max-w-80 border-2 hover:border-0  transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
+              className="group relative bg-white rounded-2xl overflow-hidden max-w-sm w-full shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105"
               data-aos="zoom-in-up"
               data-aos-delay="600"
             >
-              <img
-                src="/web-front-2.png"
-                alt="Work 2"
-                className="w-full h-3/5 object-cover rounded-lg"
-              />
-              <div className="p-4 h-2/5 flex flex-col justify-between">
-                <h3 className="text-base sm:text-lg font-bold">
-                  Broadband Billing system
-                </h3>
-                <p className="text-[#666666] mb-4 text-sm sm:text-base">
-                  Comprehensive system for managing cable TV and broadband
-                  billing efficiently.
-                </p>
+              {/* Image Container with Overlay */}
+              <div className="relative overflow-hidden h-56">
+                <img
+                  src="/web-front-2.png"
+                  alt="Broadband Billing System"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* Category Badge */}
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
+                    Web App
+                  </span>
+                </div>
+                {/* View Project Button */}
+                <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  <button className="bg-white/90 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-colors duration-200 shadow-lg">
+                    View Project →
+                  </button>
+                </div>
+              </div>
+              
+              {/* Content Container */}
+              <div className="p-6 relative">
+                {/* Decorative Element */}
+                <div className="absolute top-0 left-6 w-8 h-1 bg-gradient-to-r from-green-500 to-teal-500 rounded-full"></div>
+                
+                <div className="mt-2">
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors duration-300">
+                    Broadband Billing System
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    Comprehensive management system for cable TV and broadband billing with automated processes and efficient customer management.
+                  </p>
+                  
+                  {/* Tech Stack Tags */}
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium">React</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium">Node.js</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium">MongoDB</span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Third Card */}
+            {/* Third Card - Near Me App */}
             <div
-              className="bg-white rounded-xl p-4 max-w-80 border-2 hover:border-0  transition-all border-[#E0E0E0] drop-shadow-xl hover:drop-shadow-2xl h-[23rem]"
+              className="group relative bg-white rounded-2xl overflow-hidden max-w-sm w-full shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105"
               data-aos="zoom-in-up"
               data-aos-delay="800"
             >
-              <img
-                src="/ui-card.png"
-                alt="Work 3"
-                className="w-full h-3/5 object-cover rounded-lg"
-              />
-              <div className="p-4 h-2/5 flex flex-col justify-between">
-                <h3 className="text-base sm:text-lg font-bold">Near Me</h3>
-                <p className="text-[#666666] mb-4 text-sm sm:text-base">
-                  Discover local attractions and experiences with our AI travel
-                  app.
-                </p>
+              {/* Image Container with Overlay */}
+              <div className="relative overflow-hidden h-56">
+                <img
+                  src="/ui-card.png"
+                  alt="Near Me Travel App"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* Category Badge */}
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-purple-500 text-white text-xs font-semibold rounded-full shadow-lg">
+                    AI/Mobile
+                  </span>
+                </div>
+                {/* View Project Button */}
+                <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  <button className="bg-white/90 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-colors duration-200 shadow-lg">
+                    View Project →
+                  </button>
+                </div>
+              </div>
+              
+              {/* Content Container */}
+              <div className="p-6 relative">
+                {/* Decorative Element */}
+                <div className="absolute top-0 left-6 w-8 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                
+                <div className="mt-2">
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-purple-600 transition-colors duration-300">
+                    Near Me
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    AI-powered travel companion app that discovers local attractions, experiences, and hidden gems tailored to user preferences and location.
+                  </p>
+                  
+                  {/* Tech Stack Tags */}
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium">Flutter</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium">AI/ML</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium">Maps API</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
