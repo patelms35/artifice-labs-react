@@ -63,7 +63,7 @@ const Services = () => {
   };
 
   return (
-    <div className="font-poppins">
+    <div className="font-inter">
       {/* Navbar */}
       <Navbar />
 
@@ -73,7 +73,7 @@ const Services = () => {
 
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
-          <h1 className="text-4xl md:text-6xl mb-8 leading-tight" style={{ fontFamily: "MADE Gentle, sans-serif" }}>
+          <h1 className="text-4xl md:text-6xl font-syne font-bold mb-8 leading-tight">
             AI / ML Services
           </h1>
           <p className="text-lg md:text-2xl mb-8 leading-relaxed">
@@ -95,7 +95,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-20">
             <h2
-              className="text-3xl md:text-4xl font-bold lg:w-1/2"
+              className="text-3xl md:text-4xl font-syne font-bold lg:w-1/2"
               data-aos="fade-up"
               data-aos-delay="300"
             >
@@ -159,7 +159,7 @@ const Services = () => {
 
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-syne font-bold mb-6">
               Elevate your digital with a top-tier{" "}
               <span className="text-[#0B5EFF]">
                 AI/ML solutions that set you apart, driving innovation and

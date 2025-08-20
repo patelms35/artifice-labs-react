@@ -36,7 +36,7 @@ const HomeSection = () => {
   };
 
   return (
-    <div className="w-full bg-[#F6F9FE] font-poppins">
+    <div className="w-full bg-[#F6F9FE] font-inter">
       {/* Navbar */}
       <Navbar />
 
@@ -48,7 +48,7 @@ const HomeSection = () => {
         <div className="bg-black opacity-40 w-full h-full absolute top-0 left-0"></div>
         <div className="text-center text-white px-6 relative z-10">
           <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-syne font-bold mb-4"
             data-aos="zoom-in-up"
           >
             Driven by Innovation, Shaped by Expertise
@@ -63,7 +63,7 @@ const HomeSection = () => {
           <button
             data-aos="zoom-in-up"
             data-aos-delay="800"
-            className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-base sm:text-lg md:text-xl lg:text-lg text-gray-50 bg-[#106eea] backdrop-blur-md lg:font-semibold border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#FFFFFF] hover:text-black before:-z-10 before:aspect-square before:hover:scale-200 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+            className="font-inter flex justify-center gap-2 items-center mx-auto shadow-xl text-base sm:text-lg md:text-xl lg:text-lg text-gray-50 bg-[#106eea] backdrop-blur-md lg:font-semibold border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#FFFFFF] hover:text-black before:-z-10 before:aspect-square before:hover:scale-200 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
             type="submit"
             onClick={handleGetStarted}
           >
@@ -106,14 +106,14 @@ const HomeSection = () => {
             {/* Right Text Content */}
             <div className="md:w-1/2 lg:w-3/5 md:pl-12 relative flex flex-col justify-between">
               <h1
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold text-black mb-4 z-20 relative"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-syne font-bold text-black mb-4 z-20 relative"
                 data-aos="fade-up"
                 data-aos-delay="400"
               >
                 About <span className="text-[#106eea]">Artifice Labs</span>
               </h1>
               <h3
-                className="text-lg sm:text-xl md:text-2xl lg:text-xl font-semibold mb-2 z-20 relative"
+                className="text-lg sm:text-xl md:text-2xl lg:text-xl font-syne font-semibold mb-2 z-20 relative"
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
@@ -211,7 +211,7 @@ const HomeSection = () => {
                 <div className="absolute top-0 left-6 w-8 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
                 
                 <div className="mt-2">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                  <h3 className="text-xl font-syne font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors duration-300">
                     VR Simulators
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -263,7 +263,7 @@ const HomeSection = () => {
                 <div className="absolute top-0 left-6 w-8 h-1 bg-gradient-to-r from-green-500 to-teal-500 rounded-full"></div>
                 
                 <div className="mt-2">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors duration-300">
+                  <h3 className="text-xl font-syne font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors duration-300">
                     Broadband Billing System
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">

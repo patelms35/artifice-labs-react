@@ -98,7 +98,7 @@ const MissionVisionSection = () => {
               <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/20 group hover:scale-[1.02]">
                 <div className="flex items-center mb-6">
                   <div className="w-2 h-12 bg-gradient-to-b from-indigo-500 to-purple-600 rounded-full mr-4"></div>
-                  <h3 className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                  <h3 className="text-3xl lg:text-4xl font-syne font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
                     Our Vision
                   </h3>
                 </div>

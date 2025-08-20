@@ -24,7 +24,7 @@ const Services = () => {
   };
 
   return (
-    <div className="font-poppins">
+    <div className="font-inter">
       {/* Navbar */}
       <Navbar />
 
@@ -34,7 +34,7 @@ const Services = () => {
 
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight" data-aos="fade-up" data-aos-delay="300"  >
+          <h1 className="text-4xl md:text-5xl font-syne font-bold mb-8 leading-tight" data-aos="fade-up" data-aos-delay="300"  >
             Application Development Services
           </h1>
           <p className="text-lg md:text-2xl mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="500" >
@@ -58,7 +58,7 @@ const Services = () => {
       <section className="py-16 px-6 md:px-16 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10" data-aos="fade-up" data-aos-delay="300">
+            <div className="md:w-1/2 font-syne font-bold text-2xl md:text-3xl md:mr-10 mt-10" data-aos="fade-up" data-aos-delay="300">
               <span className="text-black">What are</span>
               <span className="text-[#0B5EFF]">
                 Application Development services?
@@ -83,7 +83,7 @@ const Services = () => {
       <section className="py-24 px-6 md:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-start lg:items-center justify-between gap-5 space-y-4 lg:space-y-0 mb-24">
-            <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2 text-center" data-aos="fade-up" data-aos-delay="300" >
+            <h2 className="text-3xl md:text-4xl font-syne font-bold lg:w-1/2 text-center" data-aos="fade-up" data-aos-delay="300" >
               Application Development Services We Provide
             </h2>
             <p className="text-lg text-center text-[#808080] lg:w-1/2" data-aos="fade-up" data-aos-delay="400" >
@@ -102,7 +102,7 @@ const Services = () => {
                 className="pb-6"
                 alt="Web app design"
               />
-              <h1 className="text-xl font-bold">
+              <h1 className="text-xl font-syne font-bold">
                 Custom Mobile Application Development
               </h1>
               <p className="text-[#AFAFAF]">
@@ -121,7 +121,7 @@ const Services = () => {
                 className="pb-6"
                 alt="Mobile app design"
               />
-              <h1 className="text-xl font-bold">
+              <h1 className="text-xl font-syne font-bold">
                 Android Mobile App Development
               </h1>
               <p className="text-[#AFAFAF]">
@@ -140,7 +140,7 @@ const Services = () => {
                 className="pb-6"
                 alt="Mobile app design"
               />
-              <h1 className="text-xl font-bold">
+              <h1 className="text-xl font-syne font-bold">
                 Hybrid Mobile App Development Services
               </h1>
               <p className="text-[#AFAFAF]">
@@ -159,7 +159,7 @@ const Services = () => {
                 className="pb-6"
                 alt="Mobile app design"
               />
-              <h1 className="text-xl font-bold">
+              <h1 className="text-xl font-syne font-bold">
                 iPhone Mobile App Development
               </h1>
               <p className="text-[#AFAFAF]">
@@ -188,7 +188,7 @@ const Services = () => {
 
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
-            <h2 className="text-3xl md:text-3xl font-bold mb-6" data-aos="fade-up" data-aos-delay="300" >
+            <h2 className="text-3xl md:text-3xl font-syne font-bold mb-6" data-aos="fade-up" data-aos-delay="300" >
               Enhance your digital presence with a leading {""}
               <span className="text-[#0B5EFF]">
                 application development company that sets the standard for

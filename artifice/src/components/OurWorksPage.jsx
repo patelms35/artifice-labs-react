@@ -132,7 +132,7 @@ const OurWorks = () => {
   };
 
   return (
-    <section className="bg-white py-10 font-poppins">
+    <section className="bg-white py-10 font-inter">
       <div className="hidden md:flex items-baseline justify-start z-0 fixed top-0 left-[-100px]">
         <div className="w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-blue-300 via-blue-500 to-blue-700 opacity-60"></div>
       </div>

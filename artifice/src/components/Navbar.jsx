@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/AR.png"; // adjust your logo path as needed
+
 import ContactSvg from "./ContactSvg";
 import Sidebar from "./Sidebar";
 
@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center w-full h-16">
           {/* Logo on the left */}
           <div className="flex-shrink-0 ml-5">
-            <img src={logo} alt="Logo" className="h-14 w-12" />
+            <img src="https://res.cloudinary.com/dhloesckk/image/upload/v1755704230/3D-White-Logo-Bg_esu7mu.png" alt="Logo" className="h-14 w-12" />
           </div>
 
           {/* Centered Links */}

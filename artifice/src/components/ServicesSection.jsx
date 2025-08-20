@@ -93,7 +93,7 @@ const ServicesSection = () => {
       <div className="text-center mb-12">
         <MainHeading title="Services" backgroundTitle="Services" />
         <p
-          className="text-left text-[32px] ml-10 font-bold text-black mt-12"
+          className="text-left text-[32px] ml-10 font-syne font-bold text-black mt-12"
           data-aos="fade-right"
         >
           Discover our wide range of services.
@@ -112,7 +112,7 @@ const ServicesSection = () => {
               } transition-opacity duration-300`}
             >
               <img src={item.image} className="h-16 w-16 mb-6" />
-              <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+              <h3 className="text-2xl font-syne font-semibold mb-4">{item.title}</h3>
               <p className="text-center text-gray-600 mb-6">{item.content}</p>
 
               {/* Learn More Button */}

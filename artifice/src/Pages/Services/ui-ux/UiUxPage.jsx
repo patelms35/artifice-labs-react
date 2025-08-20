@@ -21,7 +21,7 @@ const Services = () => {
   };
 
   return (
-    <div className="font-poppins">
+    <div className="font-inter">
       {/* Navbar */}
       <Navbar />
 
@@ -32,7 +32,7 @@ const Services = () => {
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
           <h1
-            className="text-4xl md:text-5xl font-bold mb-8 leading-tight"
+            className="text-4xl md:text-5xl font-syne font-bold mb-8 leading-tight"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -66,7 +66,7 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             <div
-              className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10"
+              className="md:w-1/2 font-syne font-bold text-2xl md:text-3xl md:mr-10 mt-10"
               data-aos="fade-up"
               data-aos-delay="300"
             >
@@ -98,7 +98,7 @@ const Services = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <h2 className="text-3xl md:text-4xl font-bold lg:w-1/2 text-center">
+            <h2 className="text-3xl md:text-4xl font-syne font-bold lg:w-1/2 text-center">
               UI / UX design Service we provide
             </h2>
             <p
@@ -120,7 +120,7 @@ const Services = () => {
             {/* Card 1 */}
             <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 max-w-lg mx-auto">
               <img src="/webappdesign.png" className="pb-6 " />
-              <h1 className="text-xl font-bold">Web app design</h1>
+              <h1 className="text-xl font-syne font-bold">Web app design</h1>
               <p className="text-[#AFAFAF]">
                 Creative and understandable website design significantly
                 increases the chances of a visitor taking the target action we
@@ -134,7 +134,7 @@ const Services = () => {
             {/* Card 2 */}
             <div className="bg-white p-10 rounded-lg shadow-lg flex flex-col items-start transform pb-14 max-w-lg mx-auto">
               <img src="/mobileappdesign.png" className="pb-6 " />
-              <h1 className="text-xl font-bold">Mobile app design</h1>
+              <h1 className="text-xl font-syne font-bold">Mobile app design</h1>
               <p className="text-[#AFAFAF]">
                 Mobile UX design defines the correct user flow of the app. How
                 many actions will the user take to reach what they want? What
@@ -164,7 +164,7 @@ const Services = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
             <h2
-              className="text-3xl md:text-3xl font-bold mb-6"
+              className="text-3xl md:text-3xl font-syne font-bold mb-6"
               data-aos="fade-up"
               data-aos-delay="300"
             >

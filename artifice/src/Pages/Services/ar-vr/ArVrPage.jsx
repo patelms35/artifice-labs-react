@@ -93,7 +93,7 @@ const Services = () => {
   };
 
   return (
-    <div className="font-poppins">
+    <div className="font-inter">
       {/* Navbar */}
       <Navbar />
 
@@ -104,7 +104,7 @@ const Services = () => {
         {/* Content */}
         <div className="relative z-10 text-left text-white px-6 md:px-16 lg:px-56">
           <h1
-            className="text-4xl md:text-5xl font-bold mb-8 leading-tight"
+            className="text-4xl md:text-5xl font-syne font-bold mb-8 leading-tight"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -139,7 +139,7 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             <div
-              className="md:w-1/2 font-bold text-2xl md:text-3xl md:mr-10 mt-10"
+              className="md:w-1/2 font-syne font-bold text-2xl md:text-3xl md:mr-10 mt-10"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -230,7 +230,7 @@ const Services = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
             <h2
-              className="text-3xl md:text-3xl font-bold mb-6"
+              className="text-3xl md:text-3xl font-syne font-bold mb-6"
               data-aos="fade-up"
               data-aos-delay="300"
             >
